@@ -2,8 +2,8 @@
   "name": "sffaudio-rsd",
   "version": "1.0.0",
   "engines": {
-    "node": "6.11.1",
-    "npm": "3.8.6"
+    "node": "6.10.2",
+    "npm": "3.10.10"
   },
   "eslintIgnore": ["**/all_tile_image_widths.js"],
   "main": "media-server.js",
