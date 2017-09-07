@@ -19,7 +19,7 @@ var gutil = require('gulp-util')
 env('./.env')  // N.B. This defines process.env.NODE_ENV
 
 require('./node_modules/react-hover-grid/gulpfile.hover_tiles_compile.js')
-require('./hover-grid-data/entry-points/gulpfile.jsx_entries.js')
+require('./hover-grid-data/gulpfile.jsx_entries.js')
 require('./hover-grid-data/gulpfile.image_data_uri_width.js')
 require('./hover-grid-server/gulpfile.webpack_gulp.js')
 

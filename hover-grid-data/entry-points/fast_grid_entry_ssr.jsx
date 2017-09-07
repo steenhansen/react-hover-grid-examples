@@ -4,7 +4,7 @@ import React from 'react'
 const ReactDOMServer = require('react-dom/server')
 
 const picture_tile_widths = require('../picture_tile_widths.js')
-const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
+const all_tile_image_widths = require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js')
 
 var lodash_shuffle = require('lodash/shuffle.js')
 

@@ -29,7 +29,7 @@ const wildcard_image_types = ['*.png', '*.jpg']
 
 
 let tile_image_widths = {}
-const ALL_TILE_IMAGE_WIDTHS = 'all_tile_image_widths.js'
+const ALL_TILE_IMAGE_WIDTHS = 'ALL_TILE_IMAGE_WIDTHS.js'
 
 // FROM https://github.com/gulpjs/gulp/blob/master/docs/recipes/running-task-steps-per-folder.md
 function getFolders (dir) {

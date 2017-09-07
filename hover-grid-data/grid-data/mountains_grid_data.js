@@ -1,4 +1,4 @@
-const city_grid_data = [
+const mountains_grid_data = [
   {
     picture_src: 'buntzen_lake.jpg'
     , normal_area: 'north-west'
@@ -84,7 +84,7 @@ const city_grid_data = [
 module.exports = {
   hover_grid_id: 'mountains_grid_id'
   ,  hover_grid_row_height: 200
-  ,  pictureTile_text: city_grid_data
+  ,  pictureTile_text: mountains_grid_data
   ,  hor_text_edge: 9
   ,  tile_edge: 2
   , resize_nested_component: true

@@ -10,7 +10,7 @@ const MIN_WIDTH = 100
 
 const mountains_grid_data = require('../grid-data/mountains_grid_data')
 const picture_tile_widths = require('../picture_tile_widths.js')
-const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
+const all_tile_image_widths = require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js')
 
 function setGridWidth(width_int, mountains_grid_id) {
   const elem = document.getElementById(mountains_grid_id)

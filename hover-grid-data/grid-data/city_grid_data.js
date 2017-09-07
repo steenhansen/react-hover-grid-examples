@@ -1,8 +1,6 @@
 'use strict'  // city_grid data
 
-
-const city_grid_data = [
-  {
+const city_grid_data = [{
     picture_src: 'amc_spirit.jpg'
     , filter_hover: 'grayscale(1)'
     , normal_area: 'north-west'
@@ -36,7 +34,6 @@ const city_grid_data = [
     , normal_style: {fontFamily: "'Schoolbell', cursive", fontSize: '24px', color: '#8341D9'}
     , hover_style: {fontFamily: "'Schoolbell', cursive", fontSize: '24px', color: '#2193EC'}
     , hover_linear_gradient: {clear_percent: 30, gradient_rgba: 'rgba(0, 0, 0, 0.99)'}
-
   }, {
     picture_src: 'denver_nukes.jpg'
     , filter_hover: 'grayscale(1)'
@@ -48,7 +45,6 @@ const city_grid_data = [
     , hover_info: 'the Rockies'
     , normal_style: {fontFamily: "'Share Tech Mono', monospace", fontSize: '36px', color: 'white'}
     , hover_linear_gradient: {clear_percent: 10, gradient_rgba: 'rgba(0, 0, 0, 0.99)'}
-
   }, {
     picture_src: 'hello_kitty_skytrain.jpg'
     , filter_hover: 'hue-rotate(90deg)'
@@ -95,24 +91,20 @@ const city_grid_data = [
     , hover_info: 'at SFU'
     , normal_style: {fontFamily: "'Carter One', cursive", fontSize: '24px', color: 'red'}
     , hover_gradient: 'rgba(255, 0, 0, 0.1)'
-
   }, {
     picture_src: 'i_like_coffee.jpg'
     , filter_hover: 'grayscale(1)'
     , normal_title: 'Crystal Mall'
     , hover_title: 'Food Court'
     , normal_style: {fontFamily: "'Fredericka the Great', cursive", fontSize: '24px', color: 'white'}
-
-  }
-]
+  }]
 
 module.exports = {
   hover_grid_id: 'city_grid_id'
-  ,  hover_grid_row_height: 222
- , pictureTile_text:city_grid_data
-
-  ,  hor_text_edge: 9
-  ,  tile_edge: 2
-  ,  max_rows: 2
-  ,  google_font_link: 'https://fonts.googleapis.com/css?family=Abril+Fatface|Schoolbell|Fredericka+the+Great|Carter+One|Allerta+Stencil|Lobster+Two|Shrikhand|Orbitron|Permanent+Marker|Share+Tech+Mono'
+  , hover_grid_row_height: 222
+  , pictureTile_text:city_grid_data
+  , hor_text_edge: 9
+  , tile_edge: 2
+  , max_rows: 2
+  , google_font_link: 'https://fonts.googleapis.com/css?family=Abril+Fatface|Schoolbell|Fredericka+the+Great|Carter+One|Allerta+Stencil|Lobster+Two|Shrikhand|Orbitron|Permanent+Marker|Share+Tech+Mono'
 }

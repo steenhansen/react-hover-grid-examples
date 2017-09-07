@@ -1,4 +1,4 @@
-const pictureTile_list = [
+const left_grid_data = [
   {
     picture_src: 'alouette_mtn.jpg'
     , normal_title: 'Maggie'
@@ -46,7 +46,7 @@ const pictureTile_list = [
 module.exports = {
   hover_grid_id: 'sizeable_left_grid_id'
   , hover_grid_row_height: 250
-  , pictureTile_text: pictureTile_list
+  , pictureTile_text: left_grid_data
   , tile_edge: 0
   , resize_nested_component: true
 }

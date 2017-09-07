@@ -4,7 +4,6 @@
 
 const gulp = require('gulp')
 
-const extname = require('gulp-extname')
 const babel = require('gulp-babel')
 const gutil = require('gulp-util')
 const debug = require('gulp-debug')
@@ -26,8 +25,8 @@ env('./.env')  // N.B. This defines process.env.NODE_ENV
 function onError (error) { handleError.call(this, 'error', error) }
 
 function jsx_to_js_1 () {
-  const jsx_source = __dirname + '/*.jsx'
-  const js_dest = __dirname
+  const jsx_source = __dirname + '/entry-points/*.jsx'
+  const js_dest = __dirname + '/entry-points/'
   return gulp.src(jsx_source)
           .on('error', onError)
           .pipe(babel({presets: ['es2015', 'stage-2']}))
@@ -36,9 +35,8 @@ function jsx_to_js_1 () {
 }
 
 function remove_asserts_2 () {
-  const not_gulp_files = '!' + __dirname + '/gulpfile.*.js'
-  const jsx_source = [__dirname + '/*.js', not_gulp_files]
-  const js_dest = __dirname
+  const jsx_source = __dirname + '/entry-points/*.js'
+  const js_dest = __dirname + '/entry-points/'
   if (process.env.NODE_ENV === 'development') {
     unassert = require('gulp-empty-pipe')
   }

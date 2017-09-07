@@ -10,13 +10,8 @@ const webpack = require('webpack')
 const AssetsPlugin = require('assets-webpack-plugin')
 
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 const MAX_BYTES_INLINE_IMAGE_SIZE = 8192
-
-const NOP_DEFINE_PLUGIN = new webpack.DefinePlugin({
-  NOP_EMPTY_PLUGIN: 'for developement'
-})
 
 env('./.env')  // N.B. This defines process.env.NODE_ENV
 
@@ -62,11 +57,6 @@ const react_cdns = {
 
 const js_chunks_location_plugin = new AssetsPlugin({filename: './hover-grid-server/webpack_js_chunks.json'})
 
-let do_uglifyjs_plugin = NOP_DEFINE_PLUGIN
-if (process.env.NODE_ENV !== 'development') {
-  do_uglifyjs_plugin = new UglifyJSPlugin()
-}
-
 const node_env_plugin = new webpack.DefinePlugin({
   'process.env': {
     'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
@@ -77,7 +67,6 @@ const js_chunks_hashed_plugin = new webpack.optimize.CommonsChunkPlugin({
   name: 'commons'
   , filename: '[name].[chunkhash].js'
   ,chunkFilename: '[chunkhash].js'
-  //,minChunks: 2
 })
 
 const do_cleanup_plugin = new WebpackCleanupPlugin({exclude: ['**/*.jpg'
@@ -96,7 +85,6 @@ module.exports = {
   ,plugins: [js_chunks_location_plugin
     , node_env_plugin
     , js_chunks_hashed_plugin
-    , do_uglifyjs_plugin
     , do_cleanup_plugin
   ]
 }
