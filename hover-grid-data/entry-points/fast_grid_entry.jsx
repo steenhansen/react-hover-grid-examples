@@ -5,10 +5,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 
-// N.B. include 'picture_tile_widths.js' and 'ALL_TILE_IMAGE_WIDTHS.js' so that they will be
+// N.B. include 'picture_tile_widths.js' and 'all_tile_image_widths.js' so that they will be
 // included in /public/commons.hash.js
 require('../picture_tile_widths.js')
-require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js')
+require('../grid-data/all_tile_image_widths.js')
 
 
 const fast_grid_data = window._HOVER_TILES.fast_grid_json

@@ -8,7 +8,7 @@ const LEFT_PANE_SIZE = 400
 const PANE_MARGIN = 20
 
 const picture_tile_widths = require('../picture_tile_widths.js')
-const all_tile_image_widths = require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js')
+const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
 
 const sizeable_grid_left_data = require('../grid-data/sizeable_left_grid_data')
 const sizeable_left_grid_id =sizeable_grid_left_data.hover_grid_id

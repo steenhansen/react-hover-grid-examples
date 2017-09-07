@@ -6,7 +6,7 @@
     "npm": "3.10.10"
   },
   "eslintIgnore": [
-    "**/ALL_TILE_IMAGE_WIDTHS.js"
+    "**/all_tile_image_widths.js"
   ],
   "main": "media-server.js",
   "scripts": {
