@@ -8,7 +8,7 @@ function _interopRequireDefault(obj) {
 }
 var ReactDOMServer = require('react-dom/server');
 var picture_tile_widths = require('../picture_tile_widths.js');
-var all_tile_image_widths = require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js');
+var all_tile_image_widths = require('../grid-data/all_tile_image_widths.js');
 var lodash_shuffle = require('lodash/shuffle.js');
 module.exports = function (fast_grid_data) {
     var fast_grid_texts = fast_grid_data.pictureTile_text;

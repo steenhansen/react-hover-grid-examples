@@ -13,7 +13,7 @@ var MAX_WIDTH = 1000;
 var MIN_WIDTH = 100;
 var mountains_grid_data = require('../grid-data/mountains_grid_data');
 var picture_tile_widths = require('../picture_tile_widths.js');
-var all_tile_image_widths = require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js');
+var all_tile_image_widths = require('../grid-data/all_tile_image_widths.js');
 function setGridWidth(width_int, mountains_grid_id) {
     var elem = document.getElementById(mountains_grid_id);
     elem.style.width = width_int + 'px';

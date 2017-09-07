@@ -24,7 +24,7 @@ function _defineProperty(obj, key, value) {
 var LEFT_PANE_SIZE = 400;
 var PANE_MARGIN = 20;
 var picture_tile_widths = require('../picture_tile_widths.js');
-var all_tile_image_widths = require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js');
+var all_tile_image_widths = require('../grid-data/all_tile_image_widths.js');
 var sizeable_grid_left_data = require('../grid-data/sizeable_left_grid_data');
 var sizeable_left_grid_id = sizeable_grid_left_data.hover_grid_id;
 var sizeable_grid_right_data = require('../grid-data/sizeable_right_grid_data');

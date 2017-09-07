@@ -10,7 +10,7 @@ function _interopRequireDefault(obj) {
 }
 var city_grid_data = require('../grid-data/city_grid_data.js');
 var picture_tile_widths = require('../picture_tile_widths.js');
-var all_tile_image_widths = require('../grid-data/ALL_TILE_IMAGE_WIDTHS.js');
+var all_tile_image_widths = require('../grid-data/all_tile_image_widths.js');
 var city_grid_texts = city_grid_data.pictureTile_text;
 var city_grid_widths = all_tile_image_widths['city_grid'];
 var pictureTile_widths = picture_tile_widths.mergeWidthsWithText(city_grid_texts, city_grid_widths, 'city_grid_images');
