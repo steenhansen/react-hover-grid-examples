@@ -6861,9 +6861,9 @@ react-dom@^15.3.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react-hover-grid@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-hover-grid/-/react-hover-grid-0.0.2.tgz#a0ee2f98eb3aea30e5d2c6e4108b39603578be35"
+react-hover-grid@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-hover-grid/-/react-hover-grid-0.0.4.tgz#ad64e6dcf2d4f2368343d74f31351f6420c2342e"
   dependencies:
     detect-node "^2.0.3"
     invariant "^2.2.2"
