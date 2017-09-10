@@ -3,7 +3,7 @@ import ReactHoverGrid from 'react-hover-grid'
 import React from 'react'
 const ReactDOMServer = require('react-dom/server')
 
-const picture_tile_widths = require('../picture_tile_widths.js')
+const browser_helpers = require('../browser_helpers.js')
 const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
 
 var lodash_shuffle = require('lodash/shuffle.js')
@@ -11,7 +11,7 @@ var lodash_shuffle = require('lodash/shuffle.js')
 module.exports = function (fast_grid_data) {
   const fast_grid_texts =  fast_grid_data.pictureTile_text
   const fast_grid_widths =  all_tile_image_widths['fast_grid']
-  let pictureTile_widths= picture_tile_widths.mergeWidthsWithText(fast_grid_texts, fast_grid_widths, 'fast_grid_images')
+  let pictureTile_widths= browser_helpers.mergeWidthsWithText(fast_grid_texts, fast_grid_widths, 'fast_grid_images')
 
    if (fast_grid_data.init_shuffle) {
      pictureTile_widths = lodash_shuffle(pictureTile_widths)

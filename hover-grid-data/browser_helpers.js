@@ -1,5 +1,56 @@
 'use strict'
 
+function grid_menu(current_grid){
+    const number_pages = 5
+    const li_width =100/number_pages
+
+const menu_html =`
+
+<style>
+#grid-menu {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+}
+
+#grid-menu li {
+    display: block;
+    float: left;
+    margin: 0;
+    width: ${li_width}%;
+    background-color: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#grid-menu li a {
+  color:red;
+}
+#grid-menu li a:hover {
+  color:yellow;
+}
+
+#grid-menu li#${current_grid} a {
+  color:green;
+}
+#grid-menu li#${current_grid} a:hover {
+  color:purple;
+  cursor:default;
+  text-decoration:none; 
+  font-weight:bold;
+}
+
+</style>
+    <ul id="grid-menu">
+      <li id="tiny_grid"><a href="tiny_grid">Tiny</a></li>
+      <li id="city_grid"><a href="city_grid">City</a></li>
+    </ul>
+
+ <div style="clear:both">&nbsp;</div>
+`
+return menu_html
+}
+
 function mergeWidthsWithText(grid_pictureTiles, grid_image_widths, dir_name) {
     let image_not_copied = []
     for (let picture_src in grid_image_widths) {
@@ -32,4 +83,5 @@ function mergeWidthsWithText(grid_pictureTiles, grid_image_widths, dir_name) {
     }
     return pictureTile_widths
 }
-module.exports = { mergeWidthsWithText: mergeWidthsWithText }
+module.exports = { grid_menu:grid_menu
+    ,mergeWidthsWithText: mergeWidthsWithText }

@@ -6,8 +6,10 @@ import ReactHoverGrid from 'react-hover-grid'
 
 const LEFT_PANE_SIZE = 400
 const PANE_MARGIN = 20
+const SPLITTER_CONTAINER_ID = 'sizeable_grid_id'
 
-const picture_tile_widths = require('../picture_tile_widths.js')
+
+const browser_helpers = require('../browser_helpers.js')
 const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
 
 const sizeable_grid_left_data = require('../grid-data/sizeable_left_grid_data')
@@ -46,6 +48,11 @@ let sizeable_resizePubSub_splitter = (function (sizeable_grid_left_id, sizeable_
           containerResize_func(current_widths[grid_id])
         }
       }
+      const splitter_container = document.getElementById(SPLITTER_CONTAINER_ID)
+      const splitter_height = splitter_container.style.height
+      const div_data_reactroot = splitter_container.firstElementChild
+      const div_class_SplitPane = div_data_reactroot.firstElementChild
+      div_class_SplitPane.style.height=splitter_height
     }
   }
 })(sizeable_left_grid_id, sizeable_right_grid_id)
@@ -53,15 +60,13 @@ let sizeable_resizePubSub_splitter = (function (sizeable_grid_left_id, sizeable_
 
 const left_grid_texts =  sizeable_grid_left_data.pictureTile_text
 const left_grid_widths =  all_tile_image_widths['sizeable_left_grid']
-const left_pictureTile_widths= picture_tile_widths.mergeWidthsWithText(left_grid_texts, left_grid_widths, 'sizeable_left_grid_images')
+const left_pictureTile_widths= browser_helpers.mergeWidthsWithText(left_grid_texts, left_grid_widths, 'sizeable_left_grid_images')
 sizeable_grid_left_data['pictureTile_list']=left_pictureTile_widths
 sizeable_grid_left_data.resize_pub_sub = sizeable_resizePubSub_splitter
 
-
-
 const right_grid_texts =  sizeable_grid_right_data.pictureTile_text
 const right_grid_widths =  all_tile_image_widths['sizeable_right_grid']
-const right_pictureTile_widths= picture_tile_widths.mergeWidthsWithText(right_grid_texts, right_grid_widths, 'sizeable_right_grid_images')
+const right_pictureTile_widths= browser_helpers.mergeWidthsWithText(right_grid_texts, right_grid_widths, 'sizeable_right_grid_images')
 sizeable_grid_right_data['pictureTile_list']=right_pictureTile_widths
 sizeable_grid_right_data.resize_pub_sub = sizeable_resizePubSub_splitter
 
@@ -81,6 +86,6 @@ let sizeable_grid_HoverGrid = ReactDOM.render(
       </div>
     </SplitPane>
   </div>
-        , document.getElementById('sizeable_grid_id'))
+        , document.getElementById(SPLITTER_CONTAINER_ID))
 
 module.exports = { sizeable_grid_HoverGrid }

@@ -9,7 +9,7 @@ const MAX_WIDTH = 1000
 const MIN_WIDTH = 100
 
 const mountains_grid_data = require('../grid-data/mountains_grid_data')
-const picture_tile_widths = require('../picture_tile_widths.js')
+const browser_helpers = require('../browser_helpers.js')
 const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
 
 function setGridWidth(width_int, mountains_grid_id) {
@@ -64,7 +64,7 @@ const mountains_grid_texts =  mountains_grid_data.pictureTile_text
 const mountains_grid_widths =  all_tile_image_widths['mountains_grid']
 
 
-const pictureTile_widths= picture_tile_widths.mergeWidthsWithText(mountains_grid_texts, mountains_grid_widths, 'mountains_grid_images')
+const pictureTile_widths= browser_helpers.mergeWidthsWithText(mountains_grid_texts, mountains_grid_widths, 'mountains_grid_images')
 mountains_grid_data['pictureTile_list']=pictureTile_widths
 
 

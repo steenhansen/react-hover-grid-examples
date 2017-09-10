@@ -58,7 +58,14 @@ let web_server = function (public_static_files, localhost_port) {
   express_server.get('/fast_grid', function (req, res) {
     require('./grid_pages/fast_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
-  
+
+  express_server.get('/tiny_grid', function (req, res) {
+    require('./grid_pages/tiny_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
+  express_server.get('/ssr-no-js', function (req, res) {
+    require('./grid_pages/ssr_no_js_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
 
 
   express_server.get('*', function (req, res) {

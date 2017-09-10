@@ -105,7 +105,8 @@
     "url": "^0.11.0",
     "util": "^0.10.3",
     "utils-merge": "^1.0.0",
-    "vary": "^1.1.0"
+    "vary": "^1.1.0",
+    "vinyl-paths": "^2.1.0"
   },
   "devDependencies": {
     "arrify": "^1.0.1",

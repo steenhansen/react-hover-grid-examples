@@ -4,20 +4,16 @@ let jsx_chunks = require('../../hover-grid-data/jsx-chunks.js')
 let fast_grid_srr = require('../../hover-grid-data/fast_grid_ssr.js')
 
 module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
-  let invalid_checksum = jsx_chunks.expectInvalidChecksum(process.env.NODE_ENV)
-  const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV)
   const {fast_grid_html, fast_grid_json, fast_grid_css, fast_grid_entry} = fast_grid_srr.start_ssr_info(req, HTML_DIR, IMAGES_DIR)
-
   let city_grid_entry = jsx_chunks.chunkhashEntry('city_grid_entry', req)
   let sizeable_grid_entry = jsx_chunks.chunkhashEntry('sizeable_grid_entry', req)
-
   let mountains_grid_entry = jsx_chunks.chunkhashEntry('mountains_grid_entry', req)
-
   let common_js_include = jsx_chunks.chunkhashEntry('commons', req)
-  const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
   let events_promises = [fast_grid_entry, fast_grid_css, city_grid_entry, sizeable_grid_entry, mountains_grid_entry, common_js_include]
   return Promise.all(events_promises)
       .then(([fast_grid_entry, fast_grid_css, city_grid_entry, sizeable_grid_entry, mountains_grid_entry, common_js_include]) => {
+      const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
+      let invalid_checksum = jsx_chunks.expectInvalidChecksum(process.env.NODE_ENV)
       const fast_html = `
         <!doctype html>
           <html lang="en-US">
@@ -54,7 +50,9 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
       var fast_minified = jsx_chunks.minify_html(fast_html, process.env.NODE_ENV)
       res.write(fast_minified)
       res.flushHeaders()     // N.B. for compression
-      const rest_grids_html = `
+  const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV)
+
+  const rest_grids_html = `
                  <link href="splitter_style.css" rel="stylesheet">
                     <div style='clear:both'>&nbsp;</div>
  
@@ -90,7 +88,7 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
                     <script DEFER src="${mountains_grid_entry}"></script>      
                </body>
             </html>`
-  res.flushHeaders()     // N.B. for compression
+  res.flushHeaders()    
   var rest_minified = jsx_chunks.minify_html(rest_grids_html, process.env.NODE_ENV)
   res.end(rest_minified)
 })

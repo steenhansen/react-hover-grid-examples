@@ -32,13 +32,11 @@ const inline_images_loader = {
 }
 
 const jsx_entries = {
-  fast_grid_entry: '../hover-grid-data/entry-points/fast_grid_entry.jsx'
+   city_grid_entry: '../hover-grid-data/entry-points/city_grid_entry.jsx'
+  , fast_grid_entry: '../hover-grid-data/entry-points/fast_grid_entry.jsx'
   , mountains_grid_entry: '../hover-grid-data/entry-points/mountains_grid_entry.jsx'
   , sizeable_grid_entry: '../hover-grid-data/entry-points/sizeable_grid_entry.jsx'
- , dog_grid_entry: '../hover-grid-data/entry-points/dog_grid_entry.jsx'
-  , city_grid_entry: '../hover-grid-data/entry-points/city_grid_entry.jsx'
-  , splitter_grid_entry: '../hover-grid-data/entry-points/splitter_grid_entry.jsx'
-  , grow_grid_entry: '../hover-grid-data/entry-points/grow_grid_entry.jsx'
+  , tiny_grid_entry: '../hover-grid-data/entry-points/tiny_grid_entry.jsx'
 }
 
 const js_vars_and_files = {

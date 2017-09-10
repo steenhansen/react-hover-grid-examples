@@ -5,9 +5,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 
-// N.B. include 'picture_tile_widths.js' and 'all_tile_image_widths.js' so that they will be
+// N.B. include 'browser_helpers.js' and 'all_tile_image_widths.js' so that they will be
 // included in /public/commons.hash.js
-require('../picture_tile_widths.js')
+require('../browser_helpers.js')
 require('../grid-data/all_tile_image_widths.js')
 
 

@@ -48,5 +48,6 @@ module.exports = {
   , hover_grid_row_height: 250
   , pictureTile_text: left_grid_data
   , tile_edge: 0
+  , max_rows: 2
   , resize_nested_component: true
 }
