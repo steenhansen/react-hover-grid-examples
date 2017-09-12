@@ -32,11 +32,10 @@ const inline_images_loader = {
 }
 
 const jsx_entries = {
-   city_grid_entry: '../hover-grid-data/entry-points/city_grid_entry.jsx'
-  , fast_grid_entry: '../hover-grid-data/entry-points/fast_grid_entry.jsx'
-  , mountains_grid_entry: '../hover-grid-data/entry-points/mountains_grid_entry.jsx'
-  , sizeable_grid_entry: '../hover-grid-data/entry-points/sizeable_grid_entry.jsx'
-  , tiny_grid_entry: '../hover-grid-data/entry-points/tiny_grid_entry.jsx'
+   ssr_with_js_grid_entry: '../hover-grid-data/entry-points/ssr_with_js_grid_entry.jsx'
+  , shrink_grow_grid_entry: '../hover-grid-data/entry-points/shrink_grow_grid_entry.jsx'
+  , resizable_splitter_grid_entry: '../hover-grid-data/entry-points/resizable_splitter_grid_entry.jsx'
+  , npm_example_grid_entry: '../hover-grid-data/entry-points/npm_example_grid_entry.jsx'
 }
 
 const js_vars_and_files = {

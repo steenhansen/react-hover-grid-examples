@@ -39,33 +39,37 @@ let web_server = function (public_static_files, localhost_port) {
   express_server.use(logExpressErrors)
   express_server.use(expressErrorHandler)
 
-  express_server.get('/', function (req, res) {
-    require('./grid_pages/all_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  express_server.get('/', function (req, res) {   //  all => show_all
+    require('./grid_pages/show_all_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
-  express_server.get('/city_grid', function (req, res) {
-    require('./grid_pages/city_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
-  })
 
-  express_server.get('/mountains_grid', function (req, res) {
-    require('./grid_pages/mountains_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
-  })
 
-  express_server.get('/sizeable_grid', function (req, res) {
-    require('./grid_pages/sizeable_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
-  })
 
-  express_server.get('/fast_grid', function (req, res) {
-    require('./grid_pages/fast_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
-  })
 
-  express_server.get('/tiny_grid', function (req, res) {
-    require('./grid_pages/tiny_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  express_server.get('/resizable-splitter', function (req, res) {
+    require('./grid_pages/resizable_splitter_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
   express_server.get('/ssr-no-js', function (req, res) {
     require('./grid_pages/ssr_no_js_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
+
+  express_server.get('/ssr-with-js', function (req, res) {      
+    require('./grid_pages/ssr_with_js_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
+  express_server.get('/shrink-grow', function (req, res) {
+    require('./grid_pages/shrink_grow_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
+  express_server.get('/npm-example', function (req, res) {       
+    require('./grid_pages/npm_example_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
+
+
+
 
 
   express_server.get('*', function (req, res) {

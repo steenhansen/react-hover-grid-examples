@@ -8,6 +8,13 @@ const kangax_minify = require('html-minifier').minify
 
 const WEBPACK_CHUNKS = path.resolve(__dirname + '/../hover-grid-server/webpack_js_chunks.json')
 
+/*
+ N.B. kangax_minify cannot handle "minifyCSS: true"
+
+ This css gets the kibosh and turns into a '&quote'
+ '"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial; cursive'
+
+ */
 
 function minify_html(html_text, node_env){
     if (node_env === 'development') {
@@ -15,11 +22,10 @@ function minify_html(html_text, node_env){
     }else {
         var minified_html = kangax_minify(html_text, {
             removeAttributeQuotes: true
-            , collapseWhitespace: true
-            , conservativeCollapse: true
-            , minifyCSS: true
-            , minifyJS: true
-            , removeComments: true
+          , collapseWhitespace: true
+          , conservativeCollapse: true
+          , minifyJS: true
+          , removeComments: true
         })
 
         return minified_html
@@ -36,6 +42,10 @@ function chunkhashEntry(bundle_name, req) {
           const chunkhash_url = '//' + host_url + '/' + js_bundle
           return chunkhash_url
       }).catch(err => console.error(err + ' ' + bundle_name +' in webpack_js_chunks.json as it is missing from webpack.config.js')
+
+
+    
+
 )
 }
 

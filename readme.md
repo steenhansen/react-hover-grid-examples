@@ -1,27 +1,6 @@
 
 
 
-
-
-
-
-    //  on hover make bolder or differnt color???
-
-
-
-
-
-
-browser_helpers ==> browser_helpers.js
-
-
-
-
-
-
-
-
-
 #React Hover Grid Component Examples
 
 Live [react-hover-grid examples](https://react-hover-grid.herokuapp.com/).

@@ -1,8 +1,8 @@
 'use strict'
 
 function grid_menu(current_grid){
-    const number_pages = 5
-    const li_width =100/number_pages
+    const number_spaces = 6 + 1
+    const li_width =100/number_spaces
 
 const menu_html =`
 
@@ -24,26 +24,33 @@ const menu_html =`
 }
 
 #grid-menu li a {
-  color:red;
+  color:dimgray;
+  text-decoration:none; 
 }
+  
 #grid-menu li a:hover {
-  color:yellow;
+    color:black;
+    text-decoration: underline;
 }
 
 #grid-menu li#${current_grid} a {
-  color:green;
+  color:black;
+   font-weight:bold;
+   cursor:default;
+
 }
 #grid-menu li#${current_grid} a:hover {
-  color:purple;
-  cursor:default;
   text-decoration:none; 
-  font-weight:bold;
 }
 
 </style>
     <ul id="grid-menu">
-      <li id="tiny_grid"><a href="tiny_grid">Tiny</a></li>
-      <li id="city_grid"><a href="city_grid">City</a></li>
+      <li id="show_all_grid"><a href="/">Home</a></li>
+      <li id="resizable_splitter_grid"><a href="resizable-splitter">Re-Sizable</a></li>
+      <li id="shrink_grow_grid"><a href="shrink-grow">Shrink&amp;Grow</a></li>
+      <li id="srr_no_js_grid"><a href="ssr-no-js">No Js SSR</a></li>
+      <li id="ssr_with_js_grid"><a href="ssr-with-js">Js SSR</a></li>
+      <li id="npm_example_grid"><a href="npm-example">NPM Example</a></li>
     </ul>
 
  <div style="clear:both">&nbsp;</div>
