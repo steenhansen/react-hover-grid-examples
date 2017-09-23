@@ -33,6 +33,7 @@ const inline_images_loader = {
 
 const jsx_entries = {
    ssr_with_js_grid_entry: '../hover-grid-data/entry-points/ssr_with_js_grid_entry.jsx'
+  , circle_clip_grid_entry: '../hover-grid-data/entry-points/circle_clip_grid_entry.jsx'
   , shrink_grow_grid_entry: '../hover-grid-data/entry-points/shrink_grow_grid_entry.jsx'
   , resizable_splitter_grid_entry: '../hover-grid-data/entry-points/resizable_splitter_grid_entry.jsx'
   , npm_example_grid_entry: '../hover-grid-data/entry-points/npm_example_grid_entry.jsx'
@@ -70,6 +71,7 @@ const do_cleanup_plugin = new WebpackCleanupPlugin({exclude: ['**/*.jpg'
                                                              , '**/*.png'
                                                              , '**/*.gif'
                                                             , '**/*.css'
+                                                            , 'develop-js/*.js'
                                                             , '*.ico']})
 module.exports = {
   context: path.resolve(__dirname, './')

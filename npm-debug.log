@@ -1,0 +1,1014 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'babel-preset-target' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData babel-preset-target
+8 silly fetchNamedPackageData babel-preset-target
+9 silly mapToRegistry name babel-preset-target
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'babel-preset-target',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'babel-preset-target',
+12 silly mapToRegistry   name: 'babel-preset-target',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-target
+14 verbose request uri https://registry.npmjs.org/babel-preset-target
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:14:03 PM
+17 verbose request using bearer token for auth
+18 verbose request id 36664a6f9baa1640
+19 http request GET https://registry.npmjs.org/babel-preset-target
+20 http 200 https://registry.npmjs.org/babel-preset-target
+21 verbose headers { server: 'nginx/1.10.1',
+21 verbose headers   'content-type': 'application/json',
+21 verbose headers   'last-modified': 'Mon, 29 Aug 2016 15:56:47 GMT',
+21 verbose headers   etag: 'W/"57c45b3f-44d0"',
+21 verbose headers   'content-encoding': 'gzip',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'transfer-encoding': 'chunked',
+21 verbose headers   'accept-ranges': 'bytes',
+21 verbose headers   date: 'Sat, 23 Sep 2017 00:14:02 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-sea1042-SEA',
+21 verbose headers   'x-cache': 'MISS',
+21 verbose headers   'x-cache-hits': '0',
+21 verbose headers   'x-timer': 'S1506125643.863348,VS0,VE21',
+21 verbose headers   vary: 'Accept-Encoding, Accept' }
+22 silly get cb [ 200,
+22 silly get   { server: 'nginx/1.10.1',
+22 silly get     'content-type': 'application/json',
+22 silly get     'last-modified': 'Mon, 29 Aug 2016 15:56:47 GMT',
+22 silly get     etag: 'W/"57c45b3f-44d0"',
+22 silly get     'content-encoding': 'gzip',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'transfer-encoding': 'chunked',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Sat, 23 Sep 2017 00:14:02 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-sea1042-SEA',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1506125643.863348,VS0,VE21',
+22 silly get     vary: 'Accept-Encoding, Accept' } ]
+23 verbose get saving babel-preset-target to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\babel-preset-target\.cache.json
+24 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule babel-preset-target@0.0.5 checking installable status
+38 silly cache add args [ 'babel-preset-target', null ]
+39 verbose cache add spec babel-preset-target
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'babel-preset-target',
+40 silly cache add   scope: null,
+40 silly cache add   escapedName: 'babel-preset-target',
+40 silly cache add   name: 'babel-preset-target',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed babel-preset-target@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for babel-preset-target
+43 info addNameTag [ 'babel-preset-target', 'latest' ]
+44 silly mapToRegistry name babel-preset-target
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'babel-preset-target',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'babel-preset-target',
+47 silly mapToRegistry   name: 'babel-preset-target',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-target
+49 verbose addNameTag registry:https://registry.npmjs.org/babel-preset-target not in flight; fetching
+50 verbose get https://registry.npmjs.org/babel-preset-target not expired, no request
+51 silly addNameTag next cb for babel-preset-target with tag latest
+52 silly addNamed babel-preset-target@0.0.5
+53 verbose addNamed "0.0.5" is a plain semver version for babel-preset-target
+54 silly mapToRegistry name babel-preset-target
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data Result {
+57 silly mapToRegistry   raw: 'babel-preset-target',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   escapedName: 'babel-preset-target',
+57 silly mapToRegistry   name: 'babel-preset-target',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-target
+59 verbose addRemoteTarball https://registry.npmjs.org/babel-preset-target/-/babel-preset-target-0.0.5.tgz not in flight; adding
+60 verbose addRemoteTarball [ 'https://registry.npmjs.org/babel-preset-target/-/babel-preset-target-0.0.5.tgz',
+60 verbose addRemoteTarball   '8728ee006d31016158045947190b9e1cb6da7645' ]
+61 info retry fetch attempt 1 at 5:14:11 PM
+62 info attempt registry request try #1 at 5:14:11 PM
+63 http fetch GET https://registry.npmjs.org/babel-preset-target/-/babel-preset-target-0.0.5.tgz
+64 verbose request using bearer token for auth
+65 http fetch 200 https://registry.npmjs.org/babel-preset-target/-/babel-preset-target-0.0.5.tgz
+66 silly fetchAndShaCheck shasum 8728ee006d31016158045947190b9e1cb6da7645
+67 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3996-824c590e\registry.npmjs.org\babel-preset-target\-\babel-preset-target-0.0.5.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for babel-preset-target@0.0.5
+69 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+70 silly cache afterAdd babel-preset-target@0.0.5
+71 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-preset-target\0.0.5\package\package.json not in flight; writing
+72 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+73 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-preset-target\0.0.5\package\package.json written
+74 silly fetchNamedPackageData babel-plugin-syntax-do-expressions
+75 silly mapToRegistry name babel-plugin-syntax-do-expressions
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry data Result {
+78 silly mapToRegistry   raw: 'babel-plugin-syntax-do-expressions',
+78 silly mapToRegistry   scope: null,
+78 silly mapToRegistry   escapedName: 'babel-plugin-syntax-do-expressions',
+78 silly mapToRegistry   name: 'babel-plugin-syntax-do-expressions',
+78 silly mapToRegistry   rawSpec: '',
+78 silly mapToRegistry   spec: 'latest',
+78 silly mapToRegistry   type: 'tag' }
+79 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-do-expressions
+80 silly fetchNamedPackageData babel-plugin-syntax-export-extensions
+81 silly mapToRegistry name babel-plugin-syntax-export-extensions
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry https://registry.npmjs.org/
+84 silly mapToRegistry data Result {
+84 silly mapToRegistry   raw: 'babel-plugin-syntax-export-extensions',
+84 silly mapToRegistry   scope: null,
+84 silly mapToRegistry   escapedName: 'babel-plugin-syntax-export-extensions',
+84 silly mapToRegistry   name: 'babel-plugin-syntax-export-extensions',
+84 silly mapToRegistry   rawSpec: '',
+84 silly mapToRegistry   spec: 'latest',
+84 silly mapToRegistry   type: 'tag' }
+85 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-export-extensions
+86 silly fetchNamedPackageData babel-plugin-syntax-function-bind
+87 silly mapToRegistry name babel-plugin-syntax-function-bind
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry data Result {
+90 silly mapToRegistry   raw: 'babel-plugin-syntax-function-bind',
+90 silly mapToRegistry   scope: null,
+90 silly mapToRegistry   escapedName: 'babel-plugin-syntax-function-bind',
+90 silly mapToRegistry   name: 'babel-plugin-syntax-function-bind',
+90 silly mapToRegistry   rawSpec: '',
+90 silly mapToRegistry   spec: 'latest',
+90 silly mapToRegistry   type: 'tag' }
+91 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-function-bind
+92 silly fetchNamedPackageData babel-plugin-syntax-function-sent
+93 silly mapToRegistry name babel-plugin-syntax-function-sent
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry data Result {
+96 silly mapToRegistry   raw: 'babel-plugin-syntax-function-sent',
+96 silly mapToRegistry   scope: null,
+96 silly mapToRegistry   escapedName: 'babel-plugin-syntax-function-sent',
+96 silly mapToRegistry   name: 'babel-plugin-syntax-function-sent',
+96 silly mapToRegistry   rawSpec: '',
+96 silly mapToRegistry   spec: 'latest',
+96 silly mapToRegistry   type: 'tag' }
+97 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-function-sent
+98 silly fetchNamedPackageData caniuse-db
+99 silly mapToRegistry name caniuse-db
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry data Result {
+102 silly mapToRegistry   raw: 'caniuse-db',
+102 silly mapToRegistry   scope: null,
+102 silly mapToRegistry   escapedName: 'caniuse-db',
+102 silly mapToRegistry   name: 'caniuse-db',
+102 silly mapToRegistry   rawSpec: '',
+102 silly mapToRegistry   spec: 'latest',
+102 silly mapToRegistry   type: 'tag' }
+103 silly mapToRegistry uri https://registry.npmjs.org/caniuse-db
+104 silly fetchOtherPackageData compat-table@git+https://github.com/kangax/compat-table.git#gh-pages
+105 silly cache add args [ 'compat-table@git+https://github.com/kangax/compat-table.git#gh-pages',
+105 silly cache add   null ]
+106 verbose cache add spec compat-table@git+https://github.com/kangax/compat-table.git#gh-pages
+107 verbose request uri https://registry.npmjs.org/babel-plugin-syntax-do-expressions
+108 verbose request no auth needed
+109 info attempt registry request try #1 at 5:14:11 PM
+110 verbose request using bearer token for auth
+111 http request GET https://registry.npmjs.org/babel-plugin-syntax-do-expressions
+112 verbose request uri https://registry.npmjs.org/babel-plugin-syntax-export-extensions
+113 verbose request no auth needed
+114 info attempt registry request try #1 at 5:14:11 PM
+115 verbose request using bearer token for auth
+116 http request GET https://registry.npmjs.org/babel-plugin-syntax-export-extensions
+117 verbose request uri https://registry.npmjs.org/babel-plugin-syntax-function-bind
+118 verbose request no auth needed
+119 info attempt registry request try #1 at 5:14:11 PM
+120 verbose request using bearer token for auth
+121 http request GET https://registry.npmjs.org/babel-plugin-syntax-function-bind
+122 verbose request uri https://registry.npmjs.org/babel-plugin-syntax-function-sent
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 5:14:11 PM
+125 verbose request using bearer token for auth
+126 http request GET https://registry.npmjs.org/babel-plugin-syntax-function-sent
+127 verbose request uri https://registry.npmjs.org/caniuse-db
+128 verbose request no auth needed
+129 info attempt registry request try #1 at 5:14:11 PM
+130 verbose request using bearer token for auth
+131 http request GET https://registry.npmjs.org/caniuse-db
+132 silly cache add parsed spec Result {
+132 silly cache add   raw: 'compat-table@git+https://github.com/kangax/compat-table.git#gh-pages',
+132 silly cache add   scope: null,
+132 silly cache add   escapedName: 'compat-table',
+132 silly cache add   name: 'compat-table',
+132 silly cache add   rawSpec: 'git+https://github.com/kangax/compat-table.git#gh-pages',
+132 silly cache add   spec: 'git+https://github.com/kangax/compat-table.git#gh-pages',
+132 silly cache add   type: 'hosted',
+132 silly cache add   hosted:
+132 silly cache add    { type: 'github',
+132 silly cache add      ssh: 'git@github.com:kangax/compat-table.git#gh-pages',
+132 silly cache add      sshUrl: 'git+ssh://git@github.com/kangax/compat-table.git#gh-pages',
+132 silly cache add      httpsUrl: 'git+https://github.com/kangax/compat-table.git#gh-pages',
+132 silly cache add      gitUrl: 'git://github.com/kangax/compat-table.git#gh-pages',
+132 silly cache add      shortcut: 'github:kangax/compat-table#gh-pages',
+132 silly cache add      directUrl: 'https://raw.githubusercontent.com/kangax/compat-table/gh-pages/package.json' } }
+133 verbose addRemoteGit caching git+https://github.com/kangax/compat-table.git#gh-pages
+134 verbose addRemoteGit git+https://github.com/kangax/compat-table.git#gh-pages is a repository hosted by github
+135 silly tryClone cloning git+https://github.com/kangax/compat-table.git#gh-pages via git+https://github.com/kangax/compat-table.git#gh-pages
+136 verbose tryClone git-https-github-com-kangax-compat-table-git-gh-pages-6789bc89 not in flight; caching
+137 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+138 http 200 https://registry.npmjs.org/babel-plugin-syntax-export-extensions
+139 verbose headers { server: 'nginx/1.10.1',
+139 verbose headers   'content-type': 'application/json',
+139 verbose headers   'last-modified': 'Tue, 19 Sep 2017 22:52:08 GMT',
+139 verbose headers   etag: 'W/"59c19f98-99ea"',
+139 verbose headers   'content-encoding': 'gzip',
+139 verbose headers   'cache-control': 'max-age=300',
+139 verbose headers   'transfer-encoding': 'chunked',
+139 verbose headers   'accept-ranges': 'bytes',
+139 verbose headers   date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+139 verbose headers   via: '1.1 varnish',
+139 verbose headers   connection: 'keep-alive',
+139 verbose headers   'x-served-by': 'cache-sea1032-SEA',
+139 verbose headers   'x-cache': 'MISS',
+139 verbose headers   'x-cache-hits': '0',
+139 verbose headers   'x-timer': 'S1506125651.927274,VS0,VE9',
+139 verbose headers   vary: 'Accept-Encoding, Accept' }
+140 silly get cb [ 200,
+140 silly get   { server: 'nginx/1.10.1',
+140 silly get     'content-type': 'application/json',
+140 silly get     'last-modified': 'Tue, 19 Sep 2017 22:52:08 GMT',
+140 silly get     etag: 'W/"59c19f98-99ea"',
+140 silly get     'content-encoding': 'gzip',
+140 silly get     'cache-control': 'max-age=300',
+140 silly get     'transfer-encoding': 'chunked',
+140 silly get     'accept-ranges': 'bytes',
+140 silly get     date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+140 silly get     via: '1.1 varnish',
+140 silly get     connection: 'keep-alive',
+140 silly get     'x-served-by': 'cache-sea1032-SEA',
+140 silly get     'x-cache': 'MISS',
+140 silly get     'x-cache-hits': '0',
+140 silly get     'x-timer': 'S1506125651.927274,VS0,VE9',
+140 silly get     vary: 'Accept-Encoding, Accept' } ]
+141 verbose get saving babel-plugin-syntax-export-extensions to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\babel-plugin-syntax-export-extensions\.cache.json
+142 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+143 silly resolveWithNewModule babel-plugin-syntax-export-extensions@6.13.0 checking installable status
+144 silly cache add args [ 'babel-plugin-syntax-export-extensions@^6.13.0', null ]
+145 verbose cache add spec babel-plugin-syntax-export-extensions@^6.13.0
+146 silly cache add parsed spec Result {
+146 silly cache add   raw: 'babel-plugin-syntax-export-extensions@^6.13.0',
+146 silly cache add   scope: null,
+146 silly cache add   escapedName: 'babel-plugin-syntax-export-extensions',
+146 silly cache add   name: 'babel-plugin-syntax-export-extensions',
+146 silly cache add   rawSpec: '^6.13.0',
+146 silly cache add   spec: '>=6.13.0 <7.0.0',
+146 silly cache add   type: 'range' }
+147 silly addNamed babel-plugin-syntax-export-extensions@>=6.13.0 <7.0.0
+148 verbose addNamed ">=6.13.0 <7.0.0" is a valid semver range for babel-plugin-syntax-export-extensions
+149 silly addNameRange { name: 'babel-plugin-syntax-export-extensions',
+149 silly addNameRange   range: '>=6.13.0 <7.0.0',
+149 silly addNameRange   hasData: false }
+150 silly mapToRegistry name babel-plugin-syntax-export-extensions
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry data Result {
+153 silly mapToRegistry   raw: 'babel-plugin-syntax-export-extensions',
+153 silly mapToRegistry   scope: null,
+153 silly mapToRegistry   escapedName: 'babel-plugin-syntax-export-extensions',
+153 silly mapToRegistry   name: 'babel-plugin-syntax-export-extensions',
+153 silly mapToRegistry   rawSpec: '',
+153 silly mapToRegistry   spec: 'latest',
+153 silly mapToRegistry   type: 'tag' }
+154 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-export-extensions
+155 verbose addNameRange registry:https://registry.npmjs.org/babel-plugin-syntax-export-extensions not in flight; fetching
+156 http 200 https://registry.npmjs.org/babel-plugin-syntax-do-expressions
+157 verbose headers { server: 'nginx/1.10.1',
+157 verbose headers   'content-type': 'application/json',
+157 verbose headers   'last-modified': 'Tue, 19 Sep 2017 22:52:05 GMT',
+157 verbose headers   etag: 'W/"59c19f95-9758"',
+157 verbose headers   'content-encoding': 'gzip',
+157 verbose headers   'cache-control': 'max-age=300',
+157 verbose headers   'transfer-encoding': 'chunked',
+157 verbose headers   'accept-ranges': 'bytes',
+157 verbose headers   date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+157 verbose headers   via: '1.1 varnish',
+157 verbose headers   connection: 'keep-alive',
+157 verbose headers   'x-served-by': 'cache-sea1042-SEA',
+157 verbose headers   'x-cache': 'MISS',
+157 verbose headers   'x-cache-hits': '0',
+157 verbose headers   'x-timer': 'S1506125651.877595,VS0,VE68',
+157 verbose headers   vary: 'Accept-Encoding, Accept' }
+158 silly get cb [ 200,
+158 silly get   { server: 'nginx/1.10.1',
+158 silly get     'content-type': 'application/json',
+158 silly get     'last-modified': 'Tue, 19 Sep 2017 22:52:05 GMT',
+158 silly get     etag: 'W/"59c19f95-9758"',
+158 silly get     'content-encoding': 'gzip',
+158 silly get     'cache-control': 'max-age=300',
+158 silly get     'transfer-encoding': 'chunked',
+158 silly get     'accept-ranges': 'bytes',
+158 silly get     date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+158 silly get     via: '1.1 varnish',
+158 silly get     connection: 'keep-alive',
+158 silly get     'x-served-by': 'cache-sea1042-SEA',
+158 silly get     'x-cache': 'MISS',
+158 silly get     'x-cache-hits': '0',
+158 silly get     'x-timer': 'S1506125651.877595,VS0,VE68',
+158 silly get     vary: 'Accept-Encoding, Accept' } ]
+159 verbose get saving babel-plugin-syntax-do-expressions to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\babel-plugin-syntax-do-expressions\.cache.json
+160 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+161 http 200 https://registry.npmjs.org/babel-plugin-syntax-function-sent
+162 verbose headers { server: 'nginx/1.10.1',
+162 verbose headers   'content-type': 'application/json',
+162 verbose headers   'last-modified': 'Tue, 19 Sep 2017 22:52:10 GMT',
+162 verbose headers   etag: 'W/"59c19f9a-694c"',
+162 verbose headers   'content-encoding': 'gzip',
+162 verbose headers   'cache-control': 'max-age=300',
+162 verbose headers   'transfer-encoding': 'chunked',
+162 verbose headers   'accept-ranges': 'bytes',
+162 verbose headers   date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+162 verbose headers   via: '1.1 varnish',
+162 verbose headers   connection: 'keep-alive',
+162 verbose headers   'x-served-by': 'cache-sea1046-SEA',
+162 verbose headers   'x-cache': 'MISS',
+162 verbose headers   'x-cache-hits': '0',
+162 verbose headers   'x-timer': 'S1506125651.935499,VS0,VE17',
+162 verbose headers   vary: 'Accept-Encoding, Accept' }
+163 silly get cb [ 200,
+163 silly get   { server: 'nginx/1.10.1',
+163 silly get     'content-type': 'application/json',
+163 silly get     'last-modified': 'Tue, 19 Sep 2017 22:52:10 GMT',
+163 silly get     etag: 'W/"59c19f9a-694c"',
+163 silly get     'content-encoding': 'gzip',
+163 silly get     'cache-control': 'max-age=300',
+163 silly get     'transfer-encoding': 'chunked',
+163 silly get     'accept-ranges': 'bytes',
+163 silly get     date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+163 silly get     via: '1.1 varnish',
+163 silly get     connection: 'keep-alive',
+163 silly get     'x-served-by': 'cache-sea1046-SEA',
+163 silly get     'x-cache': 'MISS',
+163 silly get     'x-cache-hits': '0',
+163 silly get     'x-timer': 'S1506125651.935499,VS0,VE17',
+163 silly get     vary: 'Accept-Encoding, Accept' } ]
+164 verbose get saving babel-plugin-syntax-function-sent to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\babel-plugin-syntax-function-sent\.cache.json
+165 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+166 verbose get https://registry.npmjs.org/babel-plugin-syntax-export-extensions not expired, no request
+167 silly addNameRange number 2 { name: 'babel-plugin-syntax-export-extensions',
+167 silly addNameRange   range: '>=6.13.0 <7.0.0',
+167 silly addNameRange   hasData: true }
+168 silly addNameRange versions [ 'babel-plugin-syntax-export-extensions',
+168 silly addNameRange   [ '6.0.2',
+168 silly addNameRange     '6.0.14',
+168 silly addNameRange     '6.1.4',
+168 silly addNameRange     '6.1.5',
+168 silly addNameRange     '6.1.6',
+168 silly addNameRange     '6.1.7',
+168 silly addNameRange     '6.1.8',
+168 silly addNameRange     '6.1.10',
+168 silly addNameRange     '6.1.13',
+168 silly addNameRange     '6.1.16',
+168 silly addNameRange     '6.1.17',
+168 silly addNameRange     '6.1.18',
+168 silly addNameRange     '6.2.4',
+168 silly addNameRange     '6.3.13',
+168 silly addNameRange     '6.5.0',
+168 silly addNameRange     '6.5.0-1',
+168 silly addNameRange     '6.8.0',
+168 silly addNameRange     '6.13.0',
+168 silly addNameRange     '7.0.0-alpha.1',
+168 silly addNameRange     '7.0.0-alpha.3',
+168 silly addNameRange     '7.0.0-alpha.9',
+168 silly addNameRange     '7.0.0-alpha.12',
+168 silly addNameRange     '7.0.0-alpha.13',
+168 silly addNameRange     '7.0.0-alpha.14',
+168 silly addNameRange     '7.0.0-alpha.15',
+168 silly addNameRange     '7.0.0-alpha.16',
+168 silly addNameRange     '7.0.0-alpha.17',
+168 silly addNameRange     '7.0.0-alpha.18',
+168 silly addNameRange     '7.0.0-alpha.19',
+168 silly addNameRange     '7.0.0-alpha.20',
+168 silly addNameRange     '7.0.0-beta.0',
+168 silly addNameRange     '7.0.0-beta.1' ] ]
+169 silly addNamed babel-plugin-syntax-export-extensions@6.13.0
+170 verbose addNamed "6.13.0" is a plain semver version for babel-plugin-syntax-export-extensions
+171 http 200 https://registry.npmjs.org/babel-plugin-syntax-function-bind
+172 verbose headers { server: 'nginx/1.10.1',
+172 verbose headers   'content-type': 'application/json',
+172 verbose headers   'last-modified': 'Tue, 19 Sep 2017 22:52:56 GMT',
+172 verbose headers   etag: 'W/"59c19fc8-9272"',
+172 verbose headers   'content-encoding': 'gzip',
+172 verbose headers   'cache-control': 'max-age=300',
+172 verbose headers   'transfer-encoding': 'chunked',
+172 verbose headers   'accept-ranges': 'bytes',
+172 verbose headers   date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+172 verbose headers   via: '1.1 varnish',
+172 verbose headers   connection: 'keep-alive',
+172 verbose headers   'x-served-by': 'cache-sea1040-SEA',
+172 verbose headers   'x-cache': 'MISS',
+172 verbose headers   'x-cache-hits': '0',
+172 verbose headers   'x-timer': 'S1506125651.935667,VS0,VE18',
+172 verbose headers   vary: 'Accept-Encoding, Accept' }
+173 silly get cb [ 200,
+173 silly get   { server: 'nginx/1.10.1',
+173 silly get     'content-type': 'application/json',
+173 silly get     'last-modified': 'Tue, 19 Sep 2017 22:52:56 GMT',
+173 silly get     etag: 'W/"59c19fc8-9272"',
+173 silly get     'content-encoding': 'gzip',
+173 silly get     'cache-control': 'max-age=300',
+173 silly get     'transfer-encoding': 'chunked',
+173 silly get     'accept-ranges': 'bytes',
+173 silly get     date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+173 silly get     via: '1.1 varnish',
+173 silly get     connection: 'keep-alive',
+173 silly get     'x-served-by': 'cache-sea1040-SEA',
+173 silly get     'x-cache': 'MISS',
+173 silly get     'x-cache-hits': '0',
+173 silly get     'x-timer': 'S1506125651.935667,VS0,VE18',
+173 silly get     vary: 'Accept-Encoding, Accept' } ]
+174 verbose get saving babel-plugin-syntax-function-bind to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\babel-plugin-syntax-function-bind\.cache.json
+175 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+176 silly mapToRegistry name babel-plugin-syntax-export-extensions
+177 silly mapToRegistry using default registry
+178 silly mapToRegistry registry https://registry.npmjs.org/
+179 silly mapToRegistry data Result {
+179 silly mapToRegistry   raw: 'babel-plugin-syntax-export-extensions',
+179 silly mapToRegistry   scope: null,
+179 silly mapToRegistry   escapedName: 'babel-plugin-syntax-export-extensions',
+179 silly mapToRegistry   name: 'babel-plugin-syntax-export-extensions',
+179 silly mapToRegistry   rawSpec: '',
+179 silly mapToRegistry   spec: 'latest',
+179 silly mapToRegistry   type: 'tag' }
+180 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-export-extensions
+181 verbose addRemoteTarball https://registry.npmjs.org/babel-plugin-syntax-export-extensions/-/babel-plugin-syntax-export-extensions-6.13.0.tgz not in flight; adding
+182 verbose addRemoteTarball [ 'https://registry.npmjs.org/babel-plugin-syntax-export-extensions/-/babel-plugin-syntax-export-extensions-6.13.0.tgz',
+182 verbose addRemoteTarball   '70a1484f0f9089a4e84ad44bac353c95b9b12721' ]
+183 info retry fetch attempt 1 at 5:14:12 PM
+184 info attempt registry request try #1 at 5:14:12 PM
+185 http fetch GET https://registry.npmjs.org/babel-plugin-syntax-export-extensions/-/babel-plugin-syntax-export-extensions-6.13.0.tgz
+186 verbose request using bearer token for auth
+187 silly resolveWithNewModule babel-plugin-syntax-do-expressions@6.13.0 checking installable status
+188 silly cache add args [ 'babel-plugin-syntax-do-expressions@^6.13.0', null ]
+189 verbose cache add spec babel-plugin-syntax-do-expressions@^6.13.0
+190 silly cache add parsed spec Result {
+190 silly cache add   raw: 'babel-plugin-syntax-do-expressions@^6.13.0',
+190 silly cache add   scope: null,
+190 silly cache add   escapedName: 'babel-plugin-syntax-do-expressions',
+190 silly cache add   name: 'babel-plugin-syntax-do-expressions',
+190 silly cache add   rawSpec: '^6.13.0',
+190 silly cache add   spec: '>=6.13.0 <7.0.0',
+190 silly cache add   type: 'range' }
+191 silly addNamed babel-plugin-syntax-do-expressions@>=6.13.0 <7.0.0
+192 verbose addNamed ">=6.13.0 <7.0.0" is a valid semver range for babel-plugin-syntax-do-expressions
+193 silly addNameRange { name: 'babel-plugin-syntax-do-expressions',
+193 silly addNameRange   range: '>=6.13.0 <7.0.0',
+193 silly addNameRange   hasData: false }
+194 silly mapToRegistry name babel-plugin-syntax-do-expressions
+195 silly mapToRegistry using default registry
+196 silly mapToRegistry registry https://registry.npmjs.org/
+197 silly mapToRegistry data Result {
+197 silly mapToRegistry   raw: 'babel-plugin-syntax-do-expressions',
+197 silly mapToRegistry   scope: null,
+197 silly mapToRegistry   escapedName: 'babel-plugin-syntax-do-expressions',
+197 silly mapToRegistry   name: 'babel-plugin-syntax-do-expressions',
+197 silly mapToRegistry   rawSpec: '',
+197 silly mapToRegistry   spec: 'latest',
+197 silly mapToRegistry   type: 'tag' }
+198 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-do-expressions
+199 verbose addNameRange registry:https://registry.npmjs.org/babel-plugin-syntax-do-expressions not in flight; fetching
+200 silly resolveWithNewModule babel-plugin-syntax-function-sent@6.13.0 checking installable status
+201 silly cache add args [ 'babel-plugin-syntax-function-sent@^6.13.0', null ]
+202 verbose cache add spec babel-plugin-syntax-function-sent@^6.13.0
+203 silly cache add parsed spec Result {
+203 silly cache add   raw: 'babel-plugin-syntax-function-sent@^6.13.0',
+203 silly cache add   scope: null,
+203 silly cache add   escapedName: 'babel-plugin-syntax-function-sent',
+203 silly cache add   name: 'babel-plugin-syntax-function-sent',
+203 silly cache add   rawSpec: '^6.13.0',
+203 silly cache add   spec: '>=6.13.0 <7.0.0',
+203 silly cache add   type: 'range' }
+204 silly addNamed babel-plugin-syntax-function-sent@>=6.13.0 <7.0.0
+205 verbose addNamed ">=6.13.0 <7.0.0" is a valid semver range for babel-plugin-syntax-function-sent
+206 silly addNameRange { name: 'babel-plugin-syntax-function-sent',
+206 silly addNameRange   range: '>=6.13.0 <7.0.0',
+206 silly addNameRange   hasData: false }
+207 silly mapToRegistry name babel-plugin-syntax-function-sent
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry data Result {
+210 silly mapToRegistry   raw: 'babel-plugin-syntax-function-sent',
+210 silly mapToRegistry   scope: null,
+210 silly mapToRegistry   escapedName: 'babel-plugin-syntax-function-sent',
+210 silly mapToRegistry   name: 'babel-plugin-syntax-function-sent',
+210 silly mapToRegistry   rawSpec: '',
+210 silly mapToRegistry   spec: 'latest',
+210 silly mapToRegistry   type: 'tag' }
+211 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-function-sent
+212 verbose addNameRange registry:https://registry.npmjs.org/babel-plugin-syntax-function-sent not in flight; fetching
+213 silly resolveWithNewModule babel-plugin-syntax-function-bind@6.13.0 checking installable status
+214 silly cache add args [ 'babel-plugin-syntax-function-bind@^6.13.0', null ]
+215 verbose cache add spec babel-plugin-syntax-function-bind@^6.13.0
+216 silly cache add parsed spec Result {
+216 silly cache add   raw: 'babel-plugin-syntax-function-bind@^6.13.0',
+216 silly cache add   scope: null,
+216 silly cache add   escapedName: 'babel-plugin-syntax-function-bind',
+216 silly cache add   name: 'babel-plugin-syntax-function-bind',
+216 silly cache add   rawSpec: '^6.13.0',
+216 silly cache add   spec: '>=6.13.0 <7.0.0',
+216 silly cache add   type: 'range' }
+217 silly addNamed babel-plugin-syntax-function-bind@>=6.13.0 <7.0.0
+218 verbose addNamed ">=6.13.0 <7.0.0" is a valid semver range for babel-plugin-syntax-function-bind
+219 silly addNameRange { name: 'babel-plugin-syntax-function-bind',
+219 silly addNameRange   range: '>=6.13.0 <7.0.0',
+219 silly addNameRange   hasData: false }
+220 silly mapToRegistry name babel-plugin-syntax-function-bind
+221 silly mapToRegistry using default registry
+222 silly mapToRegistry registry https://registry.npmjs.org/
+223 silly mapToRegistry data Result {
+223 silly mapToRegistry   raw: 'babel-plugin-syntax-function-bind',
+223 silly mapToRegistry   scope: null,
+223 silly mapToRegistry   escapedName: 'babel-plugin-syntax-function-bind',
+223 silly mapToRegistry   name: 'babel-plugin-syntax-function-bind',
+223 silly mapToRegistry   rawSpec: '',
+223 silly mapToRegistry   spec: 'latest',
+223 silly mapToRegistry   type: 'tag' }
+224 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-function-bind
+225 verbose addNameRange registry:https://registry.npmjs.org/babel-plugin-syntax-function-bind not in flight; fetching
+226 verbose get https://registry.npmjs.org/babel-plugin-syntax-do-expressions not expired, no request
+227 silly addNameRange number 2 { name: 'babel-plugin-syntax-do-expressions',
+227 silly addNameRange   range: '>=6.13.0 <7.0.0',
+227 silly addNameRange   hasData: true }
+228 silly addNameRange versions [ 'babel-plugin-syntax-do-expressions',
+228 silly addNameRange   [ '6.0.2',
+228 silly addNameRange     '6.0.14',
+228 silly addNameRange     '6.1.4',
+228 silly addNameRange     '6.1.5',
+228 silly addNameRange     '6.1.6',
+228 silly addNameRange     '6.1.7',
+228 silly addNameRange     '6.1.8',
+228 silly addNameRange     '6.1.10',
+228 silly addNameRange     '6.1.13',
+228 silly addNameRange     '6.1.16',
+228 silly addNameRange     '6.1.17',
+228 silly addNameRange     '6.1.18',
+228 silly addNameRange     '6.2.4',
+228 silly addNameRange     '6.3.13',
+228 silly addNameRange     '6.5.0',
+228 silly addNameRange     '6.5.0-1',
+228 silly addNameRange     '6.8.0',
+228 silly addNameRange     '6.13.0',
+228 silly addNameRange     '7.0.0-alpha.1',
+228 silly addNameRange     '7.0.0-alpha.3',
+228 silly addNameRange     '7.0.0-alpha.9',
+228 silly addNameRange     '7.0.0-alpha.12',
+228 silly addNameRange     '7.0.0-alpha.13',
+228 silly addNameRange     '7.0.0-alpha.14',
+228 silly addNameRange     '7.0.0-alpha.15',
+228 silly addNameRange     '7.0.0-alpha.16',
+228 silly addNameRange     '7.0.0-alpha.17',
+228 silly addNameRange     '7.0.0-alpha.18',
+228 silly addNameRange     '7.0.0-alpha.19',
+228 silly addNameRange     '7.0.0-alpha.20',
+228 silly addNameRange     '7.0.0-beta.0',
+228 silly addNameRange     '7.0.0-beta.1' ] ]
+229 silly addNamed babel-plugin-syntax-do-expressions@6.13.0
+230 verbose addNamed "6.13.0" is a plain semver version for babel-plugin-syntax-do-expressions
+231 verbose get https://registry.npmjs.org/babel-plugin-syntax-function-sent not expired, no request
+232 silly addNameRange number 2 { name: 'babel-plugin-syntax-function-sent',
+232 silly addNameRange   range: '>=6.13.0 <7.0.0',
+232 silly addNameRange   hasData: true }
+233 silly addNameRange versions [ 'babel-plugin-syntax-function-sent',
+233 silly addNameRange   [ '6.2.0',
+233 silly addNameRange     '6.2.4',
+233 silly addNameRange     '6.3.13',
+233 silly addNameRange     '6.5.0',
+233 silly addNameRange     '6.5.0-1',
+233 silly addNameRange     '6.8.0',
+233 silly addNameRange     '6.13.0',
+233 silly addNameRange     '7.0.0-alpha.1',
+233 silly addNameRange     '7.0.0-alpha.3',
+233 silly addNameRange     '7.0.0-alpha.9',
+233 silly addNameRange     '7.0.0-alpha.12',
+233 silly addNameRange     '7.0.0-alpha.13',
+233 silly addNameRange     '7.0.0-alpha.14',
+233 silly addNameRange     '7.0.0-alpha.15',
+233 silly addNameRange     '7.0.0-alpha.16',
+233 silly addNameRange     '7.0.0-alpha.17',
+233 silly addNameRange     '7.0.0-alpha.18',
+233 silly addNameRange     '7.0.0-alpha.19',
+233 silly addNameRange     '7.0.0-alpha.20',
+233 silly addNameRange     '7.0.0-beta.0',
+233 silly addNameRange     '7.0.0-beta.1' ] ]
+234 silly addNamed babel-plugin-syntax-function-sent@6.13.0
+235 verbose addNamed "6.13.0" is a plain semver version for babel-plugin-syntax-function-sent
+236 verbose get https://registry.npmjs.org/babel-plugin-syntax-function-bind not expired, no request
+237 silly addNameRange number 2 { name: 'babel-plugin-syntax-function-bind',
+237 silly addNameRange   range: '>=6.13.0 <7.0.0',
+237 silly addNameRange   hasData: true }
+238 silly addNameRange versions [ 'babel-plugin-syntax-function-bind',
+238 silly addNameRange   [ '6.0.2',
+238 silly addNameRange     '6.0.14',
+238 silly addNameRange     '6.1.4',
+238 silly addNameRange     '6.1.5',
+238 silly addNameRange     '6.1.6',
+238 silly addNameRange     '6.1.8',
+238 silly addNameRange     '6.1.10',
+238 silly addNameRange     '6.1.13',
+238 silly addNameRange     '6.1.16',
+238 silly addNameRange     '6.1.17',
+238 silly addNameRange     '6.1.18',
+238 silly addNameRange     '6.2.4',
+238 silly addNameRange     '6.3.13',
+238 silly addNameRange     '6.5.0',
+238 silly addNameRange     '6.5.0-1',
+238 silly addNameRange     '6.8.0',
+238 silly addNameRange     '6.13.0',
+238 silly addNameRange     '7.0.0-alpha.1',
+238 silly addNameRange     '7.0.0-alpha.3',
+238 silly addNameRange     '7.0.0-alpha.9',
+238 silly addNameRange     '7.0.0-alpha.12',
+238 silly addNameRange     '7.0.0-alpha.13',
+238 silly addNameRange     '7.0.0-alpha.14',
+238 silly addNameRange     '7.0.0-alpha.15',
+238 silly addNameRange     '7.0.0-alpha.16',
+238 silly addNameRange     '7.0.0-alpha.17',
+238 silly addNameRange     '7.0.0-alpha.18',
+238 silly addNameRange     '7.0.0-alpha.19',
+238 silly addNameRange     '7.0.0-alpha.20',
+238 silly addNameRange     '7.0.0-beta.0',
+238 silly addNameRange     '7.0.0-beta.1' ] ]
+239 silly addNamed babel-plugin-syntax-function-bind@6.13.0
+240 verbose addNamed "6.13.0" is a plain semver version for babel-plugin-syntax-function-bind
+241 silly mapToRegistry name babel-plugin-syntax-function-bind
+242 silly mapToRegistry using default registry
+243 silly mapToRegistry registry https://registry.npmjs.org/
+244 silly mapToRegistry data Result {
+244 silly mapToRegistry   raw: 'babel-plugin-syntax-function-bind',
+244 silly mapToRegistry   scope: null,
+244 silly mapToRegistry   escapedName: 'babel-plugin-syntax-function-bind',
+244 silly mapToRegistry   name: 'babel-plugin-syntax-function-bind',
+244 silly mapToRegistry   rawSpec: '',
+244 silly mapToRegistry   spec: 'latest',
+244 silly mapToRegistry   type: 'tag' }
+245 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-function-bind
+246 verbose addRemoteTarball https://registry.npmjs.org/babel-plugin-syntax-function-bind/-/babel-plugin-syntax-function-bind-6.13.0.tgz not in flight; adding
+247 verbose addRemoteTarball [ 'https://registry.npmjs.org/babel-plugin-syntax-function-bind/-/babel-plugin-syntax-function-bind-6.13.0.tgz',
+247 verbose addRemoteTarball   '48c495f177bdf31a981e732f55adc0bdd2601f46' ]
+248 http 200 https://registry.npmjs.org/caniuse-db
+249 verbose headers { server: 'nginx/1.10.1',
+249 verbose headers   'content-type': 'application/json',
+249 verbose headers   'last-modified': 'Fri, 22 Sep 2017 04:23:39 GMT',
+249 verbose headers   etag: 'W/"59c4904b-c980a"',
+249 verbose headers   'content-encoding': 'gzip',
+249 verbose headers   'cache-control': 'max-age=300',
+249 verbose headers   'transfer-encoding': 'chunked',
+249 verbose headers   'accept-ranges': 'bytes',
+249 verbose headers   date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+249 verbose headers   via: '1.1 varnish',
+249 verbose headers   connection: 'keep-alive',
+249 verbose headers   'x-served-by': 'cache-sea1037-SEA',
+249 verbose headers   'x-cache': 'MISS',
+249 verbose headers   'x-cache-hits': '0',
+249 verbose headers   'x-timer': 'S1506125651.930033,VS0,VE22',
+249 verbose headers   vary: 'Accept-Encoding, Accept' }
+250 silly get cb [ 200,
+250 silly get   { server: 'nginx/1.10.1',
+250 silly get     'content-type': 'application/json',
+250 silly get     'last-modified': 'Fri, 22 Sep 2017 04:23:39 GMT',
+250 silly get     etag: 'W/"59c4904b-c980a"',
+250 silly get     'content-encoding': 'gzip',
+250 silly get     'cache-control': 'max-age=300',
+250 silly get     'transfer-encoding': 'chunked',
+250 silly get     'accept-ranges': 'bytes',
+250 silly get     date: 'Sat, 23 Sep 2017 00:14:10 GMT',
+250 silly get     via: '1.1 varnish',
+250 silly get     connection: 'keep-alive',
+250 silly get     'x-served-by': 'cache-sea1037-SEA',
+250 silly get     'x-cache': 'MISS',
+250 silly get     'x-cache-hits': '0',
+250 silly get     'x-timer': 'S1506125651.930033,VS0,VE22',
+250 silly get     vary: 'Accept-Encoding, Accept' } ]
+251 verbose get saving caniuse-db to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\caniuse-db\.cache.json
+252 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+253 silly mapToRegistry name babel-plugin-syntax-function-sent
+254 silly mapToRegistry using default registry
+255 silly mapToRegistry registry https://registry.npmjs.org/
+256 silly mapToRegistry data Result {
+256 silly mapToRegistry   raw: 'babel-plugin-syntax-function-sent',
+256 silly mapToRegistry   scope: null,
+256 silly mapToRegistry   escapedName: 'babel-plugin-syntax-function-sent',
+256 silly mapToRegistry   name: 'babel-plugin-syntax-function-sent',
+256 silly mapToRegistry   rawSpec: '',
+256 silly mapToRegistry   spec: 'latest',
+256 silly mapToRegistry   type: 'tag' }
+257 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-function-sent
+258 verbose addRemoteTarball https://registry.npmjs.org/babel-plugin-syntax-function-sent/-/babel-plugin-syntax-function-sent-6.13.0.tgz not in flight; adding
+259 verbose addRemoteTarball [ 'https://registry.npmjs.org/babel-plugin-syntax-function-sent/-/babel-plugin-syntax-function-sent-6.13.0.tgz',
+259 verbose addRemoteTarball   '85b5e033b53b94a3cc2569d13426c2dcdc1975a5' ]
+260 silly mapToRegistry name babel-plugin-syntax-do-expressions
+261 silly mapToRegistry using default registry
+262 silly mapToRegistry registry https://registry.npmjs.org/
+263 silly mapToRegistry data Result {
+263 silly mapToRegistry   raw: 'babel-plugin-syntax-do-expressions',
+263 silly mapToRegistry   scope: null,
+263 silly mapToRegistry   escapedName: 'babel-plugin-syntax-do-expressions',
+263 silly mapToRegistry   name: 'babel-plugin-syntax-do-expressions',
+263 silly mapToRegistry   rawSpec: '',
+263 silly mapToRegistry   spec: 'latest',
+263 silly mapToRegistry   type: 'tag' }
+264 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-syntax-do-expressions
+265 verbose addRemoteTarball https://registry.npmjs.org/babel-plugin-syntax-do-expressions/-/babel-plugin-syntax-do-expressions-6.13.0.tgz not in flight; adding
+266 verbose addRemoteTarball [ 'https://registry.npmjs.org/babel-plugin-syntax-do-expressions/-/babel-plugin-syntax-do-expressions-6.13.0.tgz',
+266 verbose addRemoteTarball   '5747756139aa26d390d09410b03744ba07e4796d' ]
+267 info retry fetch attempt 1 at 5:14:12 PM
+268 info attempt registry request try #1 at 5:14:12 PM
+269 http fetch GET https://registry.npmjs.org/babel-plugin-syntax-function-bind/-/babel-plugin-syntax-function-bind-6.13.0.tgz
+270 verbose request using bearer token for auth
+271 info retry fetch attempt 1 at 5:14:12 PM
+272 info attempt registry request try #1 at 5:14:12 PM
+273 http fetch GET https://registry.npmjs.org/babel-plugin-syntax-do-expressions/-/babel-plugin-syntax-do-expressions-6.13.0.tgz
+274 verbose request using bearer token for auth
+275 info retry fetch attempt 1 at 5:14:12 PM
+276 info attempt registry request try #1 at 5:14:12 PM
+277 http fetch GET https://registry.npmjs.org/babel-plugin-syntax-function-sent/-/babel-plugin-syntax-function-sent-6.13.0.tgz
+278 verbose request using bearer token for auth
+279 http fetch 200 https://registry.npmjs.org/babel-plugin-syntax-export-extensions/-/babel-plugin-syntax-export-extensions-6.13.0.tgz
+280 silly fetchAndShaCheck shasum 70a1484f0f9089a4e84ad44bac353c95b9b12721
+281 silly resolveWithNewModule caniuse-db@1.0.30000735 checking installable status
+282 silly cache add args [ 'caniuse-db@^1.0.30000526', null ]
+283 verbose cache add spec caniuse-db@^1.0.30000526
+284 silly cache add parsed spec Result {
+284 silly cache add   raw: 'caniuse-db@^1.0.30000526',
+284 silly cache add   scope: null,
+284 silly cache add   escapedName: 'caniuse-db',
+284 silly cache add   name: 'caniuse-db',
+284 silly cache add   rawSpec: '^1.0.30000526',
+284 silly cache add   spec: '>=1.0.30000526 <2.0.0',
+284 silly cache add   type: 'range' }
+285 silly addNamed caniuse-db@>=1.0.30000526 <2.0.0
+286 verbose addNamed ">=1.0.30000526 <2.0.0" is a valid semver range for caniuse-db
+287 silly addNameRange { name: 'caniuse-db',
+287 silly addNameRange   range: '>=1.0.30000526 <2.0.0',
+287 silly addNameRange   hasData: false }
+288 silly mapToRegistry name caniuse-db
+289 silly mapToRegistry using default registry
+290 silly mapToRegistry registry https://registry.npmjs.org/
+291 silly mapToRegistry data Result {
+291 silly mapToRegistry   raw: 'caniuse-db',
+291 silly mapToRegistry   scope: null,
+291 silly mapToRegistry   escapedName: 'caniuse-db',
+291 silly mapToRegistry   name: 'caniuse-db',
+291 silly mapToRegistry   rawSpec: '',
+291 silly mapToRegistry   spec: 'latest',
+291 silly mapToRegistry   type: 'tag' }
+292 silly mapToRegistry uri https://registry.npmjs.org/caniuse-db
+293 verbose addNameRange registry:https://registry.npmjs.org/caniuse-db not in flight; fetching
+294 http fetch 200 https://registry.npmjs.org/babel-plugin-syntax-function-bind/-/babel-plugin-syntax-function-bind-6.13.0.tgz
+295 http fetch 200 https://registry.npmjs.org/babel-plugin-syntax-function-sent/-/babel-plugin-syntax-function-sent-6.13.0.tgz
+296 http fetch 200 https://registry.npmjs.org/babel-plugin-syntax-do-expressions/-/babel-plugin-syntax-do-expressions-6.13.0.tgz
+297 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3996-824c590e\registry.npmjs.org\babel-plugin-syntax-export-extensions\-\babel-plugin-syntax-export-extensions-6.13.0.tgz not in flight; adding
+298 verbose addTmpTarball already have metadata; skipping unpack for babel-plugin-syntax-export-extensions@6.13.0
+299 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+300 verbose get https://registry.npmjs.org/caniuse-db not expired, no request
+301 silly addNameRange number 2 { name: 'caniuse-db',
+301 silly addNameRange   range: '>=1.0.30000526 <2.0.0',
+301 silly addNameRange   hasData: true }
+302 silly addNameRange versions [ 'caniuse-db',
+302 silly addNameRange   [ '1.0.20140224',
+302 silly addNameRange     '1.0.20140225',
+302 silly addNameRange     '1.0.20140226',
+302 silly addNameRange     '1.0.20140301',
+302 silly addNameRange     '1.0.20140302',
+302 silly addNameRange     '1.0.20140303',
+302 silly addNameRange     '1.0.20140304',
+302 silly addNameRange     '1.0.20140306',
+302 silly addNameRange     '1.0.20140311',
+302 silly addNameRange     '1.0.20140313',
+302 silly addNameRange     '1.0.20140316',
+302 silly addNameRange     '1.0.20140318',
+302 silly addNameRange     '1.0.20140319',
+302 silly addNameRange     '1.0.20140325',
+302 silly addNameRange     '1.0.20140326',
+302 silly addNameRange     '1.0.20140330',
+302 silly addNameRange     '1.0.20140331',
+302 silly addNameRange     '1.0.20140401',
+302 silly addNameRange     '1.0.20140403',
+302 silly addNameRange     '1.0.20140409',
+302 silly addNameRange     '1.0.20140412',
+302 silly addNameRange     '1.0.20140416',
+302 silly addNameRange     '1.0.20140422',
+302 silly addNameRange     '1.0.20140428',
+302 silly addNameRange     '1.0.20140429',
+302 silly addNameRange     '1.0.20140502',
+302 silly addNameRange     '1.0.20140504',
+302 silly addNameRange     '1.0.20140505',
+302 silly addNameRange     '1.0.20140506',
+302 silly addNameRange     '1.0.20140507',
+302 silly addNameRange     '1.0.20140511',
+302 silly addNameRange     '1.0.20140516',
+302 silly addNameRange     '1.0.20140519',
+302 silly addNameRange     '1.0.20140520',
+302 silly addNameRange     '1.0.20140521',
+302 silly addNameRange     '1.0.20140523',
+302 silly addNameRange     '1.0.20140526',
+302 silly addNameRange     '1.0.20140529',
+302 silly addNameRange     '1.0.20140601',
+302 silly addNameRange     '1.0.20140602',
+302 silly addNameRange     '1.0.20140603',
+302 silly addNameRange     '1.0.20140606',
+302 silly addNameRange     '1.0.20140608',
+302 silly addNameRange     '1.0.20140609',
+302 silly addNameRange     '1.0.20140610',
+302 silly addNameRange     '1.0.20140611',
+302 silly addNameRange     '1.0.20140616',
+302 silly addNameRange     '1.0.20140617',
+302 silly addNameRange     '1.0.20140618',
+302 silly addNameRange     '1.0.20140619',
+302 silly addNameRange     '1.0.20140622',
+302 silly addNameRange     '1.0.20140623',
+302 silly addNameRange     '1.0.20140626',
+302 silly addNameRange     '1.0.20140628',
+302 silly addNameRange     '1.0.20140702',
+302 silly addNameRange     '1.0.20140710',
+302 silly addNameRange     '1.0.20140715',
+302 silly addNameRange     '1.0.20140716',
+302 silly addNameRange     '1.0.20140717',
+302 silly addNameRange     '1.0.20140721',
+302 silly addNameRange     '1.0.20140722',
+302 silly addNameRange     '1.0.20140724',
+302 silly addNameRange     '1.0.20140726',
+302 silly addNameRange     '1.0.20140727',
+302 silly addNameRange     '1.0.20140728',
+302 silly addNameRange     '1.0.20140729',
+302 silly addNameRange     '1.0.20140730',
+302 silly addNameRange     '1.0.20140731',
+302 silly addNameRange     '1.0.20140801',
+302 silly addNameRange     '1.0.20140804',
+302 silly addNameRange     '1.0.20140810',
+302 silly addNameRange     '1.0.20140811',
+302 silly addNameRange     '1.0.20140812',
+302 silly addNameRange     '1.0.20140814',
+302 silly addNameRange     '1.0.20140815',
+302 silly addNameRange     '1.0.20140816',
+302 silly addNameRange     '1.0.20140820',
+302 silly addNameRange     '1.0.20140821',
+302 silly addNameRange     '1.0.20140826',
+302 silly addNameRange     '1.0.20140827',
+302 silly addNameRange     '1.0.20140902',
+302 silly addNameRange     '1.0.20140903',
+302 silly addNameRange     '1.0.20140906',
+302 silly addNameRange     '1.0.20140908',
+302 silly addNameRange     '1.0.20140909',
+302 silly addNameRange     '1.0.20140910',
+302 silly addNameRange     '1.0.20140911',
+302 silly addNameRange     '1.0.20140915',
+302 silly addNameRange     '1.0.20140916',
+302 silly addNameRange     '1.0.20140918',
+302 silly addNameRange     '1.0.20140922',
+302 silly addNameRange     '1.0.20140924',
+302 silly addNameRange     '1.0.20140928',
+302 silly addNameRange     '1.0.20140929',
+302 silly addNameRange     '1.0.20141001',
+302 silly addNameRange     '1.0.20141006',
+302 silly addNameRange     '1.0.20141007',
+302 silly addNameRange     '1.0.20141008',
+302 silly addNameRange     '1.0.30000001',
+302 silly addNameRange     '1.0.30000002',
+302 silly addNameRange     ... 730 more items ] ]
+303 silly addNamed caniuse-db@1.0.30000735
+304 verbose addNamed "1.0.30000735" is a plain semver version for caniuse-db
+305 silly fetchAndShaCheck shasum 85b5e033b53b94a3cc2569d13426c2dcdc1975a5
+306 silly fetchAndShaCheck shasum 5747756139aa26d390d09410b03744ba07e4796d
+307 silly fetchAndShaCheck shasum 48c495f177bdf31a981e732f55adc0bdd2601f46
+308 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3996-824c590e\registry.npmjs.org\babel-plugin-syntax-function-sent\-\babel-plugin-syntax-function-sent-6.13.0.tgz not in flight; adding
+309 verbose addTmpTarball already have metadata; skipping unpack for babel-plugin-syntax-function-sent@6.13.0
+310 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+311 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3996-824c590e\registry.npmjs.org\babel-plugin-syntax-do-expressions\-\babel-plugin-syntax-do-expressions-6.13.0.tgz not in flight; adding
+312 verbose addTmpTarball already have metadata; skipping unpack for babel-plugin-syntax-do-expressions@6.13.0
+313 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+314 silly mapToRegistry name caniuse-db
+315 silly mapToRegistry using default registry
+316 silly mapToRegistry registry https://registry.npmjs.org/
+317 silly mapToRegistry data Result {
+317 silly mapToRegistry   raw: 'caniuse-db',
+317 silly mapToRegistry   scope: null,
+317 silly mapToRegistry   escapedName: 'caniuse-db',
+317 silly mapToRegistry   name: 'caniuse-db',
+317 silly mapToRegistry   rawSpec: '',
+317 silly mapToRegistry   spec: 'latest',
+317 silly mapToRegistry   type: 'tag' }
+318 silly mapToRegistry uri https://registry.npmjs.org/caniuse-db
+319 verbose addRemoteTarball https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000735.tgz not in flight; adding
+320 verbose addRemoteTarball [ 'https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000735.tgz',
+320 verbose addRemoteTarball   '32bc4a07ef1f247474adb6097a031b94ca97ea9a' ]
+321 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3996-824c590e\registry.npmjs.org\babel-plugin-syntax-function-bind\-\babel-plugin-syntax-function-bind-6.13.0.tgz not in flight; adding
+322 verbose addTmpTarball already have metadata; skipping unpack for babel-plugin-syntax-function-bind@6.13.0
+323 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+324 info retry fetch attempt 1 at 5:14:12 PM
+325 info attempt registry request try #1 at 5:14:12 PM
+326 http fetch GET https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000735.tgz
+327 verbose request using bearer token for auth
+328 silly cache afterAdd babel-plugin-syntax-do-expressions@6.13.0
+329 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-do-expressions\6.13.0\package\package.json not in flight; writing
+330 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+331 silly cache afterAdd babel-plugin-syntax-export-extensions@6.13.0
+332 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-export-extensions\6.13.0\package\package.json not in flight; writing
+333 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+334 silly cache afterAdd babel-plugin-syntax-function-sent@6.13.0
+335 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-function-sent\6.13.0\package\package.json not in flight; writing
+336 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+337 silly cache afterAdd babel-plugin-syntax-function-bind@6.13.0
+338 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-function-bind\6.13.0\package\package.json not in flight; writing
+339 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+340 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-do-expressions\6.13.0\package\package.json written
+341 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-export-extensions\6.13.0\package\package.json written
+342 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-function-sent\6.13.0\package\package.json written
+343 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\babel-plugin-syntax-function-bind\6.13.0\package\package.json written
+344 http fetch 200 https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000735.tgz
+345 error git clone --template=C:\Users\admin\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/kangax/compat-table.git C:\Users\admin\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kangax-compat-table-git-gh-pages-6789bc89: undefined
+345 error git clone --template=C:\Users\admin\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/kangax/compat-table.git C:\Users\admin\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kangax-compat-table-git-gh-pages-6789bc89: undefined
+346 silly fetchPackageMetaData Error: not found: git
+346 silly fetchPackageMetaData     at getNotFoundError (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:14:12)
+346 silly fetchPackageMetaData     at F (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:69:19)
+346 silly fetchPackageMetaData     at E (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:81:29)
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:90:16
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:264:29
+346 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+346 silly fetchPackageMetaData  error for compat-table@git+https://github.com/kangax/compat-table.git#gh-pages { Error: not found: git
+346 silly fetchPackageMetaData     at getNotFoundError (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:14:12)
+346 silly fetchPackageMetaData     at F (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:69:19)
+346 silly fetchPackageMetaData     at E (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:81:29)
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:90:16
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+346 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:264:29
+346 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15) code: 'ENOGIT' }
+347 silly fetchAndShaCheck shasum 32bc4a07ef1f247474adb6097a031b94ca97ea9a
+348 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3996-824c590e\registry.npmjs.org\caniuse-db\-\caniuse-db-1.0.30000735.tgz not in flight; adding
+349 verbose addTmpTarball already have metadata; skipping unpack for caniuse-db@1.0.30000735
+350 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+351 silly cache afterAdd caniuse-db@1.0.30000735
+352 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\caniuse-db\1.0.30000735\package\package.json not in flight; writing
+353 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+354 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\caniuse-db\1.0.30000735\package\package.json written
+355 silly rollbackFailedOptional Starting
+356 silly rollbackFailedOptional Finishing
+357 silly runTopLevelLifecycles Finishing
+358 silly install printInstalled
+359 verbose stack Error: not found: git
+359 verbose stack     at getNotFoundError (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:14:12)
+359 verbose stack     at F (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:69:19)
+359 verbose stack     at E (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:81:29)
+359 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:90:16
+359 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+359 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+359 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:264:29
+359 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+360 verbose cwd C:\Users\admin\Desktop\hover
+361 error Windows_NT 6.1.7601
+362 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save-dev" "babel-preset-target"
+363 error node v6.10.2
+364 error npm  v3.10.10
+365 error code ENOGIT
+366 error not found: git
+367 error Failed using git.
+367 error This is most likely not a problem with npm itself.
+367 error Please check if you have git installed and in your PATH.
+368 verbose exit [ 1, true ]

@@ -111,8 +111,8 @@ module.exports = {
   , pictureTile_text: ssr_with_js_grid_data
   , tile_edge: 0
   , shuffle_seconds: 5
-  , server_render: true
-  , init_shuffle: true
+  , server_render_ssr: true
+  , init_shuffle_ssr: true
   , max_rows:2
 
   , normal_area: 'north-west'

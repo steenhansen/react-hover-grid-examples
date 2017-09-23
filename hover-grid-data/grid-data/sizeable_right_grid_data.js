@@ -6,7 +6,7 @@
                                                      robin_eggs.jpg
                                                      sister_bees.jpg
                                                      tree_bears.jpg
-                                                     weird_eggs.jpg
+                                                     weird_eggs.jpg ...
  */
 
 module.exports = {

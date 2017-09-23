@@ -7,7 +7,7 @@ const browser_helpers = require('../../hover-grid-data/browser_helpers.js')
 
 module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
   let invalid_checksum = jsx_chunks.expectInvalidChecksum(process.env.NODE_ENV)
-  const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV)
+  const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
   const {ssr_with_js_grid_html, ssr_with_js_grid_json, ssr_with_js_grid_css, ssr_with_js_grid_entry} = ssr_with_js_grid_pieces.start_ssr_info(req, HTML_DIR, IMAGES_DIR)
   let common_js_include = jsx_chunks.chunkhashEntry('commons', req)
 
@@ -36,7 +36,7 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
       const ssr_with_js_grid_pre_ssr_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_ssr)
       const ssr_with_js_grid_pre_jsx_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_jsx)
       const ssr_with_js_grid_pre_page_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_page)
-      const menu_html = browser_helpers.grid_menu('ssr_with_js_grid')
+      const menu_html = jsx_chunks.grid_menu('ssr_with_js_grid')
       const fast_html = `
         <!doctype html>
           <html lang="en-US">

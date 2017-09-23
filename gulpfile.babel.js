@@ -9,6 +9,15 @@ IF YOU GET THIS MESSAGE
 THEN
   $ yarn upgrade sharp
 
+
+
+
+ module.js:597
+ return process.dlopen(module, path._makeLong(filename));
+ ^
+
+ Error: The specified procedure could not be found.
+
 */
 
 
@@ -21,6 +30,9 @@ env('./.env')  // N.B. This defines process.env.NODE_ENV
 require('./node_modules/react-hover-grid/gulpfile.hover_tiles_compile.js')
 require('./hover-grid-data/gulpfile.jsx_entries.js')
 require('./hover-grid-data/gulpfile.image_data_uri_width.js')
+
+require('./hover-grid-data/gulpfile.image_circle_width.js')
+
 require('./hover-grid-server/gulpfile.webpack_gulp.js')
 
 require('./hover-grid-data/lint_entry.js')
@@ -30,14 +42,14 @@ const compile_all = gulp.series('hover_tiles_compile', 'jsx_entries', 'webpack_g
 const build_all = gulp.series('hover_tiles_compile', 'jsx_entries', 'image_data_uri_width', 'webpack_gulp')
 const lint_all = gulp.series('lint_entry', 'lint_hover')
 
-const all_gulps = gulp.series('hover_tiles_compile', 'jsx_entries', 'image_data_uri_width', 'webpack_gulp', 'lint_entry', 'lint_hover')
+const all_gulps = gulp.series('hover_tiles_compile', 'jsx_entries', 'image_circle_width',
+                              'image_data_uri_width', 'webpack_gulp', 'lint_entry', 'lint_hover')
 
 gulp.task('compile', compile_all)
 gulp.task('build', build_all)
 gulp.task('lint', lint_all)
 
 gulp.task('all', all_gulps)
-
 
 gulp.task('default', function (cb) {
   console.log('  gulp compile')
@@ -49,6 +61,7 @@ gulp.task('default', function (cb) {
   console.log('    gulp hover_tiles_compile')
   console.log('    gulp jsx_entries')
   console.log('    gulp webpack_gulp')
+  console.log('    gulp image_circle_width')
   console.log('    gulp image_data_uri_width')
 
   console.log('  gulp lint')

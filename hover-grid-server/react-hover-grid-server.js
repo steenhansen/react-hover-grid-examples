@@ -67,6 +67,9 @@ let web_server = function (public_static_files, localhost_port) {
     require('./grid_pages/npm_example_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
+  express_server.get('/circle-clip', function (req, res) {
+    require('./grid_pages/circle_clip_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
 
 
 

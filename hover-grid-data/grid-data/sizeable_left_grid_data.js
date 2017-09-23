@@ -10,7 +10,7 @@
                                                     cato.jpg
                                                     no_swim.jpg
                                                     snow_bridge.jpg
-                                                    trees_snow_sun.jpg
+                                                    trees_snow_sun.jpg ...
  */
 
 module.exports = {

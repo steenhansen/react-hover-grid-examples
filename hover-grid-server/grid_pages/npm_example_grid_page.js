@@ -23,11 +23,11 @@ module.exports = function (req, res) {
              ,npm_example_grid_pre_jsx
              ,npm_example_grid_pre_js
              ,npm_example_grid_pre_page]) => {
-      const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV)
+      const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const npm_example_grid_pre_jsx_text = jsx_chunks.html2Text(npm_example_grid_pre_jsx)
       const npm_example_grid_pre_page_text = jsx_chunks.html2Text(npm_example_grid_pre_page)
-      const menu_html = browser_helpers.grid_menu('npm_example_grid')
+      const menu_html = jsx_chunks.grid_menu('npm_example_grid')
       const npm_example_grid_html = `
         <!doctype html>
           <html lang="en-US">

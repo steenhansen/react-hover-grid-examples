@@ -1,61 +1,17 @@
 'use strict'
 
-function grid_menu(current_grid){
-    const number_spaces = 6 + 1
-    const li_width =100/number_spaces
 
-const menu_html =`
 
-<style>
-#grid-menu {
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+function getComputedStyleById(elem_id){
+    const element = document.getElementById(elem_id)
+    const elem_style = window.getComputedStyle(element)
+    return elem_style
 }
 
-#grid-menu li {
-    display: block;
-    float: left;
-    margin: 0;
-    width: ${li_width}%;
-    background-color: #eee;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-#grid-menu li a {
-  color:dimgray;
-  text-decoration:none; 
-}
-  
-#grid-menu li a:hover {
-    color:black;
-    text-decoration: underline;
-}
-
-#grid-menu li#${current_grid} a {
-  color:black;
-   font-weight:bold;
-   cursor:default;
-
-}
-#grid-menu li#${current_grid} a:hover {
-  text-decoration:none; 
-}
-
-</style>
-    <ul id="grid-menu">
-      <li id="show_all_grid"><a href="/">Home</a></li>
-      <li id="resizable_splitter_grid"><a href="resizable-splitter">Re-Sizable</a></li>
-      <li id="shrink_grow_grid"><a href="shrink-grow">Shrink&amp;Grow</a></li>
-      <li id="srr_no_js_grid"><a href="ssr-no-js">No Js SSR</a></li>
-      <li id="ssr_with_js_grid"><a href="ssr-with-js">Js SSR</a></li>
-      <li id="npm_example_grid"><a href="npm-example">NPM Example</a></li>
-    </ul>
-
- <div style="clear:both">&nbsp;</div>
-`
-return menu_html
+function getBoundingClientRectById(elem_id){
+    const element = document.getElementById(elem_id)
+    const rect = element.getBoundingClientRect()
+    return rect
 }
 
 function mergeWidthsWithText(grid_pictureTiles, grid_image_widths, dir_name) {
@@ -90,5 +46,7 @@ function mergeWidthsWithText(grid_pictureTiles, grid_image_widths, dir_name) {
     }
     return pictureTile_widths
 }
-module.exports = { grid_menu:grid_menu
-    ,mergeWidthsWithText: mergeWidthsWithText }
+module.exports = {
+   getComputedStyleById:getComputedStyleById
+    ,getBoundingClientRectById:getBoundingClientRectById
+   , mergeWidthsWithText: mergeWidthsWithText }

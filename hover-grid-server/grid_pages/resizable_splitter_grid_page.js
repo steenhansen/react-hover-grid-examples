@@ -24,10 +24,10 @@ module.exports = function (req, res) {
             ,resizable_splitter_grid_pre_js
             ,resizable_splitter_grid_pre_page]) => {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
-      const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV)
+      const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const sizable_grid_pre_jsx_text = jsx_chunks.html2Text(resizable_splitter_grid_pre_jsx)
       const resizable_splitter_grid_pre_page_text = jsx_chunks.html2Text(resizable_splitter_grid_pre_page)
-      const menu_html = browser_helpers.grid_menu('resizable_splitter_grid')
+      const menu_html = jsx_chunks.grid_menu('resizable_splitter_grid')
       const resizable_splitter_grid_html = `
               <!doctype html>
               <html lang="en-US">
