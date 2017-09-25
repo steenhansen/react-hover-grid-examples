@@ -20,6 +20,9 @@ module.exports = function (ssr_with_js_grid_data) {
   ssr_with_js_grid_data['pictureTile_list']=pictureTile_widths
   let react_hover_grid_factory = React.createFactory(ReactHoverGrid)
   let ssr_with_js_grid_hover_grid_ssr = react_hover_grid_factory(ssr_with_js_grid_data)
+
+  global.debug_logger.error(ssr_with_js_grid_hover_grid_ssr)
+
   let ssr_with_js_grid_html_ssr = ReactDOMServer.renderToString(ssr_with_js_grid_hover_grid_ssr)
   return ssr_with_js_grid_html_ssr
 }

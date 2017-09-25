@@ -6,6 +6,9 @@ var compression = require('compression')
 
 const env = require('node-env-file')
 var router = express.Router()
+var fs = require('fs')
+var log = require('log')
+
 
 const HTML_DIR = 'public'
 const IMAGES_DIR = 'hover-grid-images'
@@ -23,11 +26,26 @@ function expressErrorHandler (e, req, res, next) {
   }
 }
 
+function debugLog(node_env, public_static_files){
+  let debug_logger
+   if (node_env === 'development') {
+    debug_logger = new log('debug', fs.createWriteStream(public_static_files + '/my.log'))
+  }else{
+    debug_logger = { debug:x=>{console.log('debug:', x)}
+                    ,info: x=>{console.log('info:', x)}
+                    ,error:x=>{console.log('error:', x) }   }
+  }
+  return debug_logger
+}
+
 let web_server = function (public_static_files, localhost_port) {
   let express_server = express()
   env('./.env')  // N.B. This defines process.env.NODE_ENV
   const node_env = process.env.NODE_ENV
   console.log(`  Started web server on - http://localhost:${localhost_port}, node_env=${node_env}, public_folder=${public_static_files} `)
+
+  global.debug_logger = debugLog(node_env, public_static_files)
+
   if (node_env !== 'development') {
     express_server.use(compression())
   }
@@ -52,10 +70,10 @@ let web_server = function (public_static_files, localhost_port) {
   })
 
   express_server.get('/ssr-no-js', function (req, res) {
-    require('./grid_pages/ssr_no_js_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+    require('./grid_pages/ssr_no_js_grid_page')(req, res, HTML_DIR, IMAGES_DIR, debug_logger)
   })
 
-  express_server.get('/ssr-with-js', function (req, res) {      
+  express_server.get('/ssr-with-js', function (req, res) {
     require('./grid_pages/ssr_with_js_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
@@ -63,7 +81,7 @@ let web_server = function (public_static_files, localhost_port) {
     require('./grid_pages/shrink_grow_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
-  express_server.get('/npm-example', function (req, res) {       
+  express_server.get('/npm-example', function (req, res) {
     require('./grid_pages/npm_example_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
