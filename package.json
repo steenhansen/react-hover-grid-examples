@@ -1,6 +1,6 @@
 {
   "name": "react-hover-grid-examples",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "node": "6.10.2",
     "npm": "3.10.10"
@@ -93,7 +93,7 @@
     "raw-body": "^2.1.6",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-hover-grid": "^1.0.3",
+    "react-hover-grid": "^1.0.4",
     "react-split-pane": "^0.1.65",
     "resolve": "^1.1.7",
     "serve-static": "^1.10.2",
