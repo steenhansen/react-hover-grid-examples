@@ -3,7 +3,6 @@
 const path = require('path')
 let jsx_chunks = require('../../hover-grid-data/jsx-chunks.js')
 let ssr_with_js_grid_pieces = require('../../hover-grid-data/ssr_with_js_grid_pieces.js')
-const browser_helpers = require('../../hover-grid-data/browser_helpers.js')
 
 module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
   let invalid_checksum = jsx_chunks.expectInvalidChecksum(process.env.NODE_ENV)
@@ -19,20 +18,20 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
   let ssr_with_js_grid_pre_page = jsx_chunks.readResourceFile(ssr_with_js_grid_page)
   const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
   let events_promises = [ssr_with_js_grid_entry
-                        ,ssr_with_js_grid_css
-                        ,common_js_include
-                        ,ssr_with_js_grid_pre_ssr
-                        ,ssr_with_js_grid_pre_jsx
-                        ,ssr_with_js_grid_pre_js
-                        ,ssr_with_js_grid_pre_page]
+    , ssr_with_js_grid_css
+    , common_js_include
+    , ssr_with_js_grid_pre_ssr
+    , ssr_with_js_grid_pre_jsx
+    , ssr_with_js_grid_pre_js
+    , ssr_with_js_grid_pre_page]
   return Promise.all(events_promises)
-    .then(([ssr_with_js_grid_entry
-           ,ssr_with_js_grid_css
-           ,common_js_include
-           ,ssr_with_js_grid_pre_ssr
-           ,ssr_with_js_grid_pre_jsx
-           ,ssr_with_js_grid_pre_js
-           ,ssr_with_js_grid_pre_page]) => {
+      .then(([ssr_with_js_grid_entry
+        , ssr_with_js_grid_css
+        , common_js_include
+        , ssr_with_js_grid_pre_ssr
+        , ssr_with_js_grid_pre_jsx
+        , ssr_with_js_grid_pre_js
+        , ssr_with_js_grid_pre_page]) => {
       const ssr_with_js_grid_pre_ssr_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_ssr)
       const ssr_with_js_grid_pre_jsx_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_jsx)
       const ssr_with_js_grid_pre_page_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_page)
@@ -81,8 +80,8 @@ This React Hover Grid is generated isomorphically, but re-rendered in the browse
                   
                </body>
             </html>`
-    res.flushHeaders()   
-    var rest_minified= jsx_chunks.minify_html(fast_html, process.env.NODE_ENV)
-    res.end(rest_minified)
-  })
+      res.flushHeaders()
+  var rest_minified = jsx_chunks.minify_html(fast_html, process.env.NODE_ENV)
+  res.end(rest_minified)
+})
 }

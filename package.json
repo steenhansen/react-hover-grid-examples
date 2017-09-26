@@ -93,7 +93,7 @@
     "raw-body": "^2.1.6",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-hover-grid": "^0.0.4",
+    "react-hover-grid": "^1.0.3",
     "react-split-pane": "^0.1.65",
     "resolve": "^1.1.7",
     "serve-static": "^1.10.2",

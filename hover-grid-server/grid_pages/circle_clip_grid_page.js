@@ -12,16 +12,16 @@ module.exports = function (req, res) {
   const circle_clip_grid_page = path.resolve(__dirname + '/circle_clip_grid_page.js')
   let circle_clip_grid_pre_page = jsx_chunks.readResourceFile(circle_clip_grid_page)
   let events_promises = [circle_clip_grid_entry
-                        ,common_js_include
-                        ,circle_clip_grid_pre_jsx
-                        ,circle_clip_grid_pre_js
-                        ,circle_clip_grid_pre_page]
+    , common_js_include
+    , circle_clip_grid_pre_jsx
+    , circle_clip_grid_pre_js
+    , circle_clip_grid_pre_page]
   return Promise.all(events_promises)
       .then(([circle_clip_grid_entry
-             ,common_js_include 
-             ,circle_clip_grid_pre_jsx
-             ,circle_clip_grid_pre_js
-             ,circle_clip_grid_pre_page]) => {
+        , common_js_include
+        , circle_clip_grid_pre_jsx
+        , circle_clip_grid_pre_js
+        , circle_clip_grid_pre_page]) => {
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const circle_clip_grid_pre_jsx_text = jsx_chunks.html2Text(circle_clip_grid_pre_jsx)
@@ -64,7 +64,7 @@ The other images have links to Google maps.
                </body>
           </html>`
       res.flushHeaders()
-      var tiny_minified = jsx_chunks.minify_html(circle_clip_grid_html, process.env.NODE_ENV)
-      res.end(tiny_minified)
+  var tiny_minified = jsx_chunks.minify_html(circle_clip_grid_html, process.env.NODE_ENV)
+  res.end(tiny_minified)
 })
 }

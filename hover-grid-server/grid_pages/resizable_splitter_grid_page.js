@@ -13,16 +13,16 @@ module.exports = function (req, res) {
   const resizable_splitter_grid_page = path.resolve(__dirname + '/resizable_splitter_grid_page.js')
   let resizable_splitter_grid_pre_page = jsx_chunks.readResourceFile(resizable_splitter_grid_page)
   let events_promises = [resizable_splitter_grid_entry
-                        ,common_js_include
-                        ,resizable_splitter_grid_pre_jsx
-                        ,resizable_splitter_grid_pre_js
-                        ,resizable_splitter_grid_pre_page]
+    , common_js_include
+    , resizable_splitter_grid_pre_jsx
+    , resizable_splitter_grid_pre_js
+    , resizable_splitter_grid_pre_page]
   return Promise.all(events_promises)
       .then(([resizable_splitter_grid_entry
-            ,common_js_include
-            ,resizable_splitter_grid_pre_jsx
-            ,resizable_splitter_grid_pre_js
-            ,resizable_splitter_grid_pre_page]) => {
+        , common_js_include
+        , resizable_splitter_grid_pre_jsx
+        , resizable_splitter_grid_pre_js
+        , resizable_splitter_grid_pre_page]) => {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const sizable_grid_pre_jsx_text = jsx_chunks.html2Text(resizable_splitter_grid_pre_jsx)
@@ -58,8 +58,8 @@ A <a href="https://github.com/tomkp/react-split-pane" target="_blank"> tomkp/rea
                     
                 </body>
               </html>`
-      res.flushHeaders()    
-      var sizeable_minified = jsx_chunks.minify_html(resizable_splitter_grid_html, process.env.NODE_ENV)
-      res.end(sizeable_minified)
-  })
+      res.flushHeaders()
+  var sizeable_minified = jsx_chunks.minify_html(resizable_splitter_grid_html, process.env.NODE_ENV)
+  res.end(sizeable_minified)
+})
 }

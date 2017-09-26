@@ -13,16 +13,16 @@ module.exports = function (req, res) {
   const npm_example_grid_page = path.resolve(__dirname + '/npm_example_grid_page.js')
   let npm_example_grid_pre_page = jsx_chunks.readResourceFile(npm_example_grid_page)
   let events_promises = [npm_example_grid_entry
-                        ,common_js_include
-                        ,npm_example_grid_pre_jsx
-                        ,npm_example_grid_pre_js
-                        ,npm_example_grid_pre_page]
+    , common_js_include
+    , npm_example_grid_pre_jsx
+    , npm_example_grid_pre_js
+    , npm_example_grid_pre_page]
   return Promise.all(events_promises)
       .then(([npm_example_grid_entry
-             ,common_js_include 
-             ,npm_example_grid_pre_jsx
-             ,npm_example_grid_pre_js
-             ,npm_example_grid_pre_page]) => {
+        , common_js_include
+        , npm_example_grid_pre_jsx
+        , npm_example_grid_pre_js
+        , npm_example_grid_pre_page]) => {
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const npm_example_grid_pre_jsx_text = jsx_chunks.html2Text(npm_example_grid_pre_jsx)
@@ -62,7 +62,7 @@ The other images have links to Google maps.
                </body>
           </html>`
       res.flushHeaders()
-      var tiny_minified = jsx_chunks.minify_html(npm_example_grid_html, process.env.NODE_ENV)
-      res.end(tiny_minified)
+  var tiny_minified = jsx_chunks.minify_html(npm_example_grid_html, process.env.NODE_ENV)
+  res.end(tiny_minified)
 })
 }

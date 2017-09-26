@@ -28,10 +28,10 @@ function jsx_to_js_1 () {
   const jsx_source = __dirname + '/entry-points/*.jsx'
   const js_dest = __dirname + '/entry-points/'
   return gulp.src(jsx_source)
-          .on('error', onError)
-          .pipe(babel({presets: ['es2015', 'stage-2']}))
-          .pipe(gulp.dest(js_dest))
-          .pipe(debug({title: 'jsx_entries jsx:'}))
+    .on('error', onError)
+    .pipe(babel({presets: ['es2015', 'stage-2']}))
+    .pipe(gulp.dest(js_dest))
+    .pipe(debug({title: 'jsx_entries jsx:'}))
 }
 
 function remove_asserts_2 () {
@@ -41,10 +41,10 @@ function remove_asserts_2 () {
     unassert = require('gulp-empty-pipe')
   }
   return gulp.src(jsx_source)
-          .on('error', onError)
-          .pipe(unassert())
-          .pipe(gulp.dest(js_dest))
-          .pipe(debug({title: 'jsx_entries unAssert:'}))
+    .on('error', onError)
+    .pipe(unassert())
+    .pipe(gulp.dest(js_dest))
+    .pipe(debug({title: 'jsx_entries unAssert:'}))
 }
 
 function fini_message_3 (cb) {

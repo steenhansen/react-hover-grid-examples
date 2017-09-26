@@ -13,16 +13,16 @@ module.exports = function (req, res) {
   const shrink_grow_grid_page = path.resolve(__dirname + '/shrink_grow_grid_page.js')
   let shrink_grow_grid_pre_page = jsx_chunks.readResourceFile(shrink_grow_grid_page)
   let events_promises = [shrink_grow_grid_entry
-                        ,common_js_include
-                        ,shrink_grow_grid_pre_jsx
-                        ,shrink_grow_grid_pre_js
-                        ,shrink_grow_grid_pre_page]
+    , common_js_include
+    , shrink_grow_grid_pre_jsx
+    , shrink_grow_grid_pre_js
+    , shrink_grow_grid_pre_page]
   return Promise.all(events_promises)
       .then(([shrink_grow_grid_entry
-             ,common_js_include
-             ,shrink_grow_grid_pre_jsx
-             ,shrink_grow_grid_pre_js
-             ,shrink_grow_grid_pre_page]) => {
+        , common_js_include
+        , shrink_grow_grid_pre_jsx
+        , shrink_grow_grid_pre_js
+        , shrink_grow_grid_pre_page]) => {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const shrink_grow_grid_pre_jsx_text = jsx_chunks.html2Text(shrink_grow_grid_pre_jsx)
@@ -62,8 +62,8 @@ Publish/Subscribe handles the growing and shrinking of this grid; cpu intensive 
 
                </body>
           </html>`
-      res.flushHeaders() 
-      var mountains_minified = jsx_chunks.minify_html(shrink_grow_grid_html, process.env.NODE_ENV)
-      res.end(mountains_minified)
-  })
+      res.flushHeaders()
+  var mountains_minified = jsx_chunks.minify_html(shrink_grow_grid_html, process.env.NODE_ENV)
+  res.end(mountains_minified)
+})
 }

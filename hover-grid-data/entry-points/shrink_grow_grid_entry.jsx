@@ -12,7 +12,7 @@ const shrink_grow_grid_data = require('../grid-data/shrink_grow_grid_data')
 const browser_helpers = require('../browser_helpers.js')
 const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
 
-function setGridWidth(width_int, shrink_grow_grid_id) {
+function setGridWidth (width_int, shrink_grow_grid_id) {
   const elem = document.getElementById(shrink_grow_grid_id)
   elem.style.width = width_int + 'px'
 }
@@ -59,18 +59,15 @@ let resizePubSub_timer = (function (seconds_between) {
   }
 })(SECOND_TIME)
 
+const shrink_grow_grid_texts = shrink_grow_grid_data.pictureTile_text
+const shrink_grow_grid_widths = all_tile_image_widths['shrink_grow_grid']
 
-const shrink_grow_grid_texts =  shrink_grow_grid_data.pictureTile_text
-const shrink_grow_grid_widths =  all_tile_image_widths['shrink_grow_grid']
-
-
-const pictureTile_widths= browser_helpers.mergeWidthsWithText(shrink_grow_grid_texts, shrink_grow_grid_widths, 'shrink_grow_grid_images')
-shrink_grow_grid_data['pictureTile_list']=pictureTile_widths
-
+const pictureTile_widths = browser_helpers.mergeWidthsWithText(shrink_grow_grid_texts, shrink_grow_grid_widths, 'shrink_grow_grid_images')
+shrink_grow_grid_data['pictureTile_list'] = pictureTile_widths
 
 shrink_grow_grid_data.resize_pub_sub = resizePubSub_timer
 let shrink_grow_grid_ReactHoverGrid = ReactDOM.render(<ReactHoverGrid
-        {...shrink_grow_grid_data}
+  {...shrink_grow_grid_data}
 />, document.getElementById(shrink_grow_grid_data.hover_grid_id))
 
 module.exports = {shrink_grow_grid_ReactHoverGrid}

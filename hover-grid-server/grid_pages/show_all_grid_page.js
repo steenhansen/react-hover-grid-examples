@@ -5,9 +5,7 @@ let jsx_chunks = require('../../hover-grid-data/jsx-chunks.js')
 let ssr_with_js_grid_pieces = require('../../hover-grid-data/ssr_with_js_grid_pieces.js')
 const browser_helpers = require('../../hover-grid-data/browser_helpers.js')
 
-
 const circle_clip_grid_data = require('../../hover-grid-data/grid-data/circle_clip_grid_data.js')
-
 
 module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
   const {ssr_with_js_grid_html, ssr_with_js_grid_json, ssr_with_js_grid_css, ssr_with_js_grid_entry} = ssr_with_js_grid_pieces.start_ssr_info(req, HTML_DIR, IMAGES_DIR)
@@ -19,22 +17,22 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
   const show_all_grid_page = path.resolve(__dirname + '/show_all_grid_page.js')
   let show_all_grid_pre_page = jsx_chunks.readResourceFile(show_all_grid_page)
   let events_promises = [circle_clip_grid_entry
-                        ,ssr_with_js_grid_entry
-                        ,ssr_with_js_grid_css
-                        ,npm_example_grid_entry
-                        ,resizable_splitter_grid_entry
-                        ,shrink_grow_grid_entry
-                        ,common_js_include
-                        ,show_all_grid_pre_page]
+    , ssr_with_js_grid_entry
+    , ssr_with_js_grid_css
+    , npm_example_grid_entry
+    , resizable_splitter_grid_entry
+    , shrink_grow_grid_entry
+    , common_js_include
+    , show_all_grid_pre_page]
   return Promise.all(events_promises)
       .then(([circle_clip_grid_entry
-             ,ssr_with_js_grid_entry
-             ,ssr_with_js_grid_css
-             ,npm_example_grid_entry
-             ,resizable_splitter_grid_entry
-             ,shrink_grow_grid_entry
-             ,common_js_include
-             ,show_all_grid_pre_page]) => {
+        , ssr_with_js_grid_entry
+        , ssr_with_js_grid_css
+        , npm_example_grid_entry
+        , resizable_splitter_grid_entry
+        , shrink_grow_grid_entry
+        , common_js_include
+        , show_all_grid_pre_page]) => {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       let invalid_checksum = jsx_chunks.expectInvalidChecksum(process.env.NODE_ENV)
       const show_all_grid_pre_page_text = jsx_chunks.html2Text(show_all_grid_pre_page)
@@ -43,8 +41,8 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
 
 
-      const onResize= circle_clip_grid_data.onResize
-      const circleIntervalMenu= circle_clip_grid_data.circleIntervalMenu
+      const onResize = circle_clip_grid_data.onResize
+      const circleIntervalMenu = circle_clip_grid_data.circleIntervalMenu
 
       const fast_html = `
         <!doctype html>
@@ -114,7 +112,7 @@ globalReadyRun('GLOBAL_WEBPACK', 'circle_clip_grid_entry', 'circleIntervalMenu',
 
       </body>
     </html>`
-  res.flushHeaders()    
+      res.flushHeaders()
   var rest_minified = jsx_chunks.minify_html(fast_html, process.env.NODE_ENV)
   res.end(rest_minified)
 })
