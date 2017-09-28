@@ -34,6 +34,7 @@ module.exports = function (req, res) {
           <html lang="en-US">
            <head>
             <title>Shrink&amp;Grow</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
             ${always_show_vert_scroll}
              </head>
             <body>
@@ -41,7 +42,7 @@ module.exports = function (req, res) {
                                 
                                 
                                 <br>          
-Publish/Subscribe handles the growing and shrinking of this grid; cpu intensive re-drawing
+Publish/Subscribe handles the growing and shrinking of this grid; very cpu intensive re-drawing
  
  
          

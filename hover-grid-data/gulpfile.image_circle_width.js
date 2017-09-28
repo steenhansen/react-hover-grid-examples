@@ -8,7 +8,6 @@ const gulp = require('gulp')
 const fs = require('fs')
 const gutil = require('gulp-util')
 const path = require('path')
-//const error_text_color = 'bgRed'
 const start_text_color = 'bgGreen'
 const moment = require('moment')
 const merge = require('merge-stream')
@@ -20,7 +19,7 @@ const jsx_text = ' IMAGE CIRCLE WIDTH ---- '
 const HTML_DIR = 'public'
 const IMAGES_DIR = 'hover-grid-images'
 const HTML_IMAGES = '/' + HTML_DIR + '/' + IMAGES_DIR + '/'
-
+const EDGED_DIAMETER=156
 const CIRCLE_IMAGE_DIR = path.resolve(__dirname + '/..') + HTML_IMAGES + 'circle_clip_grid_images/'
 
 function clear_circles_1 () {
@@ -40,7 +39,7 @@ function enlarge_circles_2 () {
   const circle_2_enlarge = path.join(CIRCLE_IMAGE_DIR, 'circle_2_enlarge', '/')
   return gulp.src(circle_1_start)
     .pipe(gm(function (gmfile) {
-      var space_for_frame = gmfile.resize(156, 156)
+      var space_for_frame = gmfile.resize(EDGED_DIAMETER, EDGED_DIAMETER)
       return space_for_frame
     }))
     .pipe(gulp.dest(circle_2_enlarge))

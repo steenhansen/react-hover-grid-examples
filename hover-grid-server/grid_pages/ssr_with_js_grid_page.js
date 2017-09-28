@@ -41,6 +41,7 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
           <html lang="en-US">
            <head>
             <title>Js SSR</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
             ${always_show_vert_scroll}
               <style>${ssr_with_js_grid_css}</style>
             </head>
@@ -59,11 +60,11 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
                </div>  
                
                 <br>          
-This React Hover Grid is generated isomorphically, but re-rendered in the browser once Javascript is loaded for smooth resizing.<br>             
-- the variable window._HOVER_TILES is used to transfer grid data from the server to the browser with a possible random ordering<br>
+This React Hover Grid is generated isomorphically, but re-rendered in the browser once Javascript is loaded for smooth resizing.<br><br>             
+- the variable window._HOVER_TILES is used to transfer grid data from the server to the browser with a possible random ordering<br><br>
 - The console message of "Warning: React attempted to reuse markup in a container but the checksum was invalid." is displayed when 
-  in development mode since the server does not know how wide to draw the grid until it is rendered via media queries in the browser
-- the value 'show_server_grid_sizes : true' must be set in the 'grid-data' directory for screen width to be logged to the console 
+  in development mode since the server does not know how wide to draw the grid until it is rendered in the browser<br><br>
+- Server Side Rendering is accomplished via media queries choosing the best match out of many possible choices
 
  
                

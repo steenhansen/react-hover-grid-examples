@@ -33,6 +33,7 @@ module.exports = function (req, res) {
               <html lang="en-US">
                <head>
                 <title>Re-Sizable</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
                 ${always_show_vert_scroll}
                 <link href="splitter_style.css" rel="stylesheet">
                  </head>
@@ -41,7 +42,7 @@ module.exports = function (req, res) {
                   <br>
                   <div id='resizable_splitter_grid_id' style='width:100px; margin:0 auto; height:444px'>&nbsp;</div>
 <br>                  
-A <a href="https://github.com/tomkp/react-split-pane" target="_blank"> tomkp/react-split-pane<a> splits two resizable React Hover Grids
+A <a href="https://github.com/tomkp/react-split-pane" target="_blank">react-split-pane<a> splits two resizable React Hover Grids
 - Publish/Subscribe is used to match the React Hover Grids' width to their containers
 
                   

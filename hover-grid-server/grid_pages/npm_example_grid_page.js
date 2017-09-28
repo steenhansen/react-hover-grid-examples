@@ -33,6 +33,7 @@ module.exports = function (req, res) {
           <html lang="en-US">
            <head>
             <title>NPM Example</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
             ${always_show_vert_scroll}
              </head>
             <body>

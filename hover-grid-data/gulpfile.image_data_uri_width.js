@@ -29,8 +29,6 @@ const wildcard_image_types = ['*.png', '*.jpg']
 let tile_image_widths = {}
 const ALL_TILE_IMAGE_WIDTHS = 'all_tile_image_widths.js'
 
-//const empty_pipe = require('gulp-empty-pipe')
-
 // FROM https://github.com/gulpjs/gulp/blob/master/docs/recipes/running-task-steps-per-folder.md
 function getFolders (dir) {
   return fs.readdirSync(dir)

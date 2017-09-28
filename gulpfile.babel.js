@@ -9,13 +9,9 @@ IF YOU GET THIS MESSAGE
 THEN
   $ yarn upgrade sharp
 
-
-
-
  module.js:597
  return process.dlopen(module, path._makeLong(filename));
  ^
-
  Error: The specified procedure could not be found.
 
 */

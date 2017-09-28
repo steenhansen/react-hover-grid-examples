@@ -1,4 +1,4 @@
-'use strict'  // jsx entry file
+'use strict' 
 
 import ReactHoverGrid from 'react-hover-grid'
 import React from 'react'

@@ -35,6 +35,7 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
           <html lang="en-US">
            <head>
             <title>No Js SSR</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
             ${always_show_vert_scroll}
               <style>${ssr_with_js_grid_css}</style>
              </head>  
@@ -54,11 +55,11 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
                       </div>
                </div>  
  <br>          
-This React Hover Grid is generated isomorphically, there is no Javascript on this page.<br>             
-- to display the grid without seeing unloaded images, each picture is first retrieved via inlined data-uri that is
-  stored in public/hover-grid-images/ssr_with_js_grid_images/low_quality which is generated with 'gulp all'<br>
-- as there is no Javascript, the grid width is controlled with media queries matching popular screen widths, like 1280px
-- there is only jerky browser resizing without Javascript
+This React Hover Grid is rendered server side with media queries, there is no Javascript on this page.<br><br>             
+- to display the grid immediately without unloaded images, each picture is first retrieved via inlined data-uri that is
+  stored in public/hover-grid-images/ssr_with_js_grid_images/low_quality which is generated with 'gulp all'<br><br>
+- the grid width is controlled with media queries matching popular screen widths, like 1280px<br><br>
+- there is only jerky browser resizing without Javascript<br><br>
 - server screen sizes supported in [412, 414, 480, 568, 640, 667, 720, 732, 736, 768, 800, 900, 1024, 1050, 1080, 
                                   1200, 1280, 1360, 1366, 1440, 1600, 1680, 1920]
        

@@ -17,23 +17,23 @@ module.exports = function (req, res) {
     , circle_clip_grid_pre_js
     , circle_clip_grid_pre_page]
   return Promise.all(events_promises)
-      .then(([circle_clip_grid_entry
-        , common_js_include
-        , circle_clip_grid_pre_jsx
-        , circle_clip_grid_pre_js
-        , circle_clip_grid_pre_page]) => {
+    .then(([circle_clip_grid_entry
+      , common_js_include
+      , circle_clip_grid_pre_jsx
+      , circle_clip_grid_pre_js
+      , circle_clip_grid_pre_page]) => {
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const circle_clip_grid_pre_jsx_text = jsx_chunks.html2Text(circle_clip_grid_pre_jsx)
       const circle_clip_grid_pre_page_text = jsx_chunks.html2Text(circle_clip_grid_pre_page)
       const circle_menu = jsx_chunks.circle_menu('circle_clip_grid')
 
-
       const circle_clip_grid_html = `
         <!doctype html>
           <html lang="en-US">
            <head>
             <title>Circle Clip</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
             ${always_show_vert_scroll}
              </head>
             <body  style=' background-image: url("sq.png");' >
@@ -45,8 +45,9 @@ module.exports = function (req, res) {
                   
                   
 <br>                  
-The first three images have image filters on hover, gradients on text, and gradients on hover text. 
-The other images have links to Google maps.
+Image 1,2 is static so that the menu can be displayed. 
+Images are cycled through randomly.
+Images have a black and white filter on hover. 
 
                           
                   ${react_includes}
@@ -64,7 +65,7 @@ The other images have links to Google maps.
                </body>
           </html>`
       res.flushHeaders()
-  var tiny_minified = jsx_chunks.minify_html(circle_clip_grid_html, process.env.NODE_ENV)
-  res.end(tiny_minified)
-})
+      var tiny_minified = jsx_chunks.minify_html(circle_clip_grid_html, process.env.NODE_ENV)
+      res.end(tiny_minified)
+    })
 }

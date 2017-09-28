@@ -49,6 +49,7 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
           <html lang="en-US">
             <head>
               <title>React Hover Grid</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
               ${always_show_vert_scroll}
               <style>${ssr_with_js_grid_css}</style>
             </head>
