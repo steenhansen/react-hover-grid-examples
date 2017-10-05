@@ -96,14 +96,12 @@ function circle_menu (current_grid) {
 <style>
 #circle-menu {
     margin: 0;
-    padding: 0;
+    padding: 0px 0px 11px 0px;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
-                         z-index:333;
-                            position:absolute;
-                            display:none;
-                             padding-left:30px;
-    padding-right:25px;
-    padding-bottom:11px;
+    z-index:333;
+    position:absolute;
+    display:none;
+    font-size: 15px;
 }
 
 #circle-menu li {
@@ -141,14 +139,13 @@ function circle_menu (current_grid) {
 
    
       <li id="shrink_grow_grid_circle"><a href="shrink-grow">Shrink&amp;Grow</a></li>
-      <li id="srr_no_js_grid_circle"><a href="ssr-no-js">No&nbsp;Js&nbsp;SSR</a></li>
- 
-
-  
-      <li id="ssr_with_js_grid_circle"><a href="ssr-with-js">Js&nbsp;SSR</a></li>
       <li id="npm_example_grid_circle"><a href="npm-example">NPM&nbsp;Example</a></li>
 
-
+ <li id="readme_sample_grid"><a href="readme-sample">Readme Sample</a></li>
+     <li id="srr_no_js_grid_circle"><a href="ssr-no-js">No&nbsp;Js&nbsp;SSR</a></li>
+   
+      <li id="ssr_with_js_grid_circle"><a href="ssr-with-js">Js&nbsp;SSR</a></li>
+ 
   
       <li id="circle_clip_grid_circle"><a href="circle-clip">Circles</a></li>
     </ul>
@@ -160,7 +157,7 @@ function circle_menu (current_grid) {
 
 function grid_menu (current_grid) {
 
-  const number_spaces = 7 + 1
+  const number_spaces = 8 + 1
   const li_width = 100 / number_spaces
   const menu_html = `
 
@@ -205,10 +202,11 @@ function grid_menu (current_grid) {
     <ul id="grid-menu">
       <li id="show_all_grid"><a href="/">Home</a></li>
       <li id="resizable_splitter_grid"><a href="resizable-splitter">Re-Sizable</a></li>
-      <li id="shrink_grow_grid"><a href="shrink-grow">Shrink&amp;Grow</a></li>
+      <li id="shrink_grow_grid"><a href="shrink-grow">Shrink &amp; Grow</a></li>
+      <li id="npm_example_grid"><a href="npm-example">NPM Example</a></li>
+      <li id="readme_sample_grid"><a href="readme-sample">Readme Sample</a></li>
       <li id="srr_no_js_grid"><a href="ssr-no-js">No Js SSR</a></li>
       <li id="ssr_with_js_grid"><a href="ssr-with-js">Js SSR</a></li>
-      <li id="npm_example_grid"><a href="npm-example">NPM Example</a></li>
       <li id="circle_clip_grid"><a href="circle-clip">Circles</a></li>
     </ul>
 

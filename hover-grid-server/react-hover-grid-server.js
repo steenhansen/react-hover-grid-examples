@@ -44,6 +44,22 @@ let web_server = function (public_static_files, localhost_port) {
     require('./grid_pages/show_all_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
+  express_server.get('/circle-clip', function (req, res) {
+    require('./grid_pages/circle_clip_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
+  express_server.get('/npm-example', function (req, res) {
+    require('./grid_pages/npm_example_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
+  express_server.get('/readme-sample', function (req, res) {
+    require('./grid_pages/readme_sample_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
+  express_server.get('/shrink-grow', function (req, res) {
+    require('./grid_pages/shrink_grow_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
+  })
+
   express_server.get('/resizable-splitter', function (req, res) {
     require('./grid_pages/resizable_splitter_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
@@ -54,18 +70,6 @@ let web_server = function (public_static_files, localhost_port) {
 
   express_server.get('/ssr-with-js', function (req, res) {
     require('./grid_pages/ssr_with_js_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
-  })
-
-  express_server.get('/shrink-grow', function (req, res) {
-    require('./grid_pages/shrink_grow_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
-  })
-
-  express_server.get('/npm-example', function (req, res) {
-    require('./grid_pages/npm_example_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
-  })
-
-  express_server.get('/circle-clip', function (req, res) {
-    require('./grid_pages/circle_clip_grid_page')(req, res, HTML_DIR, IMAGES_DIR)
   })
 
   express_server.get('*', function (req, res) {

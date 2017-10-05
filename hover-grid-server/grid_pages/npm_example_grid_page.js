@@ -2,7 +2,6 @@
 
 const path = require('path')
 let jsx_chunks = require('../../hover-grid-data/jsx-chunks.js')
-const browser_helpers = require('../../hover-grid-data/browser_helpers.js')
 
 module.exports = function (req, res) {
   let npm_example_grid_entry = jsx_chunks.chunkhashEntry('npm_example_grid_entry', req)

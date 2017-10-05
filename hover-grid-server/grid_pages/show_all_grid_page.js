@@ -3,7 +3,6 @@
 const path = require('path')
 let jsx_chunks = require('../../hover-grid-data/jsx-chunks.js')
 let ssr_with_js_grid_pieces = require('../../hover-grid-data/ssr_with_js_grid_pieces.js')
-const browser_helpers = require('../../hover-grid-data/browser_helpers.js')
 
 const circle_clip_grid_data = require('../../hover-grid-data/grid-data/circle_clip_grid_data.js')
 

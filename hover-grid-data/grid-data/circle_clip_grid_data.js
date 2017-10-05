@@ -340,21 +340,21 @@ const circle_clip_grid_data = [
 ]
 
 function onResize () {
-  const element = document.getElementById('the_static_tile')
-  if (element) {
-    const rect = element.getBoundingClientRect()
-    const menu_top = (rect.top + window.pageYOffset + 4) + 'px'
-    const rect_left = rect.left + window.pageXOffset + 4
-    const menu_style = window.getComputedStyle(element)
-    const menu_px_width = menu_style.width
-    const menu_int_width = parseInt(menu_px_width, 10)
-    const menu_left = (rect_left + (menu_int_width / 4) - 33) + 'px'
+  const static_tile = document.getElementById('the_static_tile')
+  if (static_tile) {
+    document.getElementById('circle-menu').style.display = 'block'
+    const image_rect = static_tile.getBoundingClientRect()
+    const circle_menu = document.getElementById('circle-menu')
+    const menu_style = circle_menu.getBoundingClientRect()
+    const half_image_width = image_rect.width / 2
+    const half_menu_width = menu_style.width / 2
+    const menu_left = (window.pageXOffset + image_rect.left + half_image_width - half_menu_width ) + 'px'
+    const menu_top = (window.pageYOffset + image_rect.top + 2) + 'px'
     const current_top = document.getElementById('circle-menu').style.top
     const current_left = document.getElementById('circle-menu').style.left
     if (current_top !== menu_top || current_left !== menu_left) {
       document.getElementById('circle-menu').style.top = menu_top
       document.getElementById('circle-menu').style.left = menu_left
-      document.getElementById('circle-menu').style.display = 'block'
     }
   }
 }
@@ -383,7 +383,7 @@ module.exports = {
     fontFamily: "Helvetica Neue Light, HelveticaNeue-Light, Helvetica Neue, Calibri, Helvetica, Arial"
     , fontSize: '16px'
     , color: 'black'
-    , fontWweight: 'bold'
+    , fontWeight: 'bold'
   }
 
 }

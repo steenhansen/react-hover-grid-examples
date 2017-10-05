@@ -20,4 +20,8 @@ module.exports = {
   , tile_edge: 0
   , max_rows: 2
   , resize_nested_component: true
+
+
+  , hover_gradient: 'rgba(255, 255, 0, 0.1)'
+
 }

@@ -1,17 +1,27 @@
-
-
-
-
-
-
-
 #React Hover Grid Component Examples
 
-Live [react-hover-grid examples](https://react-hover-grid.herokuapp.com/).
+## Live Example
+### https://react-hover-grid.herokuapp.com/
 
-$ gulp build
 
-$ node start-webserver 5001
+## Install
+###$ npm install
 
-browser http://localhost:5001
+
+## Start web server
+###$ node start-webserver 5001
+
+
+## Local url
+###http://localhost:5001
+
+
+
+## Command Line Compiling JSX, Bundling, and Linting
+
+###$ gulp build
+>Compile web server
+
+###$ gulp lint
+>Lint web server code once.
 
