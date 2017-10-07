@@ -1,5 +1,4 @@
-'use strict'  // ssr_with_js_grid data
-
+'use strict'
 
 /*
  Images
@@ -27,8 +26,6 @@
                                                   carSurfing.jpg
                                                   hansenGiles.jpg
  */
-
-
 
 var ssr_with_js_grid_data = [
   {

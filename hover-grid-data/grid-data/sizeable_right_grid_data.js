@@ -1,13 +1,4 @@
-'use strict'  // ssr_with_js_grid data
-
-/*
- Images
- public/hover-grid-images/sizeable_right_grid_images/nz_pigs.jpg
-                                                     robin_eggs.jpg
-                                                     sister_bees.jpg
-                                                     tree_bears.jpg
-                                                     weird_eggs.jpg ...
- */
+'use strict'  
 
 module.exports = {
   hover_grid_id: 'sizeable_right_grid_id'

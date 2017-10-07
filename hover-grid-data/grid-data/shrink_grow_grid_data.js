@@ -1,17 +1,4 @@
-'use strict'  // shrink_grow_grid data
-
-/*
- Images
- public/hover-grid-images/shrink_grow_data/buntzen_lake.jpg
-                                           golden_colorado.jpg
-                                           joe_mills_mtn.jpg
-                                           lake_garabaldi.jpg
-                                           longs_peak.jpg
-                                           old_quary_colorado_springs.jpg
-                                           snow_lake_colorado.jpg
-                                           whale_rock_utah.jpg
-                                           white_rock.jpg
- */
+'use strict'  
 
 const shrink_grow_grid_data = [
   {

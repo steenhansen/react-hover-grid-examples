@@ -10,7 +10,8 @@ const all_tile_image_widths = require('../grid-data/all_tile_image_widths.js')
 
 const readme_sample_grid_texts = readme_sample_grid_data.pictureTile_text
 const readme_sample_grid_widths = all_tile_image_widths['readme_sample_grid']
-const pictureTile_widths = browser_helpers.mergeWidthsWithText(readme_sample_grid_texts, readme_sample_grid_widths, 'readme_sample_grid_images')
+const pictureTile_widths = browser_helpers.mergeWidthsWithText(readme_sample_grid_texts,
+                                 readme_sample_grid_widths, 'readme_sample_grid_images')
 readme_sample_grid_data['pictureTile_list'] = pictureTile_widths
 const readme_sample_grid_ReactHoverGrid = ReactDOM.render(<ReactHoverGrid {...readme_sample_grid_data} />
   , document.getElementById(readme_sample_grid_data.hover_grid_id))

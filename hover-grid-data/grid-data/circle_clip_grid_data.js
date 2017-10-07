@@ -1,17 +1,4 @@
-'use strict'  // data file
-
-/*
- Images
- public/hover-grid-images/circle_clip_grid_images/1_canada_bernie.jpg
- 2_amc_spirit.jpg
- 3_kiwi_airforce.jpg
- 4_christmas_cranes.jpg
- 5_sfu_observatory.jpg
- 6_i_like_coffee.jpg
- 7_pkd_tombstone.jpg
- 8_hello_kitty_skytrain.jpg
- 9_denver_nukes.jpg
- */
+'use strict'
 
 const circle_clip_grid_data = [
 

@@ -1,16 +1,11 @@
-'use strict'  // data file
+'use strict'
 
 /*
  Images
- public/hover-grid-images/npm_example_grid_images/1_canada_bernie.jpg
- 2_amc_spirit.jpg
- 3_kiwi_airforce.jpg
- 4_christmas_cranes.jpg
- 5_sfu_observatory.jpg
- 6_i_like_coffee.jpg
- 7_pkd_tombstone.jpg
- 8_hello_kitty_skytrain.jpg
- 9_denver_nukes.jpg
+ public/hover-grid-images/readme_sample_grid_images/1_east_van.png
+                                                    2_over_sasemat.png
+                                                    3_bc_snake.png
+                                                    4_amazon_in_bc.png
  */
 
 const readme_sample_grid_data = [
@@ -29,10 +24,10 @@ const readme_sample_grid_data = [
     , hover_title: 'East'
     , hover_info: 'Van'
   } , {
-    picture_src: '2_over_sasemat.png'
+    picture_src: '2_over_sasamat.png'
     , hover_gradient: 'rgba(255, 0, 0, 0.1)'
     , normal_gradient: 'rgba(0, 255, 0, 0.1)'
-    , link_url: 'http://www.cnn.com'
+    , link_url: 'https://www.vancouvertrails.com/trails/sasamat-lake/'
   } , {
     picture_src: '3_bc_snake.png'
     , normal_area: 'north-east'
@@ -42,7 +37,7 @@ const readme_sample_grid_data = [
   } , {
     picture_src: '4_amazon_in_bc.png'
     , normal_title: 'css'
-    , normal_title_style: 'readme-sample-grid-css-style'
+    , normal_title_style: '.readme-sample-grid-css-style'
     , filter_normal: 'hue-rotate(250deg)'
     , filter_hover: 'hue-rotate(150deg)'
   }

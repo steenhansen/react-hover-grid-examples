@@ -1,17 +1,4 @@
-'use strict'  // data file
-
-/*
-Images
-  public/hover-grid-images/npm_example_grid_images/1_canada_bernie.jpg
-                                            2_amc_spirit.jpg
-                                            3_kiwi_airforce.jpg
-                                            4_christmas_cranes.jpg
-                                            5_sfu_observatory.jpg
-                                            6_i_like_coffee.jpg
-                                            7_pkd_tombstone.jpg
-                                            8_hello_kitty_skytrain.jpg
-                                            9_denver_nukes.jpg
-*/
+'use strict'  
 
 const npm_example_grid_data = [{
     picture_src: '1_canada_bernie.jpg'
@@ -57,6 +44,14 @@ const npm_example_grid_data = [{
   ,link_url: 'https://www.google.ca/maps/@40.259518,-103.8095973,230m/data=!3m1!1e3?hl=en'
 }, {
   picture_src: '8_hello_kitty_skytrain.jpg'
+    , normal_title: 'Hello Skytrain'
+    , normal_area: 'south'
+    , normal_style: {fontFamily:"HarmoniaSansW01-Bold", fontSize: '30px', color: 'white', fontWeight: 'bold'}
+
+    , hover_title: 'Hello Skytrain'
+    , hover_area: 'south'
+    , hover_style: {fontFamily:"UniqueRegular", fontSize: '30px', color: 'black', fontWeight: 'bold'}
+
   ,link_url: 'https://www.google.ca/maps/place/Commercial+-+Broadway+Station/@49.2630943,-123.0704535,188m/data=!3m1!1e3!4m12!1m6!3m5!1s0x0:0xdf1603c7a7c098f1!2sSFU+Trottier+Observatory!8m2!3d49.2785011!4d-122.9149546!3m4!1s0x5486714ed1cbf3cf:0xed9b913d83dd63fd!8m2!3d49.2626442!4d-123.0692567?hl=en'
 }, {
     picture_src: '9_denver_nukes.jpg'
@@ -73,5 +68,11 @@ module.exports = {
   , hover_grid_row_height: 234
   , pictureTile_text:npm_example_grid_data
   , max_rows:2
-  , google_font_link: 'https://fonts.googleapis.com/css?family=Abril+Fatface|Schoolbell|Fredericka+the+Great|Carter+One|Allerta+Stencil|Lobster+Two|Shrikhand|Orbitron|Permanent+Marker|Share+Tech+Mono'
+  , google_font_link: [
+      'https://fonts.googleapis.com/css?family=Abril+Fatface|Schoolbell|Fredericka+the+Great|Carter+One|Allerta+Stencil|Lobster+Two|Shrikhand|Orbitron|Permanent+Marker|Share+Tech+Mono'
+    , "//db.onlinewebfonts.com/c/99f44be299d4608af6fbe99aa38ce446?family=HarmoniaSansW01-Bold"
+    , "https://fontlibrary.org/face/unique"
+  ]
 }
+
+
