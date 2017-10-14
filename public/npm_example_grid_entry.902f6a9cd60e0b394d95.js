@@ -1,4 +1,59 @@
-'use strict'  
+var GLOBAL_WEBPACK = GLOBAL_WEBPACK || {}; GLOBAL_WEBPACK["npm_example_grid_entry"] =
+webpackJsonpGLOBAL_WEBPACK__name_([3],{
+
+/***/ 0:
+/***/ (function(module, exports) {
+
+module.exports = React;
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports) {
+
+module.exports = ReactDOM;
+
+/***/ }),
+
+/***/ 74:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _reactHoverGrid = __webpack_require__(3);
+
+var _reactHoverGrid2 = _interopRequireDefault(_reactHoverGrid);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(1);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var npm_example_grid_data = __webpack_require__(75);
+var browser_helpers = __webpack_require__(5);
+var all_tile_image_widths = __webpack_require__(6);
+
+var npm_example_grid_texts = npm_example_grid_data.pictureTile_text;
+var npm_example_grid_widths = all_tile_image_widths['npm_example_grid'];
+var pictureTile_widths = browser_helpers.mergeWidthsWithText(npm_example_grid_texts, npm_example_grid_widths, 'npm_example_grid_images');
+npm_example_grid_data['pictureTile_list'] = pictureTile_widths;
+var npm_example_grid_ReactHoverGrid = _reactDom2.default.render(_react2.default.createElement(_reactHoverGrid2.default, npm_example_grid_data), document.getElementById(npm_example_grid_data.hover_grid_id));
+
+module.exports = { npm_example_grid_ReactHoverGrid: npm_example_grid_ReactHoverGrid };
+
+/***/ }),
+
+/***/ 75:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+  
 
 const npm_example_grid_data = [{
     picture_src: '1_canada_bernie.jpg'
@@ -76,3 +131,8 @@ module.exports = {
 }
 
 
+
+
+/***/ })
+
+},[74]);

@@ -101,22 +101,33 @@ var ssr_with_js_grid_data = [
 
 ]
 
+  const show_js_status = function onResize () {
+      const js_has_run = document.getElementById('js-has-run')
+      if (js_has_run) {
+        if (js_has_run.style.display === 'none') {
+          js_has_run.style.display = 'block'
+        }
+      }
+  }
+
 module.exports = {
   hover_grid_id: 'ssr_with_js_grid_id'
   , ssr_grid_id: 's'
   , hover_grid_row_height: 140
-  , pictureTile_text: ssr_with_js_grid_data
   , tile_edge: 0
   , shuffle_seconds: 5
   , server_render_ssr: true
   , init_shuffle_ssr: true
   , max_rows:2
 
+
+  , onResize: show_js_status
+
   , normal_area: 'north-west'
   , hover_area: 'south-east'
   , filter_hover: 'grayscale(1)'
-  , normal_style: {fontFamily: '"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial; cursive', fontSize: '24px', color: 'white'}
-  , hover_style: {fontFamily:  '"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial; cursive', fontSize: '24px', color: 'black'}
+  , normal_style: {fontFamily: 'Helvetica Neue Light, HelveticaNeue-Light, Helvetica Neue, Calibri, Helvetica, Arial', fontSize: '24px', color: 'white'}
+  , hover_style: {fontFamily:  'Helvetica Neue Light, HelveticaNeue-Light, Helvetica Neue, Calibri, Helvetica, Arial', fontSize: '24px', color: 'black'}
   , hover_linear_gradient: {clear_percent: 50, gradient_rgba: 'rgba(255, 255, 255, 1)'}
   , normal_linear_gradient: {clear_percent: 75, gradient_rgba: 'rgba(0, 0, 0, 0.99)'}
 
@@ -124,5 +135,9 @@ module.exports = {
   , show_server_grid_sizes : true
   , server_grid_size: [339, 341, 407, 495, 567, 594, 647, 659, 663, 695, 727, 827,  951,  977, 1007, 1127, 1207, 1287, 1293, 1367, 1527, 1607, 1847]
   , gulp_ssr_low_quality_perc: 11
+
+
+  , pictureTile_text: ssr_with_js_grid_data
+
 
 }

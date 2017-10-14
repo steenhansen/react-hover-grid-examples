@@ -1,4 +1,66 @@
-'use strict'
+var GLOBAL_WEBPACK = GLOBAL_WEBPACK || {}; GLOBAL_WEBPACK["circle_clip_grid_entry"] =
+webpackJsonpGLOBAL_WEBPACK__name_([4],{
+
+/***/ 0:
+/***/ (function(module, exports) {
+
+module.exports = React;
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports) {
+
+module.exports = ReactDOM;
+
+/***/ }),
+
+/***/ 34:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _reactHoverGrid = __webpack_require__(3);
+
+var _reactHoverGrid2 = _interopRequireDefault(_reactHoverGrid);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(1);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var circle_clip_grid_data = __webpack_require__(73);
+var browser_helpers = __webpack_require__(5);
+var all_tile_image_widths = __webpack_require__(6);
+
+var circle_clip_grid_texts = circle_clip_grid_data.pictureTile_text;
+var circle_clip_grid_widths = all_tile_image_widths['circle_clip_grid'];
+var pictureTile_widths = browser_helpers.mergeWidthsWithText(circle_clip_grid_texts, circle_clip_grid_widths, 'circle_clip_grid_images');
+circle_clip_grid_data['pictureTile_list'] = pictureTile_widths;
+var circle_clip_grid_ReactHoverGrid = _reactDom2.default.render(_react2.default.createElement(_reactHoverGrid2.default, circle_clip_grid_data), document.getElementById(circle_clip_grid_data.hover_grid_id));
+
+function circleIntervalMenu(interval_seconds) {
+  setInterval(circle_clip_grid_data.onResize, interval_seconds);
+}
+
+module.exports = {
+  circle_clip_grid_ReactHoverGrid: circle_clip_grid_ReactHoverGrid,
+  circleIntervalMenu: circleIntervalMenu
+};
+
+/***/ }),
+
+/***/ 73:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 const circle_clip_grid_data = [
 
@@ -374,3 +436,8 @@ module.exports = {
   }
 
 }
+
+
+/***/ })
+
+},[34]);

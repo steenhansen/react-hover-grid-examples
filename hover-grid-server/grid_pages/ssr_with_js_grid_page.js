@@ -7,7 +7,7 @@ let ssr_with_js_grid_pieces = require('../../hover-grid-data/ssr_with_js_grid_pi
 module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
   let invalid_checksum = jsx_chunks.expectInvalidChecksum(process.env.NODE_ENV)
   const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
-  const {ssr_with_js_grid_html, ssr_with_js_grid_json, ssr_with_js_grid_css, ssr_with_js_grid_entry} = ssr_with_js_grid_pieces.start_ssr_info(req, HTML_DIR, IMAGES_DIR)
+  const {ssr_with_js_grid_html, ssr_with_js_grid_json, ssr_with_js_grid_css, ssr_with_js_grid_entry, ssr_onResize} = ssr_with_js_grid_pieces.start_ssr_info(req, HTML_DIR, IMAGES_DIR)
   let common_js_include = jsx_chunks.chunkhashEntry('commons', req)
 
   let ssr_with_js_grid_pre_ssr = jsx_chunks.readEntryJsx('ssr_with_js_grid_entry_ssr.jsx')
@@ -36,6 +36,8 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
       const ssr_with_js_grid_pre_jsx_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_jsx)
       const ssr_with_js_grid_pre_page_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_page)
       const menu_html = jsx_chunks.grid_menu('ssr_with_js_grid')
+
+
       const fast_html = `
         <!doctype html>
           <html lang="en-US">
@@ -47,11 +49,16 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
             </head>
             <body>
                 ${menu_html}
+
+
                     ${invalid_checksum}
+
                    <script>
                          window._HOVER_TILES ={}
                          window._HOVER_TILES.ssr_with_js_grid_json=${ssr_with_js_grid_json}
+                         window._HOVER_TILES.ssr_with_js_grid_json.onResize=${ssr_onResize}
                       </script>
+
                <div style="background-color:#eee; padding:20px;">
                       <div style="overflow:hidden">
                         <div id='s'
@@ -59,6 +66,9 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
                       </div>
                </div>  
                
+<div id='no-js-yet' style='background-color:#f00;'>Viewing server side rendered grid with media queries, as JavaScript has not run yet.</div>
+<div id='js-has-run' style='background-color:#0f0; display:none;'>Javascript loaded, viewing local React generated component.</div>
+
                 <br>          
 This React Hover Grid is generated isomorphically, but re-rendered in the browser once Javascript is loaded for smooth resizing.<br><br>             
 - the variable window._HOVER_TILES is used to transfer grid data from the server to the browser with a possible random ordering<br><br>

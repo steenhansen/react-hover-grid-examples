@@ -17,12 +17,12 @@ function mergeWidthsWithText (grid_pictureTiles, grid_image_widths, dir_name) {
   for (let picture_src in grid_image_widths) {
     image_not_copied[picture_src] = true
   }
-  let pictureTile_widths = []
+  let pictureTile_sizes = []
   for (let i = 0; i < grid_pictureTiles.length; i++) {
     var picture_src = grid_pictureTiles[i].picture_src
     if (typeof grid_image_widths[picture_src] !== 'undefined') {
       var new_picture_tile = Object.assign({}, grid_pictureTiles[i], grid_image_widths[picture_src])
-      pictureTile_widths.push(new_picture_tile)
+      pictureTile_sizes.push(new_picture_tile)
       image_not_copied[picture_src] = false
     } else {
       if (process.env.NODE_ENV === 'development') {
@@ -39,10 +39,10 @@ function mergeWidthsWithText (grid_pictureTiles, grid_image_widths, dir_name) {
         , picture_width: picture_width
         , picture_height: picture_height
       }
-      pictureTile_widths.push(no_text_image)
+      pictureTile_sizes.push(no_text_image)
     }
   }
-  return pictureTile_widths
+  return pictureTile_sizes
 }
 module.exports = {
   getComputedStyleById: getComputedStyleById

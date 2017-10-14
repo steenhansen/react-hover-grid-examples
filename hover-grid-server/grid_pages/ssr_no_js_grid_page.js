@@ -54,6 +54,8 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
                          style='width:100%;'>${ssr_with_js_grid_html}</div><!-- id='s_grid_id' -->
                       </div>
                </div>  
+<div id='no-js-yet' style='background-color:#f00;'>Viewing server side rendered grid with media queries, as JavaScript has not run yet.</div>
+
  <br>          
 This React Hover Grid is rendered server side with media queries, there is no Javascript on this page.<br><br>             
 - to display the grid immediately without unloaded images, each picture is first retrieved via inlined data-uri that is
