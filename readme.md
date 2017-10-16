@@ -5,23 +5,23 @@
 
 
 ## Install
-###$ npm install
+### $ npm install
 
 
 ## Start web server
-###$ node start-webserver 5001
+### $ node start-webserver 5001
 
 
 ## Local url
-###http://localhost:5001
+### http://localhost:5001
 
 
 
 ## Command Line Compiling JSX, Bundling, and Linting
 
-###$ gulp build
+### $ gulp build
 >Compile web server
 
-###$ gulp lint
+### $ gulp lint
 >Lint web server code once.
 
