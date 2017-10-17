@@ -64,8 +64,7 @@ Images have a black and white filter on hover.
                   
                </body>
           </html>`
-      res.flushHeaders()
       var tiny_minified = jsx_chunks.minify_html(circle_clip_grid_html, process.env.NODE_ENV)
-      res.end(tiny_minified)
+      res.send(tiny_minified)
     })
 }

@@ -62,8 +62,7 @@ Publish/Subscribe handles the growing and shrinking of this grid; very cpu inten
 
                </body>
           </html>`
-      res.flushHeaders()
   var mountains_minified = jsx_chunks.minify_html(shrink_grow_grid_html, process.env.NODE_ENV)
-  res.end(mountains_minified)
+     res.send(mountains_minified)
 })
 }

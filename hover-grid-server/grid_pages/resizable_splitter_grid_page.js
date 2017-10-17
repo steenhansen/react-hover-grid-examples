@@ -58,8 +58,7 @@ A <a href="https://github.com/tomkp/react-split-pane" target="_blank">react-spli
                     
                 </body>
               </html>`
-      res.flushHeaders()
   var sizeable_minified = jsx_chunks.minify_html(resizable_splitter_grid_html, process.env.NODE_ENV)
-  res.end(sizeable_minified)
+    res.send(sizeable_minified)
 })
 }

@@ -68,8 +68,7 @@ The other images have links to Google maps.
                   
                </body>
           </html>`
-      res.flushHeaders()
-      var tiny_minified = jsx_chunks.minify_html(readme_sample_grid_html, process.env.NODE_ENV)
-      res.end(tiny_minified)
+        var tiny_minified = jsx_chunks.minify_html(readme_sample_grid_html, process.env.NODE_ENV)
+        res.send(tiny_minified)
     })
 }

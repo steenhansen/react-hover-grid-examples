@@ -73,8 +73,7 @@ This React Hover Grid is rendered server side with media queries, there is no Ja
                   
                </body>
             </html>`
-      res.flushHeaders()
   var no_js_srr_minified = jsx_chunks.minify_html(no_js_srr_html, process.env.NODE_ENV)
-  res.end(no_js_srr_minified)
+  res.send(no_js_srr_minified)
 })
 }

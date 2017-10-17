@@ -91,8 +91,7 @@ This React Hover Grid is generated isomorphically, but re-rendered in the browse
                   
                </body>
             </html>`
-      res.flushHeaders()
   var rest_minified = jsx_chunks.minify_html(fast_html, process.env.NODE_ENV)
-  res.end(rest_minified)
+    res.send(rest_minified)
 })
 }

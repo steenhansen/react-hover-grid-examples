@@ -108,7 +108,8 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
             <div id='resizable_splitter_grid_id' style='width:100px; margin:0 auto 500px auto; '>&nbsp;</div>
         
      
-        
+         <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+
         <div style='clear:both'>&nbsp;</div>     
              <pre style='background-color:#eee'>${show_all_grid_pre_page_text}</pre>
         ${react_includes}
@@ -138,8 +139,7 @@ globalReadyRun('GLOBAL_WEBPACK', 'circle_clip_grid_entry', 'circleIntervalMenu',
 
       </body>
     </html>`
-      res.flushHeaders()
   var rest_minified = jsx_chunks.minify_html(fast_html, process.env.NODE_ENV)
-  res.end(rest_minified)
+   res.send(rest_minified)
 })
 }

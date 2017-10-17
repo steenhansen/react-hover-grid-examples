@@ -120,6 +120,7 @@ function circle_menu (current_grid, node_env) {
     margin: 0;
     box-sizing: border-box;
     text-align:center;
+    line-height:18px;
 }
 
 #circle-menu li a {

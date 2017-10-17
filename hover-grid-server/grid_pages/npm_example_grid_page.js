@@ -82,10 +82,11 @@ The other images have links to Google maps.
                     <pre style='background-color:#ccc'>${npm_example_grid_pre_page_text}</pre>
                   
                   
+                     <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+
                </body>
           </html>`
-      res.flushHeaders()
   var tiny_minified = jsx_chunks.minify_html(npm_example_grid_html, process.env.NODE_ENV)
-  res.end(tiny_minified)
+  res.send(tiny_minified)
 })
 }
