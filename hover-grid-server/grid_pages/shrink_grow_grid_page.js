@@ -26,7 +26,7 @@ module.exports = function (req, res) {
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const shrink_grow_grid_pre_jsx_text = jsx_chunks.html2Text(shrink_grow_grid_pre_jsx)
       const shrink_grow_grid_pre_page_text = jsx_chunks.html2Text(shrink_grow_grid_pre_page)
-      const menu_html = jsx_chunks.grid_menu('shrink_grow_grid')
+      const menu_html = jsx_chunks.grid_menu('shrink_grow_grid', process.env.NODE_ENV)
 
       const shrink_grow_grid_html = `
         <!doctype html>

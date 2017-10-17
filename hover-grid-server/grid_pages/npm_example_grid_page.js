@@ -26,7 +26,7 @@ module.exports = function (req, res) {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const npm_example_grid_pre_jsx_text = jsx_chunks.html2Text(npm_example_grid_pre_jsx)
       const npm_example_grid_pre_page_text = jsx_chunks.html2Text(npm_example_grid_pre_page)
-      const menu_html = jsx_chunks.grid_menu('npm_example_grid')
+      const menu_html = jsx_chunks.grid_menu('npm_example_grid', process.env.NODE_ENV)
       const npm_example_grid_html = `
         <!doctype html>
           <html lang="en-US">
@@ -38,6 +38,29 @@ module.exports = function (req, res) {
             <body>
            ${menu_html}
           
+<style>
+/*
+      www.OnlineWebFonts.Com 
+      You must credit the author Copy this link on your web 
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+
+
+      https://db.onlinewebfonts.com/c/99f44be299d4608af6fbe99aa38ce446?family=HarmoniaSansW01-Bold
+      does not use https, thus we get 'insecure font', below fixes that
+
+*/
+@font-face {font-family: "HarmoniaSansW01-Bold";
+    src: url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.svg#HarmoniaSansW01-Bold") format("svg"); /* iOS 4.1- */
+}
+</style>
+
             
                   <div id='npm_example_grid_id' style='width:100%;'>&nbsp;</div>
                   

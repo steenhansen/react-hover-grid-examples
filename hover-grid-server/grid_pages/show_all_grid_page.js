@@ -35,8 +35,8 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       let invalid_checksum = jsx_chunks.expectInvalidChecksum(process.env.NODE_ENV)
       const show_all_grid_pre_page_text = jsx_chunks.html2Text(show_all_grid_pre_page)
-      const menu_html = jsx_chunks.grid_menu('show_all_grid')
-      const circle_menu = jsx_chunks.circle_menu('show_all_grid')
+      const menu_html = jsx_chunks.grid_menu('show_all_grid', process.env.NODE_ENV)
+      const circle_menu = jsx_chunks.circle_menu('show_all_grid', process.env.NODE_ENV)
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
 
 
@@ -53,6 +53,32 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
               <style>${ssr_with_js_grid_css}</style>
             </head>
            <body  style=' background-image: url("sq.png");' >
+
+
+<style>
+/*
+      www.OnlineWebFonts.Com 
+      You must credit the author Copy this link on your web 
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+
+
+      https://db.onlinewebfonts.com/c/99f44be299d4608af6fbe99aa38ce446?family=HarmoniaSansW01-Bold
+      does not use https, thus we get 'insecure font', below fixes that
+
+*/
+@font-face {font-family: "HarmoniaSansW01-Bold";
+    src: url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/99f44be299d4608af6fbe99aa38ce446.svg#HarmoniaSansW01-Bold") format("svg"); /* iOS 4.1- */
+}
+</style>
+
+
               ${menu_html}
               ${circle_menu}
               ${invalid_checksum}

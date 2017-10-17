@@ -26,7 +26,7 @@ module.exports = function (req, res) {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const circle_clip_grid_pre_jsx_text = jsx_chunks.html2Text(circle_clip_grid_pre_jsx)
       const circle_clip_grid_pre_page_text = jsx_chunks.html2Text(circle_clip_grid_pre_page)
-      const circle_menu = jsx_chunks.circle_menu('circle_clip_grid')
+      const circle_menu = jsx_chunks.circle_menu('circle_clip_grid', process.env.NODE_ENV)
 
       const circle_clip_grid_html = `
         <!doctype html>

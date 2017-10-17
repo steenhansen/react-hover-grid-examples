@@ -28,7 +28,7 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
       const ssr_with_js_grid_pre_ssr_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_ssr)
       const ssr_with_js_grid_pre_jsx_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_jsx)
       const ssr_with_js_grid_pre_page_text = jsx_chunks.html2Text(ssr_with_js_grid_pre_page)
-      const menu_html = jsx_chunks.grid_menu('srr_no_js_grid')
+      const menu_html = jsx_chunks.grid_menu('srr_no_js_grid', process.env.NODE_ENV)
 
       const no_js_srr_html = `
         <!doctype html>

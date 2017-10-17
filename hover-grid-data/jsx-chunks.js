@@ -9,7 +9,7 @@ const kangax_minify = require('html-minifier').minify
 const WEBPACK_CHUNKS = path.resolve(__dirname + '/../hover-grid-server/webpack_js_chunks.json')
 
 /*
- N.B. kangax_minify cannot handle "minifyCSS: true"
+ N.B. kangax_minify cannot handle "minifyCSS: true" with the bl
 
  This css gets the kibosh and turns into a '&quote'
  '"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial; cursive'
@@ -26,8 +26,20 @@ function minify_html (html_text, node_env) {
       , minifyJS: true
       , removeComments: true
     })
-
     return minified_html
+  }
+}
+
+function minify_css (css_text, node_env) {
+  if (node_env === 'development') {
+    return css_text
+  } else {
+    var minified_css = kangax_minify(css_text, {
+      minifyCSS: true
+      , collapseWhitespace: true
+      , removeComments: true
+    })
+    return minified_css
   }
 }
 
@@ -89,10 +101,9 @@ function alwaysShowVerticalScrollbar () {
   return always_show_vert_scroll
 }
 
-function circle_menu (current_grid) {
+function circle_menu (current_grid, node_env) {
   current_grid = current_grid + '_circle'
-  const menu_html = `
-
+  const menu_css = `
 <style>
 #circle-menu {
     margin: 0;
@@ -130,37 +141,31 @@ function circle_menu (current_grid) {
 #circle-menu li#${current_grid} a:hover {
   text-decoration:none; 
 }
-
 </style>
+`
+  const compressed_css = minify_css (menu_css, node_env) 
+  const menu_html = `
     <ul id="circle-menu">
       <li id="show_all_grid_circle"><a href="/">Home</a></li>
       <li id="resizable_splitter_grid_circle"><a href="resizable-splitter">Re-Sizable</a></li>
-   
-
-   
       <li id="shrink_grow_grid_circle"><a href="shrink-grow">Shrink&amp;Grow</a></li>
       <li id="npm_example_grid_circle"><a href="npm-example">NPM&nbsp;Example</a></li>
-
- <li id="readme_sample_grid"><a href="readme-sample">Readme Sample</a></li>
-     <li id="srr_no_js_grid_circle"><a href="ssr-no-js">No&nbsp;Js&nbsp;SSR</a></li>
-   
+      <li id="readme_sample_grid"><a href="readme-sample">Readme Sample</a></li>
+      <li id="srr_no_js_grid_circle"><a href="ssr-no-js">No&nbsp;Js&nbsp;SSR</a></li>
       <li id="ssr_with_js_grid_circle"><a href="ssr-with-js">Js&nbsp;SSR</a></li>
- 
-  
       <li id="circle_clip_grid_circle"><a href="circle-clip">Circles</a></li>
     </ul>
     
-
 `
-  return menu_html
+  const compressed_html = minify_html (menu_html, node_env) 
+  const compressed_menu = compressed_css + compressed_html
+  return compressed_menu
 }
 
-function grid_menu (current_grid) {
-
+function grid_menu (current_grid, node_env) {
   const number_spaces = 8 + 1
   const li_width = 100 / number_spaces
-  const menu_html = `
-
+  const menu_css = `
 <style>
 #grid-menu {
     margin: 0;
@@ -197,9 +202,12 @@ function grid_menu (current_grid) {
 #grid-menu li#${current_grid} a:hover {
   text-decoration:none; 
 }
+</style>`
 
-</style>
-    <ul id="grid-menu">
+  const compressed_css = minify_css (menu_css, node_env) 
+
+  const menu_html= `
+   <ul id="grid-menu">
       <li id="show_all_grid"><a href="/">Home</a></li>
       <li id="resizable_splitter_grid"><a href="resizable-splitter">Re-Sizable</a></li>
       <li id="shrink_grow_grid"><a href="shrink-grow">Shrink &amp; Grow</a></li>
@@ -212,7 +220,10 @@ function grid_menu (current_grid) {
 
  <div style="clear:both">&nbsp;</div>
 `
-  return menu_html
+  const compressed_html = minify_html (menu_html, node_env) 
+  const compressed_menu = compressed_css + compressed_html
+  return compressed_menu
+
 }
 
 module.exports = {

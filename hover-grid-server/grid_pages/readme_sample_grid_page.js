@@ -26,7 +26,7 @@ module.exports = function (req, res) {
       const always_show_vert_scroll = jsx_chunks.alwaysShowVerticalScrollbar()
       const readme_sample_grid_pre_jsx_text = jsx_chunks.html2Text(readme_sample_grid_pre_jsx)
       const readme_sample_grid_pre_page_text = jsx_chunks.html2Text(readme_sample_grid_pre_page)
-      const menu_html = jsx_chunks.grid_menu('readme_sample_grid')
+      const menu_html = jsx_chunks.grid_menu('readme_sample_grid', process.env.NODE_ENV)
       const readme_sample_grid_html = `
         <!doctype html>
           <html lang="en-US">

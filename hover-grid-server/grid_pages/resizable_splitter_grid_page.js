@@ -26,7 +26,7 @@ module.exports = function (req, res) {
       const react_includes = jsx_chunks.gmapJsIncludes(process.env.NODE_ENV, req)
       const sizable_grid_pre_jsx_text = jsx_chunks.html2Text(resizable_splitter_grid_pre_jsx)
       const resizable_splitter_grid_pre_page_text = jsx_chunks.html2Text(resizable_splitter_grid_pre_page)
-      const menu_html = jsx_chunks.grid_menu('resizable_splitter_grid')
+      const menu_html = jsx_chunks.grid_menu('resizable_splitter_grid', process.env.NODE_ENV)
       const resizable_splitter_grid_html = `
               <!doctype html>
               <html lang="en-US">

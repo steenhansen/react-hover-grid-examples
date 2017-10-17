@@ -1,7 +1,7 @@
 #React Hover Grid Component Examples
 
 ## Live Example
-### https://react-hover-grid.herokuapp.com/
+[https://react-hover-grid.herokuapp.com/](https://react-hover-grid.herokuapp.com/)
 
 
 ## Install
