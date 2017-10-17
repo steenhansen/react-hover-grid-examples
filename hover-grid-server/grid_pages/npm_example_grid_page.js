@@ -61,6 +61,11 @@ module.exports = function (req, res) {
 }
 </style>
 
+   <div style="clear:both">
+                    Change the width of the browser to see the React-Hover-Grids resize and adjust the images.
+ The <a href="https://www.npmjs.com/package/react-hover-grid">NPM package</a> has more information.
+ </div>
+
             
                   <div id='npm_example_grid_id' style='width:100%;'>&nbsp;</div>
                   

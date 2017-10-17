@@ -38,7 +38,12 @@ module.exports = function (req, res) {
              </head>
             <body>
                 ${menu_html}
-                                
+                    
+   <div style="clear:both">
+                    Change the width of the browser to see the React-Hover-Grids resize and adjust the images.
+ The <a href="https://www.npmjs.com/package/react-hover-grid">NPM package</a> has more information.
+ </div>
+            
                                 
                                 <br>          
 Publish/Subscribe handles the growing and shrinking of this grid; very cpu intensive re-drawing

@@ -41,6 +41,12 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
              </head>  
             <body>
                 ${menu_html}
+
+   <div style="clear:both">
+                    Change the width of the browser to see the React-Hover-Grids resize and adjust the images.
+ The <a href="https://www.npmjs.com/package/react-hover-grid">NPM package</a> has more information.
+ </div>
+
                     ${invalid_checksum}
                    <script>
                          window._HOVER_TILES ={}

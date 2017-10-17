@@ -38,6 +38,10 @@ module.exports = function (req, res) {
              </head>
             <body  style=' background-image: url("sq.png");' >
            ${circle_menu}
+   <br>
+                    Change the width of the browser to see the React-Hover-Grids resize and adjust the images.
+ The <a href="https://www.npmjs.com/package/react-hover-grid">NPM package</a> has more information.
+ <br>
 
 
 

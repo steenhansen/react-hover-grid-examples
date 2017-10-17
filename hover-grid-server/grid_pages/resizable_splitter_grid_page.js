@@ -38,7 +38,12 @@ module.exports = function (req, res) {
                  </head>
                 <body>
                     ${menu_html}
-                  <br>
+   <div style="clear:both">
+                    Change the width of the browser to see the React-Hover-Grids resize and adjust the images.
+ The <a href="https://www.npmjs.com/package/react-hover-grid">NPM package</a> has more information. 
+ Drag vertical gray divider left and right.
+ </div>
+               
                   <div id='resizable_splitter_grid_id' style='width:100px; margin:0 auto; height:444px'>&nbsp;</div>
 <br>                  
 A <a href="https://github.com/tomkp/react-split-pane" target="_blank">react-split-pane<a> splits two resizable React Hover Grids

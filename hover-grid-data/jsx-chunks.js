@@ -218,8 +218,6 @@ function grid_menu (current_grid, node_env) {
       <li id="ssr_with_js_grid"><a href="ssr-with-js">Js SSR</a></li>
       <li id="circle_clip_grid"><a href="circle-clip">Circles</a></li>
     </ul>
-
- <div style="clear:both">&nbsp;</div>
 `
   const compressed_html = minify_html (menu_html, node_env) 
   const compressed_menu = compressed_css + compressed_html

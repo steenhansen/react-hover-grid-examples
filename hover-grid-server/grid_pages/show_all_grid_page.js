@@ -85,6 +85,11 @@ module.exports = function (req, res, HTML_DIR, IMAGES_DIR) {
               <script>   window._HOVER_TILES ={}
                          window._HOVER_TILES.ssr_with_js_grid_json=${ssr_with_js_grid_json}  </script>
                       
+   <div style="clear:both">
+                    Change the width of the browser to see the React-Hover-Grids resize and adjust the images.
+ The <a href="https://www.npmjs.com/package/react-hover-grid">NPM package</a> has more information.
+ </div>
+
               <div style="background-color:#eee; padding:20px;">
                       <div style="overflow:hidden">
                     <div id='s' style='width:100%;'>${ssr_with_js_grid_html}</div><!-- id='s_grid_id' -->
