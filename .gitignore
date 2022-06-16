@@ -49,3 +49,4 @@ Temporary Items
 .idea
 info
 !node_modules/react-hover-grid/*
+node_modules

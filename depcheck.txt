@@ -1,0 +1,19 @@
+False positives of npx depcheck
+
+Unused dependencies
+- prop-types
+- react-addons-pure-render-mixin
+
+Unused devDependencies
+- @babel/preset-env
+- @babel/preset-react
+
+Missing dependencies
+* react-dom: .\javascript-jsx\entry-circle.jsx
+* react: .\javascript-jsx\entry-nojs.jsx
+
+Overrides are for
+  react-split-pane which is stuck on React 16
+
+
+
