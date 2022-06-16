@@ -1,9 +1,12 @@
 {
   "name": "react-hover-grid-examples",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "main": "media-server.js",
   "scripts": {
     "start": "node --expose-gc heroku-server.js"
+  },
+  "engines": {
+    "node": "18.2.0"
   },
   "description": "",
   "author": "steen hansen",
