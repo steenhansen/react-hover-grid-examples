@@ -10,7 +10,7 @@
 
 ## Compile jsx
 
-### $ gulp jsx
+### $ npx gulp jsx
 
 ## Bundle
 
@@ -26,8 +26,8 @@
 
 ## To remake images
 
-### $ gulp circles
+### $ npx gulp circles
 
-### $ gulp uris
+### $ npx gulp uris
 
-### $ gulp tiles
+### $ npx gulp tiles

@@ -3493,7 +3493,7 @@ var ssr_with_js_grid_data = [
     picture_height: NOJS_HEIGHT,
     normal_title: "St. Mark's",
     hover_title: "Howe Sound Crest Trail",
-    link_url: "https://www.google.ca/maps/@49.3477615,-122.701745,13.82z?hl=en",
+    link_url: "https://www.google.ca/maps/@49.4315863,-123.2043971,13.25z?hl=en",
   },
   {
     picture_src: "buntzen.jpg",
