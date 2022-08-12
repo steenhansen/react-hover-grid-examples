@@ -1,4 +1,4 @@
-These are the start images
+These are the finished light round images
 <br>
 
 
