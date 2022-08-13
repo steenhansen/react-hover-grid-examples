@@ -1,10 +1,10 @@
-These are the start images
+These are the start high res images
 <br>
 
 
 
-<img src="bat.png" alt="drawing" style="width:200px;"/>
-<img src="bees.png" alt="drawing" style="width:200px;"/>
+<img src="bat.png" alt="drawing" style="width:200px; float:left "/>
+<img src="bees.png" alt="drawing" style="width:200px; float:left"/>
 <img src="bridge.png" alt="drawing" style="width:200px;"/>
 <img src="buntzen.png" alt="drawing" style="width:200px;"/>
 <img src="car.png" alt="drawing" style="width:200px;"/>
