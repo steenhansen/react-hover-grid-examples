@@ -6,7 +6,7 @@
     "start": "node --expose-gc heroku-server.js"
   },
   "engines": {
-    "node": "18.2.0"
+    "node": "16.16.0"
   },
   "description": "",
   "author": "steen hansen",
@@ -36,7 +36,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
     "gulp-gm": "^0.0.9",
-    "gulp-image-data-uri": "^1.2.3",
-    "gulp-responsive": "^3.0.1"
+    "gulp-image-data-uri": "^1.2.3"
   }
 }
