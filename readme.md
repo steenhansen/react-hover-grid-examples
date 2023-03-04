@@ -2,7 +2,7 @@
 
 ## Live Example
 
-[https://react-hover-grid.herokuapp.com/](https://react-hover-grid.herokuapp.com/)
+[https://react-hover-grid.onrender.com](https://react-hover-grid.onrender.com/)
 
 ## Install
 
