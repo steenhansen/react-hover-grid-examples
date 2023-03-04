@@ -31,3 +31,19 @@
 ### $ npx gulp uris
 
 ### $ npx gulp tiles
+
+
+
+## Free Hosting on render.com
+	Web Service
+	
+	Environment
+		  Key	LOGDNA_KEY
+		Value	Abcdefghijklmnopqrstuvwxyz012345
+		
+		  Key	NPM_CONFIG_PRODUCTION
+		Value	true
+		
+	Settings
+		Build Command	$ npm install
+		Start Command	$ node start-webserver 80
