@@ -1,7 +1,7 @@
 const README_HEIGHT = 243;
 
 const tile_east_van = {
-  picture_src: "1_east_van.png",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/1_east_van.png",
   picture_width: 208,
   picture_height: README_HEIGHT,
   normal_area: "north-east",
@@ -19,7 +19,7 @@ const tile_east_van = {
 };
 
 const tile_sasamat = {
-  picture_src: "2_over_sasamat.png",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/2_over_sasamat.png",
   picture_width: 415,
   picture_height: README_HEIGHT,
   hover_gradient: "rgba(255, 0, 0, 0.1)",
@@ -28,7 +28,7 @@ const tile_sasamat = {
 };
 
 const tile_snake = {
-  picture_src: "3_bc_snake.png",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/3_bc_snake.png",
   picture_width: 229,
   picture_height: README_HEIGHT,
   normal_area: "north-east",
@@ -38,7 +38,7 @@ const tile_snake = {
 };
 
 const tile_amazon = {
-  picture_src: "4_amazon_in_bc.png",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/4_amazon_in_bc.png",
   picture_width: 180,
   picture_height: README_HEIGHT,
   normal_title: "css",
@@ -48,10 +48,10 @@ const tile_amazon = {
 };
 
 picture_sizes = {
-  "1_east_van.png": { picture_width: 208, picture_height: README_HEIGHT },
-  "2_over_sasamat.png": { picture_width: 415, picture_height: README_HEIGHT },
-  "3_bc_snake.png": { picture_width: 229, picture_height: README_HEIGHT },
-  "4_amazon_in_bc.png": { picture_width: 180, picture_height: README_HEIGHT },
+  "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/1_east_van.png": { picture_width: 208, picture_height: README_HEIGHT },
+  "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/2_over_sasamat.png": { picture_width: 415, picture_height: README_HEIGHT },
+  "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/3_bc_snake.png": { picture_width: 229, picture_height: README_HEIGHT },
+  "https://d3rprn9azbpq5l.cloudfront.net/readme_grid_images/tile_sized/4_amazon_in_bc.png": { picture_width: 180, picture_height: README_HEIGHT },
 };
 
 readme_data = {

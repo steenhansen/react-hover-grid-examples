@@ -6,7 +6,9 @@
 
 ## Install
 
-### $ npm install
+$ npm install
+
+$ npm install --global gulp-cli
 
 ## Compile jsx
 
@@ -47,3 +49,14 @@
 	Settings
 		Build Command	$ npm install
 		Start Command	$ node start-webserver 80
+
+## Amazon Lambda
+
+
+### $ node lambda-hover.js
+
+Creates a single file with all HTML/JavaScript/CSS
+
+https://steens-bucket.s3.us-east-2.amazonaws.com/lambda-hover.html
+
+

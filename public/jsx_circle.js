@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 5643:
+/***/ 4021:
 /***/ ((module) => {
 
 module.exports = false;
@@ -10,7 +10,7 @@ module.exports = false;
 
 /***/ }),
 
-/***/ 1143:
+/***/ 311:
 /***/ ((module) => {
 
 "use strict";
@@ -63,10 +63,10 @@ module.exports = invariant;
 
 /***/ }),
 
-/***/ 2705:
+/***/ 1873:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var root = __webpack_require__(5639);
+var root = __webpack_require__(9325);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -76,15 +76,15 @@ module.exports = Symbol;
 
 /***/ }),
 
-/***/ 4636:
+/***/ 695:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseTimes = __webpack_require__(2545),
-    isArguments = __webpack_require__(5694),
-    isArray = __webpack_require__(1469),
-    isBuffer = __webpack_require__(4144),
-    isIndex = __webpack_require__(5776),
-    isTypedArray = __webpack_require__(6719);
+var baseTimes = __webpack_require__(8096),
+    isArguments = __webpack_require__(2428),
+    isArray = __webpack_require__(6449),
+    isBuffer = __webpack_require__(3656),
+    isIndex = __webpack_require__(361),
+    isTypedArray = __webpack_require__(7167);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -132,7 +132,7 @@ module.exports = arrayLikeKeys;
 
 /***/ }),
 
-/***/ 9932:
+/***/ 4932:
 /***/ ((module) => {
 
 /**
@@ -160,11 +160,11 @@ module.exports = arrayMap;
 
 /***/ }),
 
-/***/ 151:
+/***/ 8567:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var copyArray = __webpack_require__(278),
-    shuffleSelf = __webpack_require__(3480);
+var copyArray = __webpack_require__(3007),
+    shuffleSelf = __webpack_require__(7410);
 
 /**
  * A specialized version of `_.shuffle` for arrays.
@@ -182,12 +182,12 @@ module.exports = arrayShuffle;
 
 /***/ }),
 
-/***/ 4239:
+/***/ 2552:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var Symbol = __webpack_require__(2705),
-    getRawTag = __webpack_require__(9607),
-    objectToString = __webpack_require__(2333);
+var Symbol = __webpack_require__(1873),
+    getRawTag = __webpack_require__(659),
+    objectToString = __webpack_require__(9350);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -217,11 +217,11 @@ module.exports = baseGetTag;
 
 /***/ }),
 
-/***/ 9454:
+/***/ 7534:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseGetTag = __webpack_require__(4239),
-    isObjectLike = __webpack_require__(7005);
+var baseGetTag = __webpack_require__(2552),
+    isObjectLike = __webpack_require__(346);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]';
@@ -242,12 +242,12 @@ module.exports = baseIsArguments;
 
 /***/ }),
 
-/***/ 8749:
+/***/ 4901:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseGetTag = __webpack_require__(4239),
-    isLength = __webpack_require__(1780),
-    isObjectLike = __webpack_require__(7005);
+var baseGetTag = __webpack_require__(2552),
+    isLength = __webpack_require__(294),
+    isObjectLike = __webpack_require__(346);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
@@ -309,11 +309,11 @@ module.exports = baseIsTypedArray;
 
 /***/ }),
 
-/***/ 280:
+/***/ 8984:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var isPrototype = __webpack_require__(5726),
-    nativeKeys = __webpack_require__(6916);
+var isPrototype = __webpack_require__(5527),
+    nativeKeys = __webpack_require__(3650);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -346,7 +346,7 @@ module.exports = baseKeys;
 
 /***/ }),
 
-/***/ 9877:
+/***/ 3195:
 /***/ ((module) => {
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
@@ -371,11 +371,11 @@ module.exports = baseRandom;
 
 /***/ }),
 
-/***/ 5127:
+/***/ 4171:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var shuffleSelf = __webpack_require__(3480),
-    values = __webpack_require__(2628);
+var shuffleSelf = __webpack_require__(7410),
+    values = __webpack_require__(5880);
 
 /**
  * The base implementation of `_.shuffle`.
@@ -393,7 +393,7 @@ module.exports = baseShuffle;
 
 /***/ }),
 
-/***/ 2545:
+/***/ 8096:
 /***/ ((module) => {
 
 /**
@@ -420,7 +420,7 @@ module.exports = baseTimes;
 
 /***/ }),
 
-/***/ 7518:
+/***/ 7301:
 /***/ ((module) => {
 
 /**
@@ -441,10 +441,10 @@ module.exports = baseUnary;
 
 /***/ }),
 
-/***/ 7415:
+/***/ 514:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var arrayMap = __webpack_require__(9932);
+var arrayMap = __webpack_require__(4932);
 
 /**
  * The base implementation of `_.values` and `_.valuesIn` which creates an
@@ -467,7 +467,7 @@ module.exports = baseValues;
 
 /***/ }),
 
-/***/ 278:
+/***/ 3007:
 /***/ ((module) => {
 
 /**
@@ -494,7 +494,7 @@ module.exports = copyArray;
 
 /***/ }),
 
-/***/ 1957:
+/***/ 4840:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /** Detect free variable `global` from Node.js. */
@@ -505,10 +505,10 @@ module.exports = freeGlobal;
 
 /***/ }),
 
-/***/ 9607:
+/***/ 659:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var Symbol = __webpack_require__(2705);
+var Symbol = __webpack_require__(1873);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -558,7 +558,7 @@ module.exports = getRawTag;
 
 /***/ }),
 
-/***/ 5776:
+/***/ 361:
 /***/ ((module) => {
 
 /** Used as references for various `Number` constants. */
@@ -590,7 +590,7 @@ module.exports = isIndex;
 
 /***/ }),
 
-/***/ 5726:
+/***/ 5527:
 /***/ ((module) => {
 
 /** Used for built-in method references. */
@@ -615,10 +615,10 @@ module.exports = isPrototype;
 
 /***/ }),
 
-/***/ 6916:
+/***/ 3650:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var overArg = __webpack_require__(5569);
+var overArg = __webpack_require__(4335);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeKeys = overArg(Object.keys, Object);
@@ -628,11 +628,11 @@ module.exports = nativeKeys;
 
 /***/ }),
 
-/***/ 1167:
+/***/ 6009:
 /***/ ((module, exports, __webpack_require__) => {
 
 /* module decorator */ module = __webpack_require__.nmd(module);
-var freeGlobal = __webpack_require__(1957);
+var freeGlobal = __webpack_require__(4840);
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
@@ -666,7 +666,7 @@ module.exports = nodeUtil;
 
 /***/ }),
 
-/***/ 2333:
+/***/ 9350:
 /***/ ((module) => {
 
 /** Used for built-in method references. */
@@ -695,7 +695,7 @@ module.exports = objectToString;
 
 /***/ }),
 
-/***/ 5569:
+/***/ 4335:
 /***/ ((module) => {
 
 /**
@@ -717,10 +717,10 @@ module.exports = overArg;
 
 /***/ }),
 
-/***/ 5639:
+/***/ 9325:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var freeGlobal = __webpack_require__(1957);
+var freeGlobal = __webpack_require__(4840);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -733,10 +733,10 @@ module.exports = root;
 
 /***/ }),
 
-/***/ 3480:
+/***/ 7410:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseRandom = __webpack_require__(9877);
+var baseRandom = __webpack_require__(3195);
 
 /**
  * A specialized version of `_.shuffle` which mutates and sets the size of `array`.
@@ -768,11 +768,11 @@ module.exports = shuffleSelf;
 
 /***/ }),
 
-/***/ 5694:
+/***/ 2428:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseIsArguments = __webpack_require__(9454),
-    isObjectLike = __webpack_require__(7005);
+var baseIsArguments = __webpack_require__(7534),
+    isObjectLike = __webpack_require__(346);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -811,7 +811,7 @@ module.exports = isArguments;
 
 /***/ }),
 
-/***/ 1469:
+/***/ 6449:
 /***/ ((module) => {
 
 /**
@@ -844,11 +844,11 @@ module.exports = isArray;
 
 /***/ }),
 
-/***/ 8612:
+/***/ 4894:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var isFunction = __webpack_require__(3560),
-    isLength = __webpack_require__(1780);
+var isFunction = __webpack_require__(1882),
+    isLength = __webpack_require__(294);
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -884,12 +884,12 @@ module.exports = isArrayLike;
 
 /***/ }),
 
-/***/ 4144:
+/***/ 3656:
 /***/ ((module, exports, __webpack_require__) => {
 
 /* module decorator */ module = __webpack_require__.nmd(module);
-var root = __webpack_require__(5639),
-    stubFalse = __webpack_require__(5062);
+var root = __webpack_require__(9325),
+    stubFalse = __webpack_require__(9935);
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
@@ -930,11 +930,11 @@ module.exports = isBuffer;
 
 /***/ }),
 
-/***/ 3560:
+/***/ 1882:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseGetTag = __webpack_require__(4239),
-    isObject = __webpack_require__(3218);
+var baseGetTag = __webpack_require__(2552),
+    isObject = __webpack_require__(3805);
 
 /** `Object#toString` result references. */
 var asyncTag = '[object AsyncFunction]',
@@ -974,7 +974,7 @@ module.exports = isFunction;
 
 /***/ }),
 
-/***/ 1780:
+/***/ 294:
 /***/ ((module) => {
 
 /** Used as references for various `Number` constants. */
@@ -1016,7 +1016,7 @@ module.exports = isLength;
 
 /***/ }),
 
-/***/ 3218:
+/***/ 3805:
 /***/ ((module) => {
 
 /**
@@ -1054,7 +1054,7 @@ module.exports = isObject;
 
 /***/ }),
 
-/***/ 7005:
+/***/ 346:
 /***/ ((module) => {
 
 /**
@@ -1090,12 +1090,12 @@ module.exports = isObjectLike;
 
 /***/ }),
 
-/***/ 6719:
+/***/ 7167:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseIsTypedArray = __webpack_require__(8749),
-    baseUnary = __webpack_require__(7518),
-    nodeUtil = __webpack_require__(1167);
+var baseIsTypedArray = __webpack_require__(4901),
+    baseUnary = __webpack_require__(7301),
+    nodeUtil = __webpack_require__(6009);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -1124,12 +1124,12 @@ module.exports = isTypedArray;
 
 /***/ }),
 
-/***/ 3674:
+/***/ 5950:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var arrayLikeKeys = __webpack_require__(4636),
-    baseKeys = __webpack_require__(280),
-    isArrayLike = __webpack_require__(8612);
+var arrayLikeKeys = __webpack_require__(695),
+    baseKeys = __webpack_require__(8984),
+    isArrayLike = __webpack_require__(4894);
 
 /**
  * Creates an array of the own enumerable property names of `object`.
@@ -1168,12 +1168,12 @@ module.exports = keys;
 
 /***/ }),
 
-/***/ 9983:
+/***/ 6049:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var arrayShuffle = __webpack_require__(151),
-    baseShuffle = __webpack_require__(5127),
-    isArray = __webpack_require__(1469);
+var arrayShuffle = __webpack_require__(8567),
+    baseShuffle = __webpack_require__(4171),
+    isArray = __webpack_require__(6449);
 
 /**
  * Creates an array of shuffled values, using a version of the
@@ -1200,7 +1200,7 @@ module.exports = shuffle;
 
 /***/ }),
 
-/***/ 5062:
+/***/ 9935:
 /***/ ((module) => {
 
 /**
@@ -1225,11 +1225,11 @@ module.exports = stubFalse;
 
 /***/ }),
 
-/***/ 2628:
+/***/ 5880:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var baseValues = __webpack_require__(7415),
-    keys = __webpack_require__(3674);
+var baseValues = __webpack_require__(514),
+    keys = __webpack_require__(5950);
 
 /**
  * Creates an array of the own enumerable string keyed property values of `object`.
@@ -1266,7 +1266,7 @@ module.exports = values;
 
 /***/ }),
 
-/***/ 6781:
+/***/ 2372:
 /***/ ((module) => {
 
 "use strict";
@@ -1342,21 +1342,21 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8732:
+/***/ 2686:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__(2204)
+module.exports = __webpack_require__(2301)
 
 
 /***/ }),
 
-/***/ 6635:
+/***/ 5032:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
-var invariant = __webpack_require__(1143);
+var invariant = __webpack_require__(311);
 
 var GradientLocations = function () {
   var NORTH_WEST = 'north-west';
@@ -1451,7 +1451,7 @@ module.exports = GradientLocations;
 
 /***/ }),
 
-/***/ 6101:
+/***/ 1442:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1462,13 +1462,13 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 
-var _react = _interopRequireWildcard(__webpack_require__(7363));
+var _react = _interopRequireWildcard(__webpack_require__(1594));
 
-var _propTypes = _interopRequireDefault(__webpack_require__(7086));
+var _propTypes = _interopRequireDefault(__webpack_require__(6935));
 
-var _GradientLocations = _interopRequireDefault(__webpack_require__(6635));
+var _GradientLocations = _interopRequireDefault(__webpack_require__(5032));
 
-var _StyleOrJsx = _interopRequireDefault(__webpack_require__(2007));
+var _StyleOrJsx = _interopRequireDefault(__webpack_require__(3955));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -1500,7 +1500,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var PureRenderMixin = __webpack_require__(6781); //  https://zhenyong.github.io/react/docs/pure-render-mixin.html
+var PureRenderMixin = __webpack_require__(2372); //  https://zhenyong.github.io/react/docs/pure-render-mixin.html
 
 
 var IMAGES_DIR = "hover-grid-images";
@@ -1525,7 +1525,7 @@ var PictureTile = /*#__PURE__*/function (_Component) {
       _this.css_grid_id = _this.props.rgh_hover_grid_id; // N.B. use long version 'my_dogs_grid_id' for css
     }
 
-    _this.class_id_names = __webpack_require__(5830)(_this.css_grid_id);
+    _this.class_id_names = __webpack_require__(3557)(_this.css_grid_id);
     console.assert(_typeof(_this.class_id_names) === "object", "PictureTile, class_id_name error");
     _this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(_assertThisInitialized(_this));
     _this.state = {
@@ -1542,7 +1542,16 @@ var PictureTile = /*#__PURE__*/function (_Component) {
       container_styles.addStyling({
         backgroundPosition: this.props.rgh_left_picture_margin
       });
-      var image_className = this.props.picture_src.replace(".", "-");
+      var the_pic_src = this.props.picture_src;
+
+      if (the_pic_src.includes(".cloudfront.net")) {
+        var parts_arr = the_pic_src.split("/");
+        var file_name = parts_arr[parts_arr.length - 1];
+        var image_className = file_name.replace(".", "-");
+      } else {
+        var image_className = this.props.picture_src.replace(".", "-");
+      }
+
       container_styles.addStyling(image_className);
       container_styles.addStyling({
         width: this.props.rgh_adjusted_tile_width
@@ -1739,11 +1748,20 @@ var PictureTile = /*#__PURE__*/function (_Component) {
     value: function _imageSource(image_type) {
       var image_folder = this.props.rgh_hover_grid_id.replace("_id", "_images");
       var image_src;
+      var the_pic_src = this.props.picture_src;
 
-      if (image_type === "") {
-        image_src = IMAGES_DIR + "/" + image_folder + "/" + this.props.picture_src;
+      if (the_pic_src.includes(".cloudfront.net")) {
+        if (image_type === "") {
+          image_src = the_pic_src;
+        } else {
+          image_src = the_pic_src;
+        }
       } else {
-        image_src = IMAGES_DIR + "/" + image_folder + "/" + image_type + "/" + this.props.picture_src;
+        if (image_type === "") {
+          image_src = IMAGES_DIR + "/" + image_folder + "/" + this.props.picture_src;
+        } else {
+          image_src = IMAGES_DIR + "/" + image_folder + "/" + image_type + "/" + this.props.picture_src;
+        }
       }
 
       return image_src;
@@ -1988,7 +2006,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 2204:
+/***/ 2301:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1999,17 +2017,17 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(7363));
+var _react = _interopRequireDefault(__webpack_require__(1594));
 
-var _propTypes = _interopRequireDefault(__webpack_require__(7086));
+var _propTypes = _interopRequireDefault(__webpack_require__(6935));
 
-var _PictureTile = _interopRequireDefault(__webpack_require__(6101));
+var _PictureTile = _interopRequireDefault(__webpack_require__(1442));
 
-var _GradientLocations = _interopRequireDefault(__webpack_require__(6635));
+var _GradientLocations = _interopRequireDefault(__webpack_require__(5032));
 
-var _ScreenSizeToGrid = _interopRequireDefault(__webpack_require__(9570));
+var _ScreenSizeToGrid = _interopRequireDefault(__webpack_require__(1042));
 
-var _miscFuncs = _interopRequireDefault(__webpack_require__(9571));
+var _miscFuncs = _interopRequireDefault(__webpack_require__(971));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -2043,13 +2061,13 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var PureRenderMixin = __webpack_require__(6781);
+var PureRenderMixin = __webpack_require__(2372);
 
-var lodash_shuffle = __webpack_require__(9983);
+var lodash_shuffle = __webpack_require__(6049);
 
-var invariant = __webpack_require__(1143);
+var invariant = __webpack_require__(311);
 
-var IS_NODE = __webpack_require__(5643);
+var IS_NODE = __webpack_require__(4021);
 
 var IS_BROWSER = !IS_NODE;
 
@@ -2066,7 +2084,7 @@ var ReactHoverGrid = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     invariant(_this.props.pictureTile_list.length > 0, "ReactHoverGrid, constructor pictureTile_list must have at least 1 element");
     _this.html_grid_id = _this._ssrOneCharId(_this.props.hover_grid_id);
-    _this.class_id_names = __webpack_require__(5830)(_this.html_grid_id);
+    _this.class_id_names = __webpack_require__(3557)(_this.html_grid_id);
     console.assert(_typeof(_this.class_id_names) === "object", "ReactHoverGrid, class_id_name error");
 
     _this._bindMethods();
@@ -2852,13 +2870,13 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 9570:
+/***/ 1042:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
-var _miscFuncs = _interopRequireDefault(__webpack_require__(9571));
+var _miscFuncs = _interopRequireDefault(__webpack_require__(971));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -2877,7 +2895,7 @@ var ScreenSizeToGrid = function () {
     container_id = id_of_container;
     server_screen_size = screen_size_match;
     server_grid_size = grid_size_match;
-    class_id_names = __webpack_require__(5830)(container_id);
+    class_id_names = __webpack_require__(3557)(container_id);
     console.assert(_typeof(class_id_names) === 'object', 'ScreenSizeToGrid, class_id_names error');
     return this;
   }
@@ -2977,7 +2995,7 @@ module.exports = ScreenSizeToGrid;
 
 /***/ }),
 
-/***/ 2007:
+/***/ 3955:
 /***/ ((module) => {
 
 "use strict";
@@ -3097,7 +3115,7 @@ module.exports = StyleOrJsx;
 
 /***/ }),
 
-/***/ 5830:
+/***/ 3557:
 /***/ ((module) => {
 
 "use strict";
@@ -3147,7 +3165,7 @@ module.exports = function (post_fix) {
 
 /***/ }),
 
-/***/ 9571:
+/***/ 971:
 /***/ ((module) => {
 
 "use strict";
@@ -3178,7 +3196,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7086:
+/***/ 6935:
 /***/ ((module) => {
 
 "use strict";
@@ -3186,7 +3204,7 @@ module.exports = PropTypes;
 
 /***/ }),
 
-/***/ 7363:
+/***/ 1594:
 /***/ ((module) => {
 
 "use strict";
@@ -3194,7 +3212,7 @@ module.exports = React;
 
 /***/ }),
 
-/***/ 1533:
+/***/ 5206:
 /***/ ((module) => {
 
 "use strict";
@@ -3266,17 +3284,12 @@ __webpack_unused_export__ = ({
   value: true
 });
 __webpack_unused_export__ = void 0;
-
-var _reactHoverGrid = _interopRequireDefault(__webpack_require__(8732));
-
-var _reactDom = _interopRequireDefault(__webpack_require__(1533));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
+var _reactHoverGrid = _interopRequireDefault(__webpack_require__(2686));
+var _reactDom = _interopRequireDefault(__webpack_require__(5206));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 function circleHover(hover_data, circle_put_id, circle_menu_id) {
   var place_circle_menu = function onResize() {
     var static_tile = document.getElementById("the_static_tile");
-
     if (static_tile) {
       document.getElementById(circle_menu_id).style.display = "block";
       var image_rect = static_tile.getBoundingClientRect();
@@ -3288,24 +3301,19 @@ function circleHover(hover_data, circle_put_id, circle_menu_id) {
       var menu_top = window.pageYOffset + image_rect.top + 12 + "px";
       var current_top = document.getElementById(circle_menu_id).style.top;
       var current_left = document.getElementById(circle_menu_id).style.left;
-
       if (current_top !== menu_top || current_left !== menu_left) {
         document.getElementById(circle_menu_id).style.top = menu_top;
         document.getElementById(circle_menu_id).style.left = menu_left;
       }
     }
   };
-
   hover_data.onResize = place_circle_menu;
   hover_data.hover_grid_id = circle_put_id;
   var grid_id = hover_data.hover_grid_id;
-
   _reactDom["default"].render( /*#__PURE__*/React.createElement(_reactHoverGrid["default"], hover_data), document.getElementById(grid_id));
 }
-
 window.circleHover = circleHover;
-var _default = circleHover;
-__webpack_unused_export__ = _default;
+var _default = __webpack_unused_export__ = circleHover;
 })();
 
 /******/ })()

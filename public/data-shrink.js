@@ -2,7 +2,7 @@ const SHRINK_HEIGHT = 200;
 
 const shrink_grow_grid_data = [
   {
-    picture_src: "buntzen_lake.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/buntzen_lake.jpg",
     picture_width: 703,
     picture_height: SHRINK_HEIGHT,
     normal_area: "north-west",
@@ -15,7 +15,7 @@ const shrink_grow_grid_data = [
     normal_linear_gradient: { clear_percent: 60, gradient_rgba: "rgba(0, 0, 0, 0.99)" },
   },
   {
-    picture_src: "golden_colorado.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/golden_colorado.jpg",
     picture_width: 270,
     picture_height: SHRINK_HEIGHT,
     normal_area: "north",
@@ -28,7 +28,7 @@ const shrink_grow_grid_data = [
     normal_linear_gradient: { clear_percent: 70, gradient_rgba: "rgba(0, 0, 0, 0.99)" },
   },
   {
-    picture_src: "joe_mills_mtn.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/joe_mills_mtn.jpg",
     picture_width: 267,
     picture_height: SHRINK_HEIGHT,
     normal_area: "north-east",
@@ -40,7 +40,7 @@ const shrink_grow_grid_data = [
     hover_linear_gradient: { clear_percent: 30, gradient_rgba: "rgba(0, 0, 0, 0.99)" },
   },
   {
-    picture_src: "lake_garabaldi.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/lake_garabaldi.jpg",
     picture_width: 267,
     picture_height: SHRINK_HEIGHT,
     normal_area: "east",
@@ -51,7 +51,7 @@ const shrink_grow_grid_data = [
     hover_linear_gradient: { clear_percent: 10, gradient_rgba: "rgba(0, 0, 0, 0.99)" },
   },
   {
-    picture_src: "longs_peak.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/longs_peak.jpg",
     picture_width: 267,
     picture_height: SHRINK_HEIGHT,
     normal_area: "south-east",
@@ -64,7 +64,7 @@ const shrink_grow_grid_data = [
     normal_linear_gradient: { clear_percent: 40, gradient_rgba: "rgba(0, 0, 0, 0.99)" },
   },
   {
-    picture_src: "old_quary_colorado_springs.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/old_quary_colorado_springs.jpg",
     picture_width: 364,
     picture_height: SHRINK_HEIGHT,
     normal_area: "south",
@@ -75,7 +75,7 @@ const shrink_grow_grid_data = [
     hover_style: { fontFamily: "Orbitron, sans-serif", fontSize: "18px", fontWeight: "bolder", color: "#C28570" },
   },
   {
-    picture_src: "snow_lake_colorado.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/snow_lake_colorado.jpg",
     picture_width: 267,
     picture_height: SHRINK_HEIGHT,
     normal_area: "south-west",
@@ -87,7 +87,7 @@ const shrink_grow_grid_data = [
     hover_style: { fontFamily: "Lobster Two, cursive", fontSize: "24px", color: "black" },
   },
   {
-    picture_src: "whale_rock_utah.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/whale_rock_utah.jpg",
     picture_width: 773,
     picture_height: SHRINK_HEIGHT,
     normal_area: "north-east",
@@ -97,7 +97,7 @@ const shrink_grow_grid_data = [
     normal_style: { fontFamily: "Allerta Stencil, sans-serif", fontSize: "18px", color: "#7D3529" },
   },
   {
-    picture_src: "white_rock.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/shrink_grid_images/tile_sized/white_rock.jpg",
     picture_width: 1333,
     picture_height: SHRINK_HEIGHT,
     normal_title: "The White Rock",

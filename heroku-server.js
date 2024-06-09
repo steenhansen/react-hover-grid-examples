@@ -16,6 +16,6 @@ To stop Heroku from building the devDependencies. Heroku crashes on
   gulp-response is used in 'gulp tiles' and 'gulp uris' to deal with images
 
 */
-const port_number = process.env.PORT || HTTP_PORT;
+const port_number = 5000;  //  process.env.PORT || HTTP_PORT;
 
 require("./webpage-server/express-pages.js")(port_number);

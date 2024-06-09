@@ -1,7 +1,7 @@
 const NPM_HEIGHT = 234;
 
 const tile_bernie = {
-  picture_src: "1_canada_bernie.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/1_canada_bernie.jpg",
   picture_width: 367,
   picture_height: NPM_HEIGHT,
   filter_hover: "sepia(1)",
@@ -16,7 +16,7 @@ const tile_bernie = {
 };
 
 const tile_amc = {
-  picture_src: "2_amc_spirit.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/2_amc_spirit.jpg",
   picture_width: 416,
   picture_height: NPM_HEIGHT,
   filter_hover: "hue-rotate(150deg)",
@@ -31,7 +31,7 @@ const tile_amc = {
 };
 
 const tile_kiwi = {
-  picture_src: "3_kiwi_airforce.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/3_kiwi_airforce.jpg",
   picture_width: 312,
   picture_height: NPM_HEIGHT,
   filter_hover: "grayscale(1)",
@@ -45,14 +45,14 @@ const tile_kiwi = {
 };
 
 const tile_cranes = {
-  picture_src: "4_christmas_cranes.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/4_christmas_cranes.jpg",
   picture_width: 416,
   picture_height: NPM_HEIGHT,
   link_url: "https://www.google.ca/maps/@49.2619256,-122.8890653,320m/data=!3m1!1e3?hl=en",
 };
 
 const tile_observ = {
-  picture_src: "5_sfu_observatory.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/5_sfu_observatory.jpg",
   picture_width: 416,
   picture_height: NPM_HEIGHT,
   link_url:
@@ -60,20 +60,20 @@ const tile_observ = {
 };
 
 const tile_coffee = {
-  picture_src: "6_i_like_coffee.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/6_i_like_coffee.jpg",
   picture_width: 432,
   picture_height: NPM_HEIGHT,
 };
 
 const tile_pkd = {
-  picture_src: "7_pkd_tombstone.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/7_pkd_tombstone.jpg",
   picture_width: 312,
   picture_height: NPM_HEIGHT,
   link_url: "https://www.google.ca/maps/@40.259518,-103.8095973,230m/data=!3m1!1e3?hl=en",
 };
 
 const tile_hello_kitty = {
-  picture_src: "8_hello_kitty_skytrain.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/8_hello_kitty_skytrain.jpg",
   picture_width: 416,
   picture_height: NPM_HEIGHT,
   normal_title: "Hello Skytrain",
@@ -89,7 +89,7 @@ const tile_hello_kitty = {
 };
 
 const tile_nukes = {
-  picture_src: "9_denver_nukes.jpg",
+  picture_src: "https://d3rprn9azbpq5l.cloudfront.net/npm_grid_images/tile_sized/9_denver_nukes.jpg",
   picture_width: 312,
   picture_height: NPM_HEIGHT,
   link_url:

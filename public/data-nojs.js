@@ -30,8 +30,8 @@
 const NOJS_HEIGHT = 140;
 
 var ssr_with_js_grid_data = [
-  {
-    picture_src: "chase_tail.jpg",
+  {  
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/chase_tail.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
     normal_title: "Willow",
@@ -39,22 +39,22 @@ var ssr_with_js_grid_data = [
     link_url: "https://www.google.ca/maps/@49.3017503,-122.9033275,13.85z?hl=en",
   },
   {
-    picture_src: "dog_head.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/dog_head.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "dog_rocks.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/dog_rocks.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "maggie.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/maggie.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "minnekhada.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/minnekhada.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
     normal_title: "Minnekhada Park",
@@ -62,42 +62,42 @@ var ssr_with_js_grid_data = [
     link_url: "https://www.google.ca/maps/@49.3316954,-122.6950204,15z",
   },
   {
-    picture_src: "pink_flower.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/pink_flower.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "this_little_piggy.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/this_little_piggy.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "two_trees.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/two_trees.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "wheres_bugs.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/wheres_bugs.jpg",
     picture_width: 186,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "white_flower.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/white_flower.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "maggie_sun.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/maggie_sun.jpg",
     picture_width: 169,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "dog_car.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/dog_car.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "st_marks.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/st_marks.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
     normal_title: "St. Mark's",
@@ -105,7 +105,7 @@ var ssr_with_js_grid_data = [
     link_url: "https://www.google.ca/maps/@49.4315863,-123.2043971,13.25z?hl=en",
   },
   {
-    picture_src: "buntzen.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/buntzen.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
     normal_title: "Buntzen Lake",
@@ -113,24 +113,24 @@ var ssr_with_js_grid_data = [
     link_url: "https://www.google.ca/maps/@49.3420378,-122.8297682,13.96z?hl=en",
   },
   {
-    picture_src: "fat_bastard.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/fat_bastard.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
     normal_title: "Fat Bastard Trail",
     hover_title: "Eagle Mountain",
   },
   {
-    picture_src: "the_lions.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/the_lions.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "bike_works.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/bike_works.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "black_mountain.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/black_mountain.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
     normal_title: "Black Mountain",
@@ -138,7 +138,7 @@ var ssr_with_js_grid_data = [
     link_url: "https://www.google.ca/maps/@49.3750506,-123.2218727,12.65z?hl=en",
   },
   {
-    picture_src: "cypress_lake.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/cypress_lake.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
     normal_title: "Cypress Lake",
@@ -146,7 +146,7 @@ var ssr_with_js_grid_data = [
     link_url: "https://www.google.ca/maps/@49.3359519,-122.8178555,15.69z?hl=en",
   },
   {
-    picture_src: "dennet_lake.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/dennet_lake.jpg",
     picture_width: 249,
     picture_height: NOJS_HEIGHT,
     normal_title: "Dennet Lake",
@@ -154,17 +154,17 @@ var ssr_with_js_grid_data = [
     link_url: "https://www.google.ca/maps/@49.3477615,-122.701745,13.82z?hl=en",
   },
   {
-    picture_src: "tiger.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/tiger.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "carSurfing.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/carSurfing.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
   {
-    picture_src: "hansenGiles.jpg",
+    picture_src: "https://d3rprn9azbpq5l.cloudfront.net/nojs_grid_images/tile_sized/hansenGiles.jpg",
     picture_width: 187,
     picture_height: NOJS_HEIGHT,
   },
