@@ -1,0 +1,49 @@
+// NB
+// MISSING image generation packages
+// "sharp": "^0.33.4"
+// "gulp-responsive": "^3.0.1"
+//
+// That crash deployment on OnRender.com and Heroku
+
+{
+  "name": "react-hover-grid-examples",
+  "version": "1.1.0",
+  "main": "media-server.js",
+  "scripts": {
+    "start": "node --expose-gc heroku-server.js"
+  },
+  "engines": {
+    "node": "16.16.0"
+  },
+  "description": "",
+  "author": "steen hansen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.6.1",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "node-env-file": "^0.1.8",
+    "prop-types": "^15.8.1",
+    "react-addons-pure-render-mixin": "^15.6.3",
+    "react-hover-grid": "^1.1.5",
+    "react-split-pane": "^0.1.92",
+    "webpack-cli": "^5.1.4"
+  },
+  "overrides": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-gm": "^0.0.9",
+    "gulp-image-data-uri": "^1.2.3"
+  }
+}

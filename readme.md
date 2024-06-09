@@ -28,6 +28,8 @@ $ npm install --global gulp-cli
 <a name="to-remake-images"></a>
 ## To remake images
 
+### Use package-local-dev.json for below image building:
+
 ### $ npx gulp circles
 
 ### $ npx gulp uris
@@ -36,7 +38,11 @@ $ npm install --global gulp-cli
 
 
 
-## Free Hosting on render.com
+## Free hosting on render.com or Heroku
+
+### Use package-onrender.json
+
+
 	Web Service
 	
 	Environment

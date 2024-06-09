@@ -1,3 +1,15 @@
+// NB
+// HAS image generation packages
+//   "sharp": "^0.33.4"
+//   "gulp-responsive": "^3.0.1"
+//
+// That crash deployment on OnRender.com and Heroku
+//
+// this package.json supports image generation of
+//    npx gulp circles
+//    npx gulp uris
+//    npx gulp tiles
+
 {
   "name": "react-hover-grid-examples",
   "version": "1.1.0",
